@@ -1,5 +1,4 @@
 # Tamusi Website
-
 Website for music-lessons for little kids.
 You can [view the website here](http://localhost:3000).
 
@@ -9,8 +8,7 @@ You can [view the website here](http://localhost:3000).
 - Prismic
 
 ## Tasks
-
-[x] - Page Transition with background-color change
-[x] - Magnetic Hover
-[ ] - Bulletpoint-section
-[ ] - Footer
+- [x] Page Transition with background-color change
+- [x] Magnetic Hover
+- [ ] Bulletpoint-section
+- [ ] Footer
