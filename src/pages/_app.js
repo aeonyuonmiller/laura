@@ -41,7 +41,7 @@ export default function App({ Component, pageProps, router }) {
                 height={90}
                 priority
               />
-              Eltern-Kind-Kurse
+              Eltern-Kind Kurs
             </Link>
           </Magnetic>
 
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
                 width={90}
                 height={90}
                 priority
-              />Kind-Kurse
+              />Kind Kurs
             </Link>
           </Magnetic>
 

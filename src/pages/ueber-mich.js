@@ -1,25 +1,22 @@
 import Head from "next/head";
-import Image from "next/image";
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion"
 
 // Components
-import Magnetic from "../components/Magnetic";
-import Link from "next/link";
 import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
 
-const dokdo = localFont({
-    src: "./fonts/DokdoRegular.woff",
-    variable: "--font-dokdo",
-    // weight: "400",
-});
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
-});
+// const dokdo = localFont({
+//     src: "./fonts/DokdoRegular.woff",
+//     variable: "--font-dokdo",
+//     // weight: "400",
+// });
+// const geistMono = localFont({
+//     src: "./fonts/GeistMonoVF.woff",
+//     variable: "--font-geist-mono",
+//     weight: "100 900",
+// });
 
 export default function Home() {
     return (

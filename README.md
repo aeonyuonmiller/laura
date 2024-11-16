@@ -11,4 +11,5 @@ You can [view the website here](http://localhost:3000).
 - [x] Page Transition with background-color change
 - [x] Magnetic Hover
 - [ ] Bulletpoint-section
+- [ ] 2er-Grid
 - [ ] Footer

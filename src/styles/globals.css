@@ -76,6 +76,7 @@ section.points span p {
 
 .xl {
   max-width: 62%;
+  height: 100svh;
 }
 
 .hero2 {
@@ -105,7 +106,7 @@ nav {
   position: fixed;
   align-items: start;
   /* justify-content: end; */
-  top: 4em;
+  top: 2vw;
   right: 5vw;
   gap: 3em;
   z-index: 10;
@@ -147,7 +148,7 @@ h1 {
   text-align: center;
   text-wrap: pretty;
   margin-bottom: 0;
-  margin-top: 30vh;
+  margin-top: 50vh;
 }
 
 h2 {

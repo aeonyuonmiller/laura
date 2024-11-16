@@ -28,9 +28,9 @@ export default function Magnetic({ children }) {
             exit={{ opacity: 0 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: .95 }}
-        // transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-        // transition={{ type: "spring", stiffness: 150, damping: 10, mass: 1 }}
-        // transition={{ type: "spring", bounce: .4, duration: 1 }}
+            // transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
+            // transition={{ type: "spring", stiffness: 150, damping: 10, mass: 1 }}
+            transition={{ type: "spring", bounce: .6, duration: .8 }}
         >
             {children}
         </motion.div>

@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 
 // Components
 import Magnetic from "../components/Magnetic";
-import Link from "next/link";
 import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
 
@@ -15,11 +14,11 @@ const dokdo = localFont({
     variable: "--font-dokdo",
     // weight: "400",
 });
-const geistMono = localFont({
-    src: "./fonts/GeistMonoVF.woff",
-    variable: "--font-geist-mono",
-    weight: "100 900",
-});
+// const geistMono = localFont({
+//     src: "./fonts/GeistMonoVF.woff",
+//     variable: "--font-geist-mono",
+//     weight: "100 900",
+// });
 
 export default function Home() {
     return (
@@ -34,7 +33,7 @@ export default function Home() {
             <div
                 // className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
                 // className={`${styles.page} ${dokdo.variable} ${geistMono.variable}`}
-                className={`${dokdo.variable} ${geistMono.variable}`}
+                className={`${dokdo.variable}`}
 
             >
                 <Background color="#87EA80" />
