@@ -22,31 +22,40 @@ export default function Home() {
         <Background color="#EA4447" />
 
         <div className="bound xl">
-          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>Willkommen bei Tamusi</motion.h1>
-          <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
+            <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>Willkommen bei Tamusi</motion.h1>
+            <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
-          </motion.h2>
+            </motion.h2>
         </div>
 
         <section className="points">
           <Bound>
-            <h3>Warum es gut für ihr Kind ist?</h3>
+            <h3>Drei gute Gründe</h3>
           
-            <span>
-              <h4>Grund 1</h4>
-              <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-            </span>
+            <div className="point">
+              <span>
+                <h4>Grund 1</h4>
+                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
+              </span>
+              <img src="/" width={30} />
+            </div>
 
-            <span>
-              <h4>Grund 2</h4>
-              <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-            </span>
+            <div className="point">
+              <span>
+                <h4>Grund 2</h4>
+                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
+              </span>
+              <img src="/" width={30} />
+            </div>
 
-            <span>
-              <h4>Grund 3</h4>
-              <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-            </span>
+            <div className="point">
+              <span>
+                <h4>Grund 3</h4>
+                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
+              </span>
+              <img src="/" width={30} />
+            </div>
           </Bound> 
         </section>
       </div>

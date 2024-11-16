@@ -7,7 +7,7 @@ export const classic = {
 }
 
 export const quick = {
-    hidden: { opacity: 0, y: 80, scale: .98, filter: "blur(6px)" },
+    hidden: { opacity: 0, y: 0, scale: 1, filter: "blur(6px)" },
     enter: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", transition: { delay: .2, type: "spring", duration: .5, bounce: .2 }},
-    exit: { opacity: 0, y: -40, scale: .98, filter: "blur(6px)", transition: { type: "spring", duration: .5, bounce: .2 }},
+    exit: { opacity: 0, y: -20, scale: .99, filter: "blur(6px)", transition: { type: "spring", duration: 1, bounce: .2 }},
 }

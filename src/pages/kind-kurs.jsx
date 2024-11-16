@@ -47,7 +47,6 @@ export default function Home() {
                         Kinder zwischen 4 und 6 Jahren kommen hier auf den musikalischen Zweig.
                     </motion.h2>
                 </div>
-
                 <section>
                     <Bound>
                         <h3>Warum es gut für ihr Kind ist?</h3>

@@ -31,15 +31,15 @@ export default function Home() {
             <div>
               <Background color="#FD7536" />
 
-              <div className="bound xl">
-                <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>
-                  Über mich
-                </motion.h1>
-                <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
-                  Leidenschaftliche Pädagogin und Musikerin mit 10 Jahren Erfahrung.
-                </motion.h2>
-              </div>
-
+          <div className="bound xl">
+              <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>
+                Über mich
+              </motion.h1>
+              <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
+                Leidenschaftliche Pädagogin und Musikerin mit 10 Jahren Erfahrung.
+              </motion.h2>
+          </div >
+  
                 <section>
                     <Bound>
                         <h3>Laura Maria Müller</h3>
