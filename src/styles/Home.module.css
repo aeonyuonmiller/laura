@@ -3,7 +3,7 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
+  --button-primary-hover: #540607;
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
@@ -88,7 +88,7 @@ a.primary {
 }
 
 a.secondary {
-  border-color: var(--gray-alpha-200);
+  border-color: var(--gray-alpha-button-secondary-hover);
   min-width: 180px;
 }
 
