@@ -9,6 +9,7 @@ import Magnetic from "../components/Magnetic";
 import Link from "next/link";
 import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
+import { hl1, hl2 } from "@/components/anim";
 
 const dokdo = localFont({
     src: "./fonts/DokdoRegular.woff",
@@ -37,14 +38,14 @@ export default function Home() {
                 className={`${dokdo.variable} ${geistMono.variable}`}
 
             >
-                <Background color="#9CB1F9" />
+                <Background color="#287ff0" />
 
                 {/* <main className={styles.main}> */}
                 <div className="bound xl">
-                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>
+                    <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
                         Eltern-Kind Kurs
                     </motion.h1>
-                    <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
+                    <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
                         Kinder zwischen 0 und 3 Jahren entdecken hier ihre musische Seite.
                     </motion.h2>
                 </div>

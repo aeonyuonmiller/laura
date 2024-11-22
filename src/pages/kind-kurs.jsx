@@ -8,6 +8,7 @@ import { motion } from "framer-motion"
 import Magnetic from "../components/Magnetic";
 import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
+import { hl1, hl2 } from "@/components/anim";
 
 const dokdo = localFont({
     src: "./fonts/DokdoRegular.woff",
@@ -40,10 +41,10 @@ export default function Home() {
 
                 {/* <main className={styles.main}> */}
                 <div className="bound xl">
-                    <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>
+                    <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
                         Kind Kurs
                     </motion.h1>
-                    <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
+                    <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
                         Kinder zwischen 4 und 6 Jahren kommen hier auf den musikalischen Zweig.
                     </motion.h2>
                 </div>

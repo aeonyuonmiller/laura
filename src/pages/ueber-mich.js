@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 // Components
 import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
+import { hl1, hl2 } from "@/components/anim";
 
 // const dokdo = localFont({
 //     src: "./fonts/DokdoRegular.woff",
@@ -32,10 +33,10 @@ export default function Home() {
               <Background color="#FD7536" />
 
           <div className="bound xl">
-              <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1 } }} exit={{ opacity: 0, y: -15 }}>
+              <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
                 Über mich
               </motion.h1>
-              <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0, transition: { delay: 1.05 } }} exit={{ opacity: 0, y: -15 }}>
+              <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
                 Leidenschaftliche Pädagogin und Musikerin mit 10 Jahren Erfahrung.
               </motion.h2>
           </div >

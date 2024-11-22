@@ -10,9 +10,9 @@ const Background = ({ color }) => (
         viewBox="0 0 1920 1080"
     >
         <motion.path
-            initial={{ scale: 1, rotate: '-30deg', x: '100%', y: '50%' }}
-            animate={{ scale: 5, rotate: ['0deg', '30deg'], x: '0%', y: '0%', transition: { duration: 1.2 } }}
-            exit={{ scale: 5, transition: { delay: .9 } }}
+            initial={{ scale: 1, rotate: '-30deg', x: '80%', y: '50%' }}
+            animate={{ scale: 5, rotate: ['0deg', '30deg'], x: '0%', y: '0%', transition: { duration: 1 } }}
+            exit={{ scale: 5, transition: { delay: .6 } }}
             // transition={{ duration: 1 }}
             // fill="#FD7536"
             fill={color}
