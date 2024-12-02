@@ -1,15 +1,16 @@
 # Tamusi Website
-Website for music-lessons for little kids.
-You can [view the website here](http://localhost:3000).
+Website for music-lessons for children.
+[View the website here](https://tamusi.vercel.app/).
 
 ## Stack
-- Next.js
-- Framer Motion
-- Prismic
+- [x] Next.js
+- [x] Motion
+- [ ] Prismic
 
 ## Tasks
 - [x] Page Transition with background-color change
 - [x] Magnetic Hover
-- [ ] Bulletpoint-section
-- [ ] 2er-Grid
-- [ ] Footer
+- [x] Bulletpoint-section
+- [x] 2er-Grid
+- [ ] Form
+- [x] Footer
