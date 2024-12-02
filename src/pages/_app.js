@@ -1,11 +1,10 @@
 import "@/styles/globals.css";
 import localFont from "next/font/local";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "motion/react"
 import Image from "next/image";
 import Link from "next/link";
 import Magnetic from "../components/Magnetic";
 import Logo from "../components/Logo";
-
 
 const dokdo = localFont({
   src: "./fonts/DokdoRegular.woff",

@@ -46,7 +46,7 @@ export default function Home() {
                         Eltern-Kind Kurs
                     </motion.h1>
                     <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
-                        Kinder zwischen 0 und 3 Jahren entdecken hier ihre musische Seite.
+                        Kinder zwischen 0 und 3 Jahren entdecken hier mit ihren Eltern ihre musische Seite.
                     </motion.h2>
                 </div>
 
