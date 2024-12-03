@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { motion } from "framer-motion"
 
 // Components
-import Background from "@/components/Background";
+import Background2 from "@/components/Background2";
 import { Bound } from "@/components/Bound";
 import { hl1, hl2 } from "@/components/anim";
 
@@ -30,7 +30,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-              <Background color="#FD7536" />
+              <Background2 color="#FD7536" />
 
           <div className="bound xl">
               <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">

@@ -13,7 +13,7 @@ import Magnetic from "../components/Magnetic";
 import { Bound } from "@/components/Bound";
 import { hl1, hl2, imagereveal, scale } from '@/components/anim';
 import Link from "next/link";
-import SvgIcon from "@/components/SVG";
+import Background2 from "@/components/Background2";
 
 export default function Home() {
 
@@ -49,7 +49,7 @@ export default function Home() {
       </Head>
       <div>
         {/* <Background color="#EA4447" /> */}
-        <SvgIcon color="#EA4447" />
+        <Background2 color="#EA4447" />
 
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
           <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">

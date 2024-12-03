@@ -22,13 +22,13 @@ export default function App({ Component, pageProps, router }) {
           </AnimatePresence>
         </div>
 
-        <Link href="/" scroll={false}>
           <div className="logo">
+        <Link href="/" scroll={false}>
             <Magnetic>
               <Logo />
           </Magnetic>
-          </div>
         </Link>
+          </div>
 
         <nav>
           <Magnetic>

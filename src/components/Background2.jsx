@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-const SvgIcon = ({ color }) => (
+const Background2 = ({ color }) => (
     <svg
         className="backgroundish"
         xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const SvgIcon = ({ color }) => (
     </svg>
 );
 
-export default SvgIcon;
+export default Background2;

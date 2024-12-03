@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 // Components
 import Magnetic from "../components/Magnetic";
-import Background from "@/components/Background";
+import Background2 from "@/components/Background2";
 import { Bound } from "@/components/Bound";
 import { hl1, hl2 } from "@/components/anim";
 
@@ -37,7 +37,7 @@ export default function Home() {
                 className={`${dokdo.variable}`}
 
             >
-                <Background color="#87EA80" />
+                <Background2 color="#87EA80" />
 
                 {/* <main className={styles.main}> */}
                 <div className="bound xl">

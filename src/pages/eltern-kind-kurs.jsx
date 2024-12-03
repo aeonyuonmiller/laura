@@ -6,10 +6,11 @@ import { motion } from "framer-motion"
 
 // Components
 import Magnetic from "../components/Magnetic";
-import Link from "next/link";
-import Background from "@/components/Background";
+// import Link from "next/link";
+// import Background from "@/components/Background";
 import { Bound } from "@/components/Bound";
 import { hl1, hl2 } from "@/components/anim";
+import Background2 from "@/components/Background2";
 
 const dokdo = localFont({
     src: "./fonts/DokdoRegular.woff",
@@ -38,7 +39,7 @@ export default function Home() {
                 className={`${dokdo.variable} ${geistMono.variable}`}
 
             >
-                <Background color="#287ff0" />
+                <Background2 color="#287ff0" />
 
                 {/* <main className={styles.main}> */}
                 <div className="bound xl">
