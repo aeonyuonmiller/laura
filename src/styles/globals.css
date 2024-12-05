@@ -17,6 +17,15 @@
   font-style: normal;
 }
 
+:focus-visible {
+  outline: 8px dotted #00000088;
+  outline-offset: 8px;
+  border-radius: 30px;
+  color: #fff;
+  z-index: 999;
+  /* outline-style: dotted; */
+}
+
 ::selection {
   background: transparent;
   color: #fff;
@@ -46,6 +55,33 @@ body {
   font-family: var(--font-dodko);
   /* font-family: 'Didact Gothic', 'DodkoRegular', sans-serif; */
 }
+
+input {
+  width: 100%;
+  height: 80px;
+  padding: 12px 40px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0 solid white;
+  border-radius: 30px;
+  color: #ccc;
+  transition: all ease-in-out .4s;
+}
+
+input:focus-visible {
+  background: #0000004e;
+  color: #f1f1f1;
+  padding: 12px 50px;
+}
+
+input:focus-visible:placeholder-shown {
+  background: #0000004e;
+  color: #f1f1f1;
+  padding: 12px 50px;
+}
+
+input[type=text],
+input[type=email] {}
 
 /* 
 a:after {
@@ -137,6 +173,12 @@ section.two-grid p {
   margin-bottom: 1rem;
 }
 
+section.contact-form h4,
+section.contact-form p {
+  text-align: center;
+
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -176,8 +218,26 @@ footer svg {
   height: 100svh;
   max-width: 62%;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
   padding-bottom: 16svh;
+}
+
+section:has(form) {
+  /* background: #0000004d; */
+  /* border-radius: 30px; */
+  height: 50vh;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 600px;
+  gap: .5em;
+  margin: auto;
 }
 
 .point {
@@ -227,10 +287,8 @@ nav {
   display: flex;
   position: fixed;
   align-items: start;
-  /* justify-content: end; */
   top: 4.2vh;
   right: 5vw;
-  /* gap: 3em; */
   gap: 5vw;
   z-index: 10;
 }
@@ -380,7 +438,7 @@ img {
     margin: 0 auto;
     margin-bottom: 20vh;
     padding: 0;
-    place-items: end center;
+    place-items: flex-end center;
   }
 }
 
@@ -405,7 +463,7 @@ img {
     height: 100svh;
     max-width: 100%;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-bottom: 16svh;
   }
 

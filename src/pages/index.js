@@ -189,14 +189,86 @@ export default function Home() {
                     width="2936"
                     height="3739"
                   ></image>
-              {/* <Image src="/portrait.png" alt="portrait" width={500} height={500} /> */}
                 </defs>
               </svg>
+              {/* <Image src="/portrait.png" alt="portrait" width={500} height={500} /> */}
             </motion.div>
             <motion.h5 variants={hl1} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
             <motion.h6 variants={hl2} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
           </div>
         </section>
+
+        <section className='contact-form'>
+          <Bound>
+            <h4>Mein Kind für den Kurs anmelden</h4>
+            <p>Die Eltern-Kind Kurse sind bis max. 12 Personen in unseren Räumlichkeiten.</p>
+
+          <form
+            // onSubmit={handleSubmit}
+            className="border-none p-0"
+            // data-aos="fade-down"
+            >
+            <input
+              name="nachname"
+              type="text"
+              placeholder="Nachname"
+              // value={formData.email}
+              // onChange={handleChange}
+              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              required
+              />
+              
+                          <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              // value={formData.email}
+              // onChange={handleChange}
+              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              required
+              />
+              
+                          <input
+              name="telefon"
+              type="tel"
+              placeholder="Telefon"
+              // value={formData.email}
+              // onChange={handleChange}
+              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              required
+            />
+              
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              // value={formData.email}
+              // onChange={handleChange}
+              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              required
+              />
+            {/* <textarea
+              name="message"
+              cols={30}
+              rows={5}
+              placeholder="...type your message"
+              // value={formData.message}
+              // onChange={handleChange}
+              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              required
+            /> */}
+            <button
+              type="submit"
+              className="w-full bg-primary hover:shadow-lg hover:opacity-90 text-background font-bold py-2 px-4 rounded"
+            >
+              {/* {isSending && <ClipLoader color="#000" size={10} />} &nbsp; Send */}
+              Anmelden
+            </button>
+          </form>
+          </Bound>
+
+        </section>
+
         
         <footer>
           <Magnetic>

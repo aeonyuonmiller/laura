@@ -23,11 +23,11 @@ export default function App({ Component, pageProps, router }) {
         </div>
 
           <div className="logo">
-        <Link href="/" scroll={false}>
-            <Magnetic>
-              <Logo />
-          </Magnetic>
-        </Link>
+            <Link href="/#" scroll={false}>
+              <Magnetic>
+                <Logo />
+              </Magnetic>
+            </Link>
           </div>
 
         <nav>
@@ -40,19 +40,19 @@ export default function App({ Component, pageProps, router }) {
                 height={90}
                 priority
               />
-              Eltern-Kind Kurs
+              Eltern-Kind-Kurse
             </Link>
           </Magnetic>
 
           <Magnetic>
-            <Link href="/kind-kurs" scroll={false}>
+            <Link href="/kinder-kurse" scroll={false} tabIndex={1}>
               <Image
                 src="/kind-kurse.svg"
                 alt="Kinderhand in Elternhand"
                 width={90}
                 height={90}
                 priority
-              />Kind Kurs
+              />Kinder-Kurse
             </Link>
           </Magnetic>
 
