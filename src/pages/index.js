@@ -1,27 +1,17 @@
 // 'use client'
 import { useScroll, useTransform, motion } from 'motion/react';
 import { useRef } from 'react';
-
 import Head from "next/head";
 import Image from "next/image";
-// import styles from "@/styles/Home.module.css";
-// import { motion } from "framer-motion"
 
 // Components
 import Magnetic from "../components/Magnetic";
-// import Background from "@/components/Background";
 import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
 import Background2 from "../components/Background2";
 
 export default function Home() {
-
-  // const container = useRef();
-  // const { scrollYProgress } = useScroll({
-  //   target: container,
-  //   offset: ['start end', 'end start']
-  // })
 
     const container = useRef();
     const { scrollYProgress } = useScroll({
@@ -48,7 +38,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        {/* <Background color="#EA4447" /> */}
         <Background2 color="#EA4447" />
 
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
@@ -120,7 +109,7 @@ export default function Home() {
                 <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
               </span>
               <Image
-                aria-hidden
+                aria-label='drums'
                 src="/drums.svg"
                 alt="Trommel"
                 width={300}
@@ -136,7 +125,14 @@ export default function Home() {
               amount: '.4',
               once: true
             }}>
-            <motion.h3 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Über mich</motion.h3>
+            <motion.h3
+              variants={hlone}
+              initial="hidden"
+              whileInView="enter"
+              exit="exit"
+              viewport={{ once: true }}>
+                Über mich
+            </motion.h3>
             <h2>Ich bin Laura Maria Müller – leidenschaftliche Musikerin und Pädagogin mit über 10 Jahren professioneller Erfahrung.</h2>
             <p>
               In meinen Kursen bringe ich Kindern von 0 bis 8 Jahren die Freude an der Musik näher und helfe ihnen, ihre kreativen Fähigkeiten zu entfalten. Die Kleinen lernen, Instrumente zu spielen und sich selbst besser kennenzulernen. Dabei achte ich immer auf die individuelle Entwicklung jedes Kindes.
@@ -151,6 +147,7 @@ export default function Home() {
               exit="exit"
               viewport={{
                 amount: '.4',
+                once: true
                 // margin: "100px 100px -100px 100px"
               }}
             >

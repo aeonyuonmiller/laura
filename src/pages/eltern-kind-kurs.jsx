@@ -3,11 +3,11 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion"
+// import { motion } from "react/motion";
 
 // Components
 import Magnetic from "../components/Magnetic";
 // import Link from "next/link";
-// import Background from "@/components/Background";
 import { Bound } from "../components/Bound";
 import { hlone, hltwo } from "../components/anim";
 import Background2 from "../components/Background2";
@@ -59,7 +59,7 @@ export default function Home() {
                     </Bound>
                 </section>
 
-                <footer className={styles.footer}>
+                <footer>
                     <Magnetic>
                         <a
                             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -423,7 +423,7 @@ form {
 nav {
   display: flex;
   position: fixed;
-  align-items: start;
+  align-items: flex-start;
   top: 4.2vh;
   right: 5vw;
   gap: 5vw;
