@@ -24,7 +24,7 @@ export default function App({ Component, pageProps, router }) {
 
           <div className="logo">
               <Magnetic>
-            <Link href="/#" aria-label="Tamusi Logo" scroll={false}>
+            <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={1}>
                 <Logo />
             </Link>
               </Magnetic>
@@ -32,7 +32,7 @@ export default function App({ Component, pageProps, router }) {
 
         <nav>
           <Magnetic>
-            <Link href="/eltern-kind-kurs" scroll={false}>
+            <Link href="/eltern-kind-kurs" scroll={false} tabIndex={1}>
               <Image
                 src="/eltern-kind-kurse.svg"
                 alt="Kinderhand in Elternhand"
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps, router }) {
           </Magnetic>
 
           <Magnetic>
-            <Link href="/ueber-mich" scroll={false}>
+            <Link href="/ueber-mich" scroll={false} tabIndex={1}>
               <Image
                 src="/ueber-mich.svg"
                 alt="Kinderhand in Elternhand"
@@ -69,7 +69,7 @@ export default function App({ Component, pageProps, router }) {
             </Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false}>
+          <Magnetic><Link href="/" scroll={false} tabIndex={1}>
             <Image
                 src="/zusammenarbeit.svg"
                 alt="Kinderhand in Elternhand"
@@ -79,7 +79,7 @@ export default function App({ Component, pageProps, router }) {
           />Zusammenarbeit</Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false}>
+          <Magnetic><Link href="/" scroll={false} tabIndex={1}>
             <Image
                 src="/kontakt.svg"
                 alt="Brief"
