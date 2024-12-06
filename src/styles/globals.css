@@ -17,13 +17,23 @@
   font-style: normal;
 }
 
-:focus-visible {
-  outline: 8px dotted #00000088;
-  outline-offset: 8px;
-  border-radius: 30px;
-  color: #fff;
-  z-index: 999;
-  /* outline-style: dotted; */
+label span {
+  position: absolute;
+  margin: auto;
+  font-size: 10px;
+  z-index: 1000;
+}
+
+a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: -12px;
+  right: -12px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
 ::selection {
@@ -50,9 +60,12 @@ body {
   /* background: var(--background); */
   background: var(--foreground);
   font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-dodko);
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
   /* font-family: 'Didact Gothic', 'DodkoRegular', sans-serif; */
 }
 
@@ -62,26 +75,67 @@ input {
   padding: 12px 40px;
   margin: 0;
   box-sizing: border-box;
+  font-size: 16px;
   border: 0 solid white;
   border-radius: 30px;
   color: #ccc;
   transition: all ease-in-out .4s;
 }
 
+button[type=submit] {
+  width: 100%;
+  height: 80px;
+  padding: 12px 40px;
+  background-color: rgba(0, 0, 0, 0.671);
+  box-sizing: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.627);
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Dodko', sans-serif;
+  font-size: 16px;
+  letter-spacing: .2rem;
+  color: #fff;
+  transition: all ease-in-out .4s;
+}
+
+:focus-visible {
+  outline: 8px solid #ffffffc7;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.483);
+  z-index: 999;
+  /* outline-style: dotted; */
+}
+
+nav a:focus-visible {
+  outline-offset: 32px;
+}
+
 input:focus-visible {
-  background: #0000004e;
-  color: #f1f1f1;
+  background: #a7a6a6;
+  color: #e0e0e0;
   padding: 12px 50px;
 }
 
-input:focus-visible:placeholder-shown {
-  background: #0000004e;
-  color: #f1f1f1;
-  padding: 12px 50px;
+input::placeholder {
+  color: #848383;
+  font-size: 16px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
-input[type=text],
-input[type=email] {}
+input:focus-visible::placeholder {
+  color: #111;
+  margin-left: auto;
+  /* padding: 12px 40px; */
+  right: 20px;
+}
+
+/* input[type=text],
+input[type=email] {} */
 
 /* 
 a:after {
@@ -111,16 +165,80 @@ a:after {
   position: relative;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: .5px solid white; */
+  /* border: .5px solid white; 
+} */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* css reset */
 
 section {
   /* height: 100vh; */
-  margin: 0px 40px;
+  margin: 40px 40px;
 }
 
 section.points span {
@@ -176,7 +294,9 @@ section.two-grid p {
 section.contact-form h4,
 section.contact-form p {
   text-align: center;
-
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 footer {
@@ -305,7 +425,7 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus-visible {
   color: #fff;
   fill: #fff;
   /* filter: invert(1); */
@@ -316,7 +436,7 @@ nav a img {
 }
 
 nav a:hover img,
-nav a:focus img {
+nav a:focus-visible img {
   transform: scale(1.3) rotate(-10deg);
 }
 

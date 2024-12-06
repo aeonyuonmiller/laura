@@ -205,18 +205,19 @@ export default function Home() {
 
           <form
             // onSubmit={handleSubmit}
-            className="border-none p-0"
+            // className="border-none p-0"
             // data-aos="fade-down"
             >
+            <label for="id-nachname">Nachname</label>
             <input
               name="nachname"
               type="text"
+              id="id-nachname"
               placeholder="Nachname"
               // value={formData.email}
               // onChange={handleChange}
-              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
               required
-              />
+                />
               
                           <input
               name="name"
