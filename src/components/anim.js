@@ -1,8 +1,7 @@
 // import { stagger } from "framer-motion"
+// import { easeIn } from "framer-motion"
 
-import { easeIn } from "framer-motion"
-
-export const hl1 = {
+export const hlone = {
     hidden: { opacity: 0, y: 30 },
     enter:  { opacity: 1, y: 0, transition: { delay: 1 } },
     exit:   { opacity: 0, y: -15, transition: { bounce: .4 }}
@@ -32,7 +31,7 @@ export const scale = {
     exit: { opacity: 0, scaleX: .5, transition: { ease: "easeIn", duration: .4 } },
 }
 
-export const hl2 = {
+export const hltwo = {
     hidden: { opacity: 0, y: 30 },
     enter: { opacity: 1, y: 0, transition: { delay: 1.05 }},
     exit: { opacity: 0, y: -15 }

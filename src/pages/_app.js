@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import localFont from "next/font/local";
 import { AnimatePresence } from "motion/react"
 import Image from "next/image";
@@ -23,11 +23,11 @@ export default function App({ Component, pageProps, router }) {
         </div>
 
           <div className="logo">
-            <Link href="/#" scroll={false}>
               <Magnetic>
+            <Link href="/#" aria-label="Tamusi Logo" scroll={false}>
                 <Logo />
-              </Magnetic>
             </Link>
+              </Magnetic>
           </div>
 
         <nav>

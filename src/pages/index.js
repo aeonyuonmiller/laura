@@ -10,10 +10,10 @@ import Image from "next/image";
 // Components
 import Magnetic from "../components/Magnetic";
 // import Background from "@/components/Background";
-import { Bound } from "@/components/Bound";
-import { hl1, hl2, imagereveal, scale } from '@/components/anim';
+import { Bound } from "../components/Bound";
+import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
-import Background2 from "@/components/Background2";
+import Background2 from "../components/Background2";
 
 export default function Home() {
 
@@ -52,9 +52,9 @@ export default function Home() {
         <Background2 color="#EA4447" />
 
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
-          <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
+          <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
             Willkommen<br/>bei Tamusi</motion.h1>
-            <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
+            <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
@@ -132,11 +132,11 @@ export default function Home() {
 
 
         <section className="two-grid">
-            <motion.div variants={hl1} initial="hidden" whileInView="enter" exit="exit" viewport={{
+            <motion.div variants={hlone} initial="hidden" whileInView="enter" exit="exit" viewport={{
               amount: '.4',
               once: true
             }}>
-            <motion.h3 variants={hl1} initial="hidden" whileInView="enter" exit="exit">Über mich</motion.h3>
+            <motion.h3 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Über mich</motion.h3>
             <h2>Ich bin Laura Maria Müller – leidenschaftliche Musikerin und Pädagogin mit über 10 Jahren professioneller Erfahrung.</h2>
             <p>
               In meinen Kursen bringe ich Kindern von 0 bis 8 Jahren die Freude an der Musik näher und helfe ihnen, ihre kreativen Fähigkeiten zu entfalten. Die Kleinen lernen, Instrumente zu spielen und sich selbst besser kennenzulernen. Dabei achte ich immer auf die individuelle Entwicklung jedes Kindes.
@@ -145,7 +145,7 @@ export default function Home() {
 
           <div>
             <motion.div
-              variants={scale}
+              variants={hlone}
               initial="hidden"
               whileInView="enter"
               exit="exit"
@@ -193,8 +193,8 @@ export default function Home() {
               </svg>
               {/* <Image src="/portrait.png" alt="portrait" width={500} height={500} /> */}
             </motion.div>
-            <motion.h5 variants={hl1} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
-            <motion.h6 variants={hl2} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
+            <motion.h5 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
+            <motion.h6 variants={hltwo} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
           </div>
         </section>
 
