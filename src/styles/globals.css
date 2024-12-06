@@ -31,10 +31,13 @@
   grid-column: 1 / -1;
 } */
 
-label span {
+label {
   position: absolute;
   margin: auto;
-  font-size: 10px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
   z-index: 1000;
 }
 
@@ -151,7 +154,7 @@ input:focus-visible::placeholder {
 /* input[type=text],
 input[type=email] {} */
 
-/* 
+
 a:after {
   content: "";
   position: absolute;
@@ -159,8 +162,8 @@ a:after {
   top: -20px;
   right: -20px;
   bottom: -20px;
-} 
-*/
+}
+
 
 .backgroundish {
   position: fixed;

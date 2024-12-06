@@ -4,9 +4,9 @@ import localFont from "next/font/local";
 import { motion } from "framer-motion"
 
 // Components
-import Background2 from "@/components/Background2";
-import { Bound } from "@/components/Bound";
-import { hl1, hl2 } from "@/components/anim";
+import Background2 from "../components/Background2";
+import { Bound } from "../components/Bound";
+import { hlone, hltwo } from "@/components/anim";
 
 // const dokdo = localFont({
 //     src: "./fonts/DokdoRegular.woff",
@@ -33,10 +33,10 @@ export default function Home() {
               <Background2 color="#FD7536" />
 
           <div className="bound xl">
-              <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
+              <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                 Über mich
               </motion.h1>
-              <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
+              <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
                 Leidenschaftliche Pädagogin und Musikerin mit 10 Jahren Erfahrung.
               </motion.h2>
           </div >

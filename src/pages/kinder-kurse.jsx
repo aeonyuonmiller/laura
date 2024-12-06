@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion"
 
 // Components
 import Magnetic from "../components/Magnetic";
-import Background2 from "@/components/Background2";
-import { Bound } from "@/components/Bound";
-import { hl1, hl2 } from "@/components/anim";
+import Background2 from "../components/Background2";
+import { Bound } from "../components/Bound";
+import { hlone, hltwo } from "../components/anim";
 
 const dokdo = localFont({
     src: "./fonts/DokdoRegular.woff",
@@ -41,10 +41,10 @@ export default function Home() {
 
                 {/* <main className={styles.main}> */}
                 <div className="bound xl">
-                    <motion.h1 variants={hl1} initial="hidden" animate="enter" exit="exit">
+                    <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                         Kind Kurs
                     </motion.h1>
-                    <motion.h2 variants={hl2} initial="hidden" animate="enter" exit="exit">
+                    <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
                         Kinder zwischen 4 und 6 Jahren kommen hier auf den musikalischen Zweig.
                     </motion.h2>
                 </div>
