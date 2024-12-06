@@ -49,7 +49,6 @@ export default function Home() {
           </motion.h2>
         </motion.div>
 
-
         <section className="points">
           <Bound>
             <h3>Drei gute Gründe</h3>
@@ -118,7 +117,6 @@ export default function Home() {
             </motion.div>
           </Bound> 
         </section>
-
 
         <section className="two-grid">
             <motion.div variants={hlone} initial="hidden" whileInView="enter" exit="exit" viewport={{
@@ -205,46 +203,52 @@ export default function Home() {
             // className="border-none p-0"
             // data-aos="fade-down"
             >
-            <label for="id-nachname">Nachname</label>
             <input
               name="nachname"
               type="text"
               id="id-nachname"
-              placeholder="Nachname"
+              placeholder="von Ihnen"
               // value={formData.email}
               // onChange={handleChange}
               required
                 />
-              
-                          <input
+            <label for="id-nachname">Nachname</label>
+            
+            <input
+              id="id-name"
               name="name"
               type="text"
-              placeholder="Name"
+              placeholder="Name des Kindes"
               // value={formData.email}
               // onChange={handleChange}
               className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
               required
               />
-              
-                          <input
+            <label for="id-name">Name</label>
+
+            <input
+              id="id-tel"
               name="telefon"
               type="tel"
-              placeholder="Telefon"
+              placeholder="Telefonnummer"
               // value={formData.email}
               // onChange={handleChange}
-              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
-              required
+              // className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
+              // required
             />
-              
+            <label for="id-tel">Telefon</label>  
+            
             <input
+              id="id-email"  
               name="email"
               type="email"
-              placeholder="Email"
+              placeholder="Emailadresse"
               // value={formData.email}
               // onChange={handleChange}
               className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
               required
               />
+            <label for="id-email">Email</label>
             {/* <textarea
               name="message"
               cols={30}
@@ -267,7 +271,6 @@ export default function Home() {
 
         </section>
 
-        
         <footer>
           <Magnetic>
             <svg

@@ -1,6 +1,6 @@
 :root {
   --background: #EA4447;
-  --foreground: #00000091;
+  --foreground: #000000ad;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 
-/* .wrapper {
+.wrapper {
   display: grid;
   grid-template-columns: 1fr min(60ch, calc(100% - 64px)) 1fr;
   grid-column-gap: 32px;
@@ -29,16 +29,42 @@
 
 .full-bleed {
   grid-column: 1 / -1;
-} */
+}
+
+section:has(form) {
+  /* background: #0000004d; */
+  /* border-radius: 30px; */
+  min-height: 70vh;
+}
+
+form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 600px;
+  gap: .5em;
+  margin: auto;
+}
 
 label {
-  position: absolute;
-  margin: auto;
+  pointer-events: none;
+  /* Prevent interference with input focus */
   font-family: 'Didact Gothic', sans-serif;
+  color: #333;
   font-size: 16px;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.18rem;
+  width: 90%;
+  margin: auto;
+  margin-top: -5.1em;
   z-index: 1000;
+  transition: all ease .4s;
+}
+
+input:focus-within+label {
+  transform: scale(.8) translate(-4px, -4px);
 }
 
 a:after {
@@ -51,16 +77,18 @@ a:after {
   right: -12px;
   border-radius: 10px;
   border: 2px solid white;
+  background: #000;
 }
 
 ::selection {
-  background: transparent;
+  background: black;
   color: #fff;
+  border-radius: 8px;
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: transparent;
+  background: black;
   color: #fff;
   /* Gecko Browsers */
 }
@@ -120,9 +148,9 @@ button[type=submit] {
   outline: 8px solid #ffffffc7;
   border-radius: 30px;
   color: #fff;
-  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.483);
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.768);
   z-index: 999;
-  /* outline-style: dotted; */
+  outline-style: solid;
 }
 
 nav a:focus-visible {
@@ -147,23 +175,21 @@ input::placeholder {
 input:focus-visible::placeholder {
   color: #111;
   margin-left: auto;
-  /* padding: 12px 40px; */
-  right: 20px;
+  width: fit-content;
 }
 
 /* input[type=text],
 input[type=email] {} */
 
-
 a:after {
-  content: "";
+  /* content: ""; */
+  content: none;
   position: absolute;
   left: -20px;
   top: -20px;
   right: -20px;
   bottom: -20px;
 }
-
 
 .backgroundish {
   position: fixed;
@@ -359,23 +385,7 @@ footer svg {
   padding-bottom: 16svh;
 }
 
-section:has(form) {
-  /* background: #0000004d; */
-  /* border-radius: 30px; */
-  height: 50vh;
-}
 
-form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-  width: 100%;
-  max-width: 600px;
-  gap: .5em;
-  margin: auto;
-}
 
 .point {
   width: 100%;
@@ -426,14 +436,14 @@ nav {
   align-items: flex-start;
   top: 4.2vh;
   right: 5vw;
-  gap: 5vw;
+  gap: 4vw;
   z-index: 10;
 }
 
 nav a {
   display: flex;
   font-family: 'Didact Gothic', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

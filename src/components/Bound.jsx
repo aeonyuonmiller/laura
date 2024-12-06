@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { quick } from './anim'
 
 export const Bound = ({ children }) => {

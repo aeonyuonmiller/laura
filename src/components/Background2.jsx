@@ -1,4 +1,5 @@
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 const Background2 = ({ color }) => (
     <svg

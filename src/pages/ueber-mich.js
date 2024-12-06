@@ -1,12 +1,10 @@
 import Head from "next/head";
-import localFont from "next/font/local";
-// import styles from "@/styles/Home.module.css";
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 // Components
 import Background2 from "../components/Background2";
 import { Bound } from "../components/Bound";
-import { hlone, hltwo } from "@/components/anim";
+import { hlone, hltwo } from "../components/anim";
 
 // const dokdo = localFont({
 //     src: "./fonts/DokdoRegular.woff",

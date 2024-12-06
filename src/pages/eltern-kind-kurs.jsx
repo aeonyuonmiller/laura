@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "../styles/Home.module.css";
-import { motion } from "framer-motion"
-// import { motion } from "react/motion";
+// import { motion } from "framer-motion"
+import { motion } from "motion/react";
 
 // Components
 import Magnetic from "../components/Magnetic";
