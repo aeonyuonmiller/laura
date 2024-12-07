@@ -157,7 +157,7 @@ export default function ubermich() {
                 name="nachname"
                 type="text"
                 id="id-nachname"
-                placeholder="von Ihnen"
+                // placeholder="von Ihnen"
                 // value={formData.email}
                 // onChange={handleChange}
                 required
@@ -168,7 +168,7 @@ export default function ubermich() {
                 id="id-name"
                 name="name"
                 type="text"
-                placeholder="Name des Kindes"
+                // placeholder="Name des Kindes"
                 // value={formData.email}
                 // onChange={handleChange}
                 required
@@ -179,7 +179,7 @@ export default function ubermich() {
                 id="id-tel"
                 name="telefon"
                 type="tel"
-                placeholder="Telefonnummer"
+              // placeholder="Telefonnummer"
               // value={formData.email}
               // onChange={handleChange}
               // className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
@@ -191,7 +191,7 @@ export default function ubermich() {
                 id="id-email"
                 name="email"
                 type="email"
-                placeholder="Emailadresse"
+                // placeholder="Emailadresse"
                 // value={formData.email}
                 // onChange={handleChange}
                 className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
