@@ -44,7 +44,7 @@ export default function App({ Component, pageProps, router }) {
             </Link>
           </Magnetic>
 
-          <Magnetic>
+          {/* <Magnetic>
             <Link href="/kinder-kurse" scroll={false} tabIndex={0}>
               <Image
                 src="/kind-kurse.svg"
@@ -54,7 +54,7 @@ export default function App({ Component, pageProps, router }) {
                 priority
               />Kinder-Kurse
             </Link>
-          </Magnetic>
+          </Magnetic> */}
 
           <Magnetic>
             <Link href="/ueber-mich" scroll={false} tabIndex={0}>
