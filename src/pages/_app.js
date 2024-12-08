@@ -23,16 +23,16 @@ export default function App({ Component, pageProps, router }) {
         </div>
 
           <div className="logo">
-              <Magnetic>
-            <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={1}>
+            <Magnetic>
+              <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={0}>
                 <Logo />
-            </Link>
-              </Magnetic>
+              </Link>
+            </Magnetic>
           </div>
 
         <nav>
           <Magnetic>
-            <Link href="/eltern-kind-kurs" scroll={false} tabIndex={1}>
+            <Link href="/eltern-kind-kurs" scroll={false} tabIndex={0}>
               <Image
                 src="/eltern-kind-kurse.svg"
                 alt="Kinderhand in Elternhand"
@@ -45,7 +45,7 @@ export default function App({ Component, pageProps, router }) {
           </Magnetic>
 
           <Magnetic>
-            <Link href="/kinder-kurse" scroll={false} tabIndex={1}>
+            <Link href="/kinder-kurse" scroll={false} tabIndex={0}>
               <Image
                 src="/kind-kurse.svg"
                 alt="Kinderhand in Elternhand"
@@ -57,7 +57,7 @@ export default function App({ Component, pageProps, router }) {
           </Magnetic>
 
           <Magnetic>
-            <Link href="/ueber-mich" scroll={false} tabIndex={1}>
+            <Link href="/ueber-mich" scroll={false} tabIndex={0}>
               <Image
                 src="/ueber-mich.svg"
                 alt="Kinderhand in Elternhand"
@@ -69,7 +69,7 @@ export default function App({ Component, pageProps, router }) {
             </Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false} tabIndex={1}>
+          <Magnetic><Link href="/" scroll={false} tabIndex={0}>
             <Image
                 src="/zusammenarbeit.svg"
                 alt="Kinderhand in Elternhand"
@@ -79,7 +79,7 @@ export default function App({ Component, pageProps, router }) {
           />Zusammenarbeit</Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false} tabIndex={1}>
+          <Magnetic><Link href="/" scroll={false} tabIndex={0}>
             <Image
                 src="/kontakt.svg"
                 alt="Brief"
