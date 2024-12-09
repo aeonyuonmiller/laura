@@ -236,9 +236,9 @@ export default function ubermich() {
               </g>
             </svg>
           </Magnetic>
-          <span>&copy; 2024 – <strong>Alle Rechte vorbehalten.</strong>
+          <span>&copy; {new Date().getFullYear()} – <strong>Alle Rechte vorbehalten.</strong>
             <Link href="/impressum">Impressum</Link>
-            <a href="mailto:laura@gmail.com">Kontakt</a>
+            <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
           </span>
         </footer>
       </div>

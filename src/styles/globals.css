@@ -145,24 +145,32 @@ button[type=submit] {
   width: auto;
   height: 100px;
   padding: 12px 40px;
-  background-color: rgba(0, 0, 0, 0.671);
+  background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  border: none;
+  border: 1px solid #ffffff3e;
   border-radius: 30px;
   text-transform: uppercase;
   font-weight: 800;
-  font-family: 'Dodko', sans-serif;
-  font-size: 16px;
-  letter-spacing: .2rem;
+  /* font-family: 'Dodko', sans-serif; */
+  font-family: var(--font-geist-sans);
+  font-size: 32px;
+  letter-spacing: .02rem;
   color: #fff;
+  cursor: pointer;
   transition: all ease-in-out .4s;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+button[type=submit]:hover,
+button[type=submit]:focus-visible {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 :focus-visible {
-  outline-offset: 8px;
-  outline: 2px solid #000000d0;
+  outline-offset: 0px;
+  outline: 8px solid #fff;
   /* border-radius: 30px; */
-  color: #000;
+  color: #fefefe;
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
   z-index: 999;
   outline-style: solid;
@@ -219,12 +227,12 @@ a:after {
   position: relative;
 }
 
-/* * {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: .5px solid white; 
-} */
+  /* border: 3px dotted white; */
+}
 
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -365,9 +373,17 @@ footer {
 }
 
 footer a {
+  font-family: "Didact Gothic", serif;
   margin-left: 1em;
-  transition: all ease .4s;
+  border-bottom: 4px solid #0000006d;
+  padding: 4px;
   overflow: hidden;
+  transition: color ease .4s, border-bottom ease-out .4s .2s;
+}
+
+footer a:hover,
+footer a:focus {
+  border-bottom: 4px solid #ffffffbe;
 }
 
 footer strong {
@@ -487,7 +503,7 @@ h1 {
   /* font-family: Dokdo Regular, Arial, Helvetica, sans-serif; */
   /* font-size: 230px; */
   font-family: var(--font-geist-sans);
-  font-size: clamp(4rem, 24vw - 9rem, 12rem);
+  font-size: clamp(4rem, 24vw - 12rem, 12rem);
   font-weight: 100;
   line-height: .6;
   letter-spacing: -.1em;
