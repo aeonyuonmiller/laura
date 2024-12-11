@@ -234,6 +234,34 @@ a:after {
   /* border: 3px dotted white; */
 }
 
+.openinghours p {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.openinghours p strong {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 160%;
+  margin-right: 2em;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* border: 1px solid white; */
+}
+
+.hero-img img {
+  position: relative;
+  max-width: 1800px;
+  margin: 18vh auto 0 auto;
+  z-index: 1;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,

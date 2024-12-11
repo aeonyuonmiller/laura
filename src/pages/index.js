@@ -40,6 +40,9 @@ export default function Home() {
       <div>
         <Background2 color="#EA4447" />
 
+        <div className="hero-img">
+          <img src="./start.png" />
+        </div>
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
             Willkommen<br/>bei Tamusi</motion.h1>
@@ -48,6 +51,7 @@ export default function Home() {
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
         </motion.div>
+
 
         <section className="points">
           <Bound>
@@ -147,8 +151,8 @@ export default function Home() {
             >
               <Image src="/portrait.png" alt="portrait" width={500} height={500} />
             </motion.div>
-            <motion.h5 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
-            <motion.h6 variants={hltwo} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
+            <h5>Laura Maria Müller</h5>
+            <h6 variants={hltwo}>Musikerin und Pädagogin</h6>
           </div>
         </section>
 
@@ -157,7 +161,8 @@ export default function Home() {
             <h4>Mein Kind für den Kurs anmelden</h4>
             <p>Die Eltern-Kind Kurse sind bis max. 12 Personen in unseren Räumlichkeiten.</p>
 
-          <form
+            <form
+              action="#"
             // onSubmit={handleSubmit}
             >
             <input
@@ -243,6 +248,14 @@ export default function Home() {
               </g>
             </svg>
           </Magnetic>
+
+          <div className="openinghours">
+            <p>
+              <strong>Öffnungszeiten</strong> Donnerstag 9:00 - 18:00 Uhr<br />
+              <strong>Telefonisch erreichbar</strong> Mo-Fr 9:00 - 11:00 Uhr
+            </p>
+          </div>
+
           <span>&copy; {new Date().getFullYear()} – <strong>Alle Rechte vorbehalten.</strong>
             <Link href="/impressum">Impressum</Link>
             <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
