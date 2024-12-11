@@ -252,7 +252,7 @@ export default function Home() {
           <div className="openinghours">
             <p>
               <strong>Öffnungszeiten</strong> Donnerstag 9:00 - 18:00 Uhr<br />
-              <strong>Telefonisch erreichbar</strong> Mo-Fr 9:00 - 11:00 Uhr
+              <strong>Telefonisch erreichbar</strong> Montag - Freitag 9:00 - 11:00 Uhr
             </p>
           </div>
 
