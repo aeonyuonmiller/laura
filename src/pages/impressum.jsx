@@ -39,7 +39,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <Background2 color="#87EA80" />
+                <Background2 color="#a35cf0" />
 
                 <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
                     {/* <img src="./start.png" /> */}
@@ -52,9 +52,7 @@ export default function Home() {
 
                 <section className="points">
                     <Bound>
-                        <h5>Angaben gemäss</h5>
-                        <h6>§ 5 TMG</h6>
-
+                        <h5>Angaben gemäss § 5 TMG</h5>
                         Tamusi - Musikkurse für Kinder im Elementarbereich<br />
                         Laura Maria Müller<br />
                         Lauteschlägerstrasse 11<br />
@@ -62,8 +60,8 @@ export default function Home() {
 
                         <h5>Kontakt</h5>
                         Telefon: [Telefonnummer]<br />
-                        E-Mail: [E-Mail-Adresse]<br />
-                        Website: [Webadresse]
+                        E-Mail: tamusi.darmstadt@gmail.com<br />
+                        Website: www.tamusi-darmstadt.de
 
                         <h5>Vertreten durch</h5>
                         Laura Maria Müller

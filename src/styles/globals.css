@@ -429,6 +429,7 @@ section.two-grid {
 section.two-grid h2 {
   margin-bottom: 1rem;
   text-align: left;
+  line-height: 1.3em;
   width: 100%;
 }
 
