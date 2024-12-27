@@ -139,7 +139,7 @@ export default function Home() {
             <motion.h3
               variants={hlone}
               initial="hidden"
-              whileInView="enter"
+              animate="enter"
               exit="exit"
               viewport={{
                 once: true,
@@ -157,7 +157,7 @@ export default function Home() {
             <motion.div
               variants={hlone}
               initial="hidden"
-              whileInView="enter"
+              animate="enter"
               exit="exit"
               viewport={{once: true}}
             >
