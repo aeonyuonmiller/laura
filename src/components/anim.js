@@ -21,7 +21,7 @@ export const quick = {
 
 export const imagereveal = {
     hidden: { opacity: 0, y: 80 },
-    enter:  { opacity: 1, y: 0, transition: { delay: .4, type: "spring", duration: 1, bounce: .2 }},
+    enter:  { opacity: 1, y: 0, transition: { delay: .2, type: "spring", duration: 1, bounce: .2 }},
     exit:   { opacity: 0, y: -40, transition: { type: "spring", duration: 1, bounce: .2 }},
 }
 
