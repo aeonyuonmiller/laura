@@ -78,7 +78,7 @@ section.scroller {
 .scroller img {
   border: 1px solid grey;
   border-radius: 30px;
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   object-fit: fill;
 }
 
