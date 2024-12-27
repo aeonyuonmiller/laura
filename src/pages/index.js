@@ -158,7 +158,7 @@ export default function Home() {
             </p>
             </div>
 
-          <div>
+          <div className='centro'>
             <motion.div
               variants={hlone}
               initial="hidden"
@@ -167,8 +167,12 @@ export default function Home() {
             >
               <Image src="/portrait.jpg" alt="portrait" width={500} height={500} />
             </motion.div>
+
             <h5>Laura Maria Müller</h5>
             <h6>Musikerin und Pädagogin</h6>
+            <Link className="button" href="/ueber-mich" aria-label="Über mich" scroll={false} tabIndex={0}>
+              Mehr über mich
+            </Link>
           </div>
         </section>
 
