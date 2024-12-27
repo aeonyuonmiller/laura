@@ -1,35 +1,43 @@
-'use client'
+'use client';
+import { useEffect } from 'react';
+import { motion, useMotionValue, useSpring } from 'motion/react';
 
-import { useState, useEffect } from 'react'
-import { motion } from 'motion/react';
+export default function index({ stickyElement }) {
 
+    const cursorSize = 40;
+    const mouse = {
+        x: useMotionValue(0),
+        y: useMotionValue(0)
+    }
 
-const CustomCursor = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 })
+    const smoothOptions = { damping: 20, stiffness: 300, mass: 0.5 }
+    const smoothMouse = {
+        x: useSpring(mouse.x, smoothOptions),
+        y: useSpring(mouse.y, smoothOptions)
+    }
+
+    const manageMouseMove = e => {
+        const { clientX, clientY } = e;
+        mouse.x.set(clientX - cursorSize / 2);
+        mouse.y.set(clientY - cursorSize / 2);
+    }
 
     useEffect(() => {
-        const updateCursorPosition = (e) => {
-            setPosition({ x: e.clientX, y: e.clientY })
-        }
-
-        window.addEventListener('mousemove', updateCursorPosition)
-
+        window.addEventListener("mousemove", manageMouseMove);
         return () => {
-            window.removeEventListener('mousemove', updateCursorPosition)
+            window.removeEventListener("mousemove", manageMouseMove)
         }
     }, [])
 
     return (
-        <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1, transition: { type: "spring", bounce: .4, stiffness: 10 } }}
-            className="cursor"
-            style={{
-                left: `${position.x}px`,
-                top: `${position.y}px`,
-            }}
-        />
+        <div>
+            <motion.div
+                style={{
+                    left: smoothMouse.x,
+                    top: smoothMouse.y,
+                }}
+                className="cursor">
+            </motion.div>
+        </div>
     )
 }
-
-export default CustomCursor

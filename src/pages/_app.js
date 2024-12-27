@@ -20,7 +20,10 @@ export default function App({ Component, pageProps, router }) {
 
   return (
       
+    
     <div className='main'>
+      
+      <Cursor />
       
       <div className={`${dokdo.variable}`}>
         <AnimatePresence mode='sync' onExitComplete={() => window.scrollTo(0, 0)}>

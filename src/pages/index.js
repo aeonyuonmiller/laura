@@ -49,7 +49,8 @@ export default function Home() {
 
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
-            Willkommen<br/>bei Tamusi</motion.h1>
+              Willkommen<br />bei Tamusi
+          </motion.h1>
             <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
@@ -144,18 +145,21 @@ export default function Home() {
 
         <section className="two-grid">
             <div>
-            <motion.h3
+            <motion.h4
               variants={hlone}
               initial="hidden"
               animate="enter"
               exit="exit"
             >
                 Über mich
-            </motion.h3>
+            </motion.h4>
             <h2>Ich bin Laura Maria Müller – leidenschaftliche Musikerin und Pädagogin mit über 10 Jahren professioneller Erfahrung.</h2>
             <p>
               In meinen Kursen bringe ich Kindern von 0 bis 8 Jahren die Freude an der Musik näher und helfe ihnen, ihre kreativen Fähigkeiten zu entfalten. Die Kleinen lernen, Instrumente zu spielen und sich selbst besser kennenzulernen. Dabei achte ich immer auf die individuelle Entwicklung jedes Kindes.
             </p>
+              <Link className="button" href="/ueber-mich" aria-label="Über mich" scroll={false} tabIndex={0}>
+                Mehr über mich
+              </Link>
             </div>
 
           <div className='centro'>
@@ -170,9 +174,6 @@ export default function Home() {
 
             <h5>Laura Maria Müller</h5>
             <h6>Musikerin und Pädagogin</h6>
-            <Link className="button" href="/ueber-mich" aria-label="Über mich" scroll={false} tabIndex={0}>
-              Mehr über mich
-            </Link>
           </div>
         </section>
 
