@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Magnetic from "../components/Magnetic";
 import Logo from "../components/Logo";
+import MobileNav from '../components/MobileNav';
+import Cursor from '../components/Cursor';
 
 const dokdo = localFont({
   src: "./fonts/DokdoRegular.woff",
@@ -22,6 +24,7 @@ export default function App({ Component, pageProps, router }) {
           </AnimatePresence>
         </div>
 
+
           <div className="logo">
             <Magnetic>
               <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={0}>
@@ -29,6 +32,8 @@ export default function App({ Component, pageProps, router }) {
               </Link>
             </Magnetic>
           </div>
+
+        
 
         <nav>
           <Magnetic>
@@ -46,15 +51,15 @@ export default function App({ Component, pageProps, router }) {
 
           {/* <Magnetic>
             <Link href="/kinder-kurse" scroll={false} tabIndex={0}>
-              <Image
-                src="/kind-kurse.svg"
-                alt="Kinderhand in Elternhand"
-                width={90}
-                height={90}
-                priority
-              />Kinder-Kurse
+            <Image
+            src="/kind-kurse.svg"
+            alt="Kinderhand in Elternhand"
+            width={90}
+            height={90}
+            priority
+            />Kinder-Kurse
             </Link>
-          </Magnetic> */}
+            </Magnetic> */}
 
           <Magnetic>
             <Link href="/ueber-mich" scroll={false} tabIndex={0}>
@@ -88,7 +93,11 @@ export default function App({ Component, pageProps, router }) {
                 priority
               />Kontakt</Link></Magnetic>
         </nav>
-        </div>
-    )
 
-}
+        <MobileNav />
+      
+        {/* <Cursor /> */}
+        
+      </div>
+    )
+  }

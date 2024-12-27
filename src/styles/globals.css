@@ -6,8 +6,30 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #920B0E;
-    --foreground: #EA4447;
+    --foreground: #000000ad;
   }
+}
+
+@supports (animation-timeline: scroll()) {
+  section.scroller img {
+    animation-name: scale, scale;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal, reverse;
+    animation-timeline: view(inline);
+    animation-range: entry 0% entry 150%, exit -50% exit 100%;
+    /* filter: blur(calc(var(--blur, 0) * 24px)); */
+  }
+
+  @keyframes scale {
+    0% {
+      scale: .5;
+      filter: blur(14px);
+      /* opacity: 0.5; */
+    }
+  }
+
+  /* :root:has(#parallax:checked) a svg { */
 }
 
 @font-face {
@@ -15,6 +37,46 @@
   src: url('/fonts/DokdoRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.bg-trans {
+  position: fixed;
+  top: 0;
+  border: 1px solid white;
+  left: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100svh;
+}
+
+.cursor {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  pointer-events: none;
+  border-radius: 100%;
+  z-index: 99999999999;
+}
+
+section.scroller {
+  display: grid;
+  place-items: center;
+  grid-auto-columns: 22%;
+  grid-auto-flow: column;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 1.5em;
+  padding: 0 1.5em 1em 1.5em;
+}
+
+.scroller img {
+  border: 1px solid grey;
+  border-radius: 30px;
+  /* scroll-snap-align: center; */
+  object-fit: fill;
 }
 
 .wrapper {
@@ -93,14 +155,14 @@ a:after {
 }
 
 ::selection {
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   border-radius: 8px;
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   /* Gecko Browsers */
 }
@@ -114,7 +176,6 @@ body {
 
 body {
   color: var(--foreground);
-  /* background: var(--background); */
   background: var(--foreground);
   font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -123,7 +184,6 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  /* font-family: 'Didact Gothic', 'DodkoRegular', sans-serif; */
 }
 
 input {
@@ -234,33 +294,21 @@ a:after {
   /* border: 3px dotted white; */
 }
 
-.openinghours p {
-  text-transform: uppercase;
-  font-size: 14px;
-  text-align: center;
-  line-height: 150%;
-}
-
-.openinghours p strong {
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 160%;
-  margin-right: 1em;
-}
-
 .hero-img {
   position: absolute;
+  display: grid;
+  place-items: center;
   top: 0;
-  width: 100%;
-  /* margin: 0 auto; */
-  /* border: 1px solid white; */
+  width: 100vw;
+  height: 100svh;
+  margin: auto;
 }
 
 .hero-img img {
   position: relative;
-  max-width: 1800px;
-  margin: 18vh auto 0 auto;
-  z-index: 1;
+  width: 100%;
+  max-width: 1600px;
+  z-index: 0;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -329,7 +377,7 @@ h6 {
 
 section {
   /* height: 100vh; */
-  margin: 40px 40px;
+  margin: 0;
 }
 
 section.points span {
@@ -374,6 +422,7 @@ section.two-grid h5 {
 section.two-grid img {
   width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 
 section.two-grid p {
@@ -404,15 +453,17 @@ footer {
 footer a {
   font-family: "Didact Gothic", serif;
   margin-left: 1em;
-  border-bottom: 4px solid #0000006d;
+  border-bottom: 2px solid #0000006d;
   padding: 4px;
   overflow: hidden;
-  transition: color ease .4s, border-bottom ease-out .4s .2s;
+  transition: color ease .9s, border-bottom ease-out 1s;
 }
 
 footer a:hover,
-footer a:focus {
-  border-bottom: 4px solid #ffffffbe;
+footer a:focus-visible {
+  border-bottom: 3px solid #ffffffbe;
+  transition: color ease .4s .05s, border-bottom ease-out .4s;
+  /* transition: color ease .8s, border-bottom ease-out .4s; */
 }
 
 footer strong {
@@ -422,6 +473,19 @@ footer strong {
 
 footer svg {
   margin-bottom: 1em;
+}
+
+.openinghours p {
+  font-size: 22px;
+  text-align: center;
+  line-height: 150%;
+}
+
+.openinghours p strong {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 160%;
+  margin-right: 1em;
 }
 
 .bound {
@@ -673,9 +737,95 @@ img {
 
   .backgroundish {
     position: fixed;
-    left: -100vw;
+    left: -2%;
+    width: 104%;
+    /* height: 100svh; */
     z-index: -999;
+    /* left: -100vw;
     width: 300vw;
-    height: 100vh;
+    height: 100vh; */
+  }
+
+  footer {
+    gap: 1em;
+    font-size: 24px;
+    padding-bottom: 2em;
+  }
+
+  footer a {
+    font-family: "Didact Gothic", serif;
+    margin-left: 1em;
+    border-bottom: 4px solid #0000006d;
+    padding: 4px;
+    overflow: hidden;
+    transition: color ease .4s, border-bottom ease-out .4s .2s;
+  }
+
+  footer a:hover,
+  footer a:focus {
+    border-bottom: 4px solid #ffffffbe;
+  }
+
+  footer strong {
+    font-family: var(--font-geist-sans);
+    font-size: 10px;
+  }
+
+  footer span {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  footer svg {
+    margin-bottom: 1em;
+  }
+
+  .openinghours {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .openinghours p {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.04rem;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  .openinghours p strong {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 160%;
+    margin-right: 1em;
+  }
+
+  section.scroller {
+    height: 80vh;
+    grid-auto-columns: 70%;
+    grid-auto-flow: column;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-color: none;
+    gap: 1.5em;
+    padding: 0 10px;
+
+    /* hide scrollbar mobile */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+  }
+
+  .scroller::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+  }
+
+  .scroller img {
+    border-radius: 20px;
+  }
+
+  .scroller img:nth-child(odd) {
+    transform: translateY(40px);
   }
 }

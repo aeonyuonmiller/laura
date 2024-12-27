@@ -11,7 +11,7 @@ import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
 import Background2 from "../components/Background2";
 
-export default function Home() {
+export default function KinderKurse() {
 
     const container = useRef();
     const { scrollYProgress } = useScroll({
