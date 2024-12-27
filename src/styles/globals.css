@@ -63,7 +63,7 @@
 section.scroller {
   display: grid;
   place-items: center;
-  grid-auto-columns: 22%;
+  grid-auto-columns: 19%;
   grid-auto-flow: column;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
