@@ -74,7 +74,7 @@ export default function App({ Component, pageProps, router }) {
             </Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false} tabIndex={0}>
+          <Magnetic><Link href="/zusammenarbeit" scroll={false} tabIndex={0}>
             <Image
                 src="/zusammenarbeit.svg"
                 alt="Kinderhand in Elternhand"
