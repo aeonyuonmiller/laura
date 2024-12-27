@@ -77,9 +77,9 @@ a.button:focus-visible {
 
 .cursor {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #fff;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -95,7 +95,7 @@ section.scroller {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   gap: 1.5em;
-  padding: 0 1.5em 1em 1.5em;
+  padding: 0 3em 1em 1.5em;
   perspective: 1000px;
 }
 

@@ -4,13 +4,13 @@ import { motion, useMotionValue, useSpring } from 'motion/react';
 
 export default function index({ stickyElement }) {
 
-    const cursorSize = 40;
+    const cursorSize = 80;
     const mouse = {
         x: useMotionValue(0),
         y: useMotionValue(0)
     }
 
-    const smoothOptions = { damping: 20, stiffness: 300, mass: 0.5 }
+    const smoothOptions = { damping: 18, stiffness: 300, mass: 0.8 }
     const smoothMouse = {
         x: useSpring(mouse.x, smoothOptions),
         y: useSpring(mouse.y, smoothOptions)
