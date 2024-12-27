@@ -46,7 +46,7 @@ a.button {
   font-family: var(--font-geist-sans);
   font-size: 24px;
   font-weight: 800;
-  padding: 0.2rem 1rem;
+  padding: 0.1rem .7rem;
   transition: all ease .4s;
 }
 
@@ -793,13 +793,14 @@ img {
     border-bottom: 4px solid #ffffffbe;
   }
 
-  footer strong {
+  footer span strong {
     font-family: var(--font-geist-sans);
+    /* font-size: 10px; */
     font-size: 10px;
   }
 
   footer span {
-    font-size: 10px;
+    font-size: 18px;
     text-align: center;
   }
 

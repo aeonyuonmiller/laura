@@ -180,7 +180,7 @@ export default function Home() {
           <Magnetic>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="120"
+              height="80"
               fill="none"
               viewBox="0 0 147 109"
               >
