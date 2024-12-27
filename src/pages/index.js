@@ -58,20 +58,19 @@ export default function Home() {
 
         <motion.section className="scroller"
         variants={trans} initial="hidden" animate="enter" exit="exit">
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
-          <img src="./portrait.jpg" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
+          <img src="./portrait.jpg" alt="Portrait von Laura Müller" />
         </motion.section>
 
         <section className="points">
