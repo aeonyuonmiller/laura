@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import { Analytics } from '@vercel/analytics/next';
+
 import localFont from "next/font/local";
 import { AnimatePresence } from "motion/react"
 import Image from "next/image";
@@ -16,17 +18,20 @@ const dokdo = localFont({
 
 export default function App({ Component, pageProps, router }) {
 
-    return (
-      <div className='main'>
-        <div className={`${dokdo.variable}`}>
-          <AnimatePresence mode='sync' onExitComplete={() => window.scrollTo(0, 0)}>
-            <Component key={router.route} {...pageProps} />
-          </AnimatePresence>
-        </div>
+  return (
+      
+    <div className='main'>
+      
+      <div className={`${dokdo.variable}`}>
+        <AnimatePresence mode='sync' onExitComplete={() => window.scrollTo(0, 0)}>
+          <Component key={router.route} {...pageProps} />
+          <Analytics />
+        </AnimatePresence>
+      </div>
 
 
-          <div className="logo">
-            <Magnetic>
+      <div className="logo">
+        <Magnetic>
               <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={0}>
                 <Logo />
               </Link>
