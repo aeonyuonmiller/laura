@@ -10,7 +10,7 @@ export default function index({ stickyElement }) {
         y: useMotionValue(0)
     }
 
-    const smoothOptions = { damping: 18, stiffness: 300, mass: 0.8 }
+    const smoothOptions = { damping: 18, stiffness: 300, mass: .98 }
     const smoothMouse = {
         x: useSpring(mouse.x, smoothOptions),
         y: useSpring(mouse.y, smoothOptions)
@@ -30,14 +30,16 @@ export default function index({ stickyElement }) {
     }, [])
 
     return (
-        <div>
+        <>
             <motion.div
+                className="cursor"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1, transition: { delay: 1.6, duration: .4 } }}
                 style={{
                     left: smoothMouse.x,
                     top: smoothMouse.y,
                 }}
-                className="cursor">
-            </motion.div>
-        </div>
+            />
+        </>
     )
 }
