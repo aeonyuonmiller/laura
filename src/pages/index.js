@@ -158,7 +158,7 @@ export default function Home() {
               In meinen Kursen bringe ich Kindern von 0 bis 8 Jahren die Freude an der Musik näher und helfe ihnen, ihre kreativen Fähigkeiten zu entfalten. Die Kleinen lernen, Instrumente zu spielen und sich selbst besser kennenzulernen. Dabei achte ich immer auf die individuelle Entwicklung jedes Kindes.
             </p>
               <Link className="button" href="/ueber-mich" aria-label="Über mich" scroll={false} tabIndex={0}>
-                Mehr über mich
+                Mehr zu mir
               </Link>
             </div>
 
