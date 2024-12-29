@@ -92,14 +92,14 @@ export default function App({ Component, pageProps, router }) {
           />Zusammenarbeit</Link>
           </Magnetic>
 
-          <Magnetic><Link href="/" scroll={false} tabIndex={0}>
+          <Magnetic><a href="mailto:tamusi.darmstadt@gmail.com" tabIndex={0}>
             <Image
                 src="/kontakt.svg"
                 alt="Brief"
                 width={90}
                 height={90}
                 priority
-              />Kontakt</Link></Magnetic>
+              />Kontakt</a></Magnetic>
         </nav>
 
         <MobileNav />
