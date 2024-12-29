@@ -118,40 +118,6 @@ export default function Home() {
                     </Bound>
                 </section>
 
-                <section className="two-grid">
-                    <motion.div variants={hlone} initial="hidden" whileInView="enter" exit="exit" viewport={{
-                        amount: '.4',
-                        once: true
-                    }}>
-                        <motion.h3
-                            variants={hlone}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}>
-                            Über mich
-                        </motion.h3>
-                        <h2>Ich bin Laura Maria Müller – leidenschaftliche Musikerin und Pädagogin mit über 10 Jahren professioneller Erfahrung.</h2>
-                        <p>
-                            In meinen Kursen bringe ich Kindern von 0 bis 8 Jahren die Freude an der Musik näher und helfe ihnen, ihre kreativen Fähigkeiten zu entfalten. Die Kleinen lernen, Instrumente zu spielen und sich selbst besser kennenzulernen. Dabei achte ich immer auf die individuelle Entwicklung jedes Kindes.
-                        </p>
-                    </motion.div>
-
-                    <div>
-                        <motion.div
-                            variants={hlone}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <Image src="/portrait.png" alt="portrait" width={500} height={500} />
-                        </motion.div>
-                        <motion.h5 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
-                        <motion.h6 variants={hltwo} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
-                    </div>
-                </section>
-
                 <Footer />
             </div>
         </>
