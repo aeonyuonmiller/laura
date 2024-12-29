@@ -9,6 +9,7 @@ import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
 import { trans } from '../components/anim';
 import Background2 from "../components/Background2";
+import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
 import Magnetic from '../components/Magnetic';
 
@@ -38,10 +39,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-      {/* <Transition backgroundColor={"#B0AD98"}> */}
-
-        <Background2 color="#EA4447" />
+      <>
+      <Background2 color={"#EA4447"} />
+      <Transition backgroundColor={"#B0AD98"}>
 
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
           <img src="./start.png" />
@@ -122,8 +122,8 @@ export default function Home() {
           </section>
           
           <Footer />
-      {/* </Transition>   */}
-      </div>
+      </Transition>  
+      </>
     </>
   );
 }

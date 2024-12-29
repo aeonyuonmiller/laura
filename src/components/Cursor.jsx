@@ -4,7 +4,7 @@ import { motion, useMotionValue, useSpring } from 'motion/react';
 
 export default function index({ stickyElement }) {
 
-    const cursorSize = 80;
+    const cursorSize = 40;
     const mouse = {
         x: useMotionValue(0),
         y: useMotionValue(0)
@@ -39,7 +39,8 @@ export default function index({ stickyElement }) {
                     left: smoothMouse.x,
                     top: smoothMouse.y,
                 }}
-            />
+            >
+            </motion.div>
         </>
     )
 }
