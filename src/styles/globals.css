@@ -35,11 +35,13 @@
 .centro {
   display: grid;
   place-items: center;
-  gap: .5em;
+  gap: .2rem;
 }
 
 a.button {
-  display: inline-block;
+  display: inline-flex;
+  place-items: center;
+  gap: .4rem;
   background: #00000014;
   border-radius: 30px;
   border: 2px solid #fff;
@@ -56,6 +58,17 @@ a.button:focus-visible {
   background: #fff;
   border: 2px solid #fff;
   color: #000;
+}
+
+a.button svg {
+  transform: scale(1.2);
+  transition: all ease .4s;
+}
+
+a.button:hover svg,
+a.button:focus-visible svg {
+  transform: scale(1.2);
+  transition: all ease .4s;
 }
 
 @font-face {
@@ -80,7 +93,7 @@ a.button:focus-visible {
 section.scroller {
   display: grid;
   place-items: center;
-  grid-auto-columns: 19%;
+  grid-auto-columns: 39%;
   grid-auto-flow: column;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
@@ -419,8 +432,8 @@ section.two-grid {
 section.two-grid h2 {
   margin-bottom: 1rem;
   text-align: left;
-  line-height: 1.3em;
-  width: 100%;
+  /* line-height: 1.3em; */
+  /* width: 100%; */
 }
 
 section.two-grid h3 {
@@ -631,7 +644,8 @@ h2 {
   font-style: normal;
   font-size: clamp(1.4rem, 9.6vw - 3rem, 2rem);
   font-weight: 100;
-  line-height: 104%;
+  line-height: 140%;
+  /* line-height: 1.3em; */
   letter-spacing: -1px;
   word-spacing: -2px;
   text-align: center;
