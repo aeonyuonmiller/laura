@@ -49,7 +49,7 @@ export default function Home() {
                 <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
                     <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                         Zusammen-<br />arbeit</motion.h1>
-                    <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
+                    <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
                         Zusammen erreicht man soviel mehr.
                     </motion.h2>
                 </motion.div>

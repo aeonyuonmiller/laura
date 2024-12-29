@@ -44,7 +44,7 @@ export default function Home() {
                 <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
                     <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                         Eltern-Kind-Kurse</motion.h1>
-                    <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
+                    <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
                         Kinder zwischen 0 und 3 Jahren entdecken hier ihre musische Seite.
                     </motion.h2>
                 </motion.div>
@@ -150,78 +150,6 @@ export default function Home() {
                         <motion.h5 variants={hlone} initial="hidden" whileInView="enter" exit="exit">Laura Maria Müller</motion.h5>
                         <motion.h6 variants={hltwo} initial="hidden" whileInView="enter" exit="exit">Musikerin und Pädagogin</motion.h6>
                     </div>
-                </section>
-
-                <section className='contact-form'>
-                    <Bound>
-                        <h4>Mein Kind für den Kurs anmelden</h4>
-                        <p>Die Eltern-Kind Kurse sind bis max. 12 Personen in unseren Räumlichkeiten.</p>
-
-                        <form
-                        // onSubmit={handleSubmit}
-                        >
-                            <input
-                                name="nachname"
-                                type="text"
-                                id="id-nachname"
-                                // placeholder="von Ihnen"
-                                // value={formData.email}
-                                // onChange={handleChange}
-                                required
-                            />
-                            <label for="id-nachname">Nachname</label>
-
-                            <input
-                                id="id-name"
-                                name="name"
-                                type="text"
-                                // placeholder="Name des Kindes"
-                                // value={formData.email}
-                                // onChange={handleChange}
-                                required
-                            />
-                            <label for="id-name">Name</label>
-
-                            <input
-                                id="id-tel"
-                                name="telefon"
-                                type="tel"
-                            // placeholder="Telefonnummer"
-                            // value={formData.email}
-                            // onChange={handleChange}
-                            // className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
-                            // required
-                            />
-                            <label for="id-tel">Telefon</label>
-
-                            <input
-                                id="id-email"
-                                name="email"
-                                type="email"
-                                // placeholder="Emailadresse"
-                                // value={formData.email}
-                                // onChange={handleChange}
-                                className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
-                                required
-                            />
-                            <label for="id-email">Email</label>
-                            {/* <textarea
-              name="message"
-              cols={30}
-              rows={5}
-              placeholder="...type your message"
-              // value={formData.message}
-              // onChange={handleChange}
-              className="text-background w-full p-2 mb-4 border border-gray-300 rounded"
-              required
-            /> */}
-                            <button type="submit">
-                                {/* {isSending && <ClipLoader color="#000" size={10} />} &nbsp; Send */}
-                                Anmelden
-                            </button>
-                        </form>
-                    </Bound>
-
                 </section>
 
                 <Footer />

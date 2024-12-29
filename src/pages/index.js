@@ -51,7 +51,7 @@ export default function Home() {
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
-            <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
+            <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
@@ -87,7 +87,8 @@ export default function Home() {
 
         <section className="two-grid">
             <div>
-            <h2>Hallo, wie schön, dass dich dein Weg hierher geführt hat. :)</h2>
+            <h5>Mein Steckbrief</h5>
+            {/* <h2>Hallo, wie schön, dass dich dein Weg hierher geführt hat. :)</h2> */}
             <p>
               Mein Name ist Laura. Ich bin Traumapädagogin und Erzieherin und seit mehr als 15 Jahren im Songwriting und als Sängerin in Bands tätig.
             </p>

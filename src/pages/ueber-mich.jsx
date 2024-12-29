@@ -38,7 +38,7 @@ export default function Uebermich() {
         <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
             Über mich</motion.h1>
-          <motion.h2 variants={hltwo} initial="hidden" animate="enter" exit="exit">
+          <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
             Leidenschaftliche Musikerin mit pädagogischer Erfahrung.
           </motion.h2>
         </motion.div>
