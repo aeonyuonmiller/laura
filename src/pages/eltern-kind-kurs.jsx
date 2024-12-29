@@ -51,7 +51,7 @@ export default function Home() {
 
                 <section className="points">
                     <Bound>
-                        <h3>Drei gute Gründe</h3>
+                        <h3 className="center">Drei gute Gründe</h3>
 
                         <motion.div
                             className="point"
