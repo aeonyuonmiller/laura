@@ -32,7 +32,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Tamusi • Musik Kinder-Kurse</title>
+                <title>Tamusi • Tanzen, Musizieren & Singen</title>
                 <meta name="description" content="Erlebe spielerische Musik-Kurse für Kleinkinder: Instrumente entdecken, kreative Zusammenarbeit und musikalische Entwicklung. Teilnahme mit oder ohne Eltern möglich!" />
                 <meta name="keywords" content="Musik-Kurse Kinder, Musik für Kleinkinder, Kinder-Instrumentenkurse, Eltern-Kind Musik-Kurse, musikalische Früherziehung, Kleinkind-Kurse, Musik und Zusammenarbeit, Musik entdecken für Kinder, kreative Kurse für Kinder, Darmstadt, Hessen" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

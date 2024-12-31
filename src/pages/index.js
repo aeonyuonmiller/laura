@@ -12,6 +12,7 @@ import Background2 from "../components/Background2";
 import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
 import Magnetic from '../components/Magnetic';
+import Scrollmarquee from '../components/Scrollmarquee/index';
 
 export default function Home() {
 
@@ -24,25 +25,19 @@ export default function Home() {
   const opacity = useTransform(scrollYProgress, [0, .2], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
 
-
-  // const Slide = (props) => {
-  // const direction = props.direction == 'left' ? -1 : 1;
-  // const translateX = useTransform(props.progress, [0, 1], [150 * direction, -150 * direction])
-  // }
-
   return (
     <>
       <Head>
-        <title>Tamusi • Musik Kinder-Kurse</title>
+        <title>Tamusi • Tanzen, Musizieren & Singen</title>
         <meta name="description" content="Erlebe spielerische Musik-Kurse für Kleinkinder: Instrumente entdecken, kreative Zusammenarbeit und musikalische Entwicklung. Teilnahme mit oder ohne Eltern möglich!" />
         <meta name="keywords" content="Musik-Kurse Kinder, Musik für Kleinkinder, Kinder-Instrumentenkurse, Eltern-Kind Musik-Kurse, musikalische Früherziehung, Kleinkind-Kurse, Musik und Zusammenarbeit, Musik entdecken für Kinder, kreative Kurse für Kinder, Darmstadt, Hessen" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-      <Background2 color={"#EA4447"} />
+        <Background2 color={"#EA4447"} />
+        
       <Transition backgroundColor={"#B0AD98"}>
-
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
           <img src="./start.png" />
         </motion.div>
@@ -55,7 +50,20 @@ export default function Home() {
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
-        </motion.div>
+          </motion.div>
+
+          {/*
+          <Scrollmarquee>
+            <img src="./bongos.png" alt="Bongo Trommeln" />
+            <img src="./guitar2.png" alt="Gitarre" />
+            <img src="./ring1.png" alt="Klangstock" />
+            <img src="./guitar2.png" alt="Gitarre" />
+            <img src="./bongos.png" alt="Bongo Trommeln" />
+            <img src="./ring1.png" alt="Klangstock" />
+            <img src="./guitar2.png" alt="Gitarre" />
+            <img src="./bongos.png" alt="Bongo Trommeln" />
+            <img src="./ring1.png" alt="Klangstock" />
+          </Scrollmarquee> */}
 
         <motion.section className="scroller"
         variants={trans} initial="hidden" animate="enter" exit="exit">
