@@ -44,7 +44,7 @@ export default function Uebermich() {
           </motion.h2>
         </motion.div>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-          <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./portrait.jpg" />
+          <img src="./portrait.jpg" />
         </motion.div>
 
         <section className="points">
