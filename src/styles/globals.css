@@ -719,6 +719,7 @@ h5 {
 }
 
 h6 {
+  font-family: var(--font-geist-sans);
   font-weight: 400;
   font-size: .9rem;
 }
@@ -818,6 +819,7 @@ img {
   }
 
   footer {
+    font-family: var(--font-geist-sans);
     gap: 1em;
     font-size: 24px;
     padding-bottom: 2em;
