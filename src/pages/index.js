@@ -39,7 +39,7 @@ export default function Home() {
         
       <Transition backgroundColor={"#B0AD98"}>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-          <img src="./start.png" />
+          <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./kinder1.png" />
         </motion.div>
 
         <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
