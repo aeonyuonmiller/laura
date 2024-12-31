@@ -16,11 +16,12 @@ import Scrollmarquee from '../components/Scrollmarquee/index';
 
 export default function Home() {
 
-    const container = useRef();
-    const { scrollYProgress } = useScroll({
-      target: container,
-      offset: ['start start', 'end start']
-    })
+  // Page Headline Scroll Anim
+  const container = useRef();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end start']
+  })
   const y = useTransform(scrollYProgress, [0, 1], ["0vh", "70vh"] )
   const opacity = useTransform(scrollYProgress, [0, .2], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
@@ -82,7 +83,7 @@ export default function Home() {
           <Bound>
             <h3>Hallo,<br/> wie schön dich hier begrüssen zu dürfen.</h3>
             <h2>
-              Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen und Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.
+              Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.
               <br /><br />
               Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.
               <br /><br />
