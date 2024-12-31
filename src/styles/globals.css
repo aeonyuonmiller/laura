@@ -819,7 +819,7 @@ img {
   }
 
   footer {
-    font-family: var(--font-geist-sans);
+    font-family: "Didact Gothic", serif;
     gap: 1em;
     font-size: 24px;
     padding-bottom: 2em;
