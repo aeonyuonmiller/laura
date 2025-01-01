@@ -232,7 +232,7 @@ input:valid+label {
   color: rgb(0, 100, 0);
 }
 
-a:after {
+/* a:after {
   content: '';
   display: block;
   position: absolute;
@@ -243,7 +243,7 @@ a:after {
   border-radius: 10px;
   border: 2px solid white;
   background: #000;
-}
+} */
 
 ::selection {
   background: rgba(0, 0, 0, 0.7);
@@ -522,6 +522,10 @@ section.two-grid img {
 section.two-grid p {
   text-align: left;
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+section.two-grid a {
   margin-bottom: 1rem;
 }
 
