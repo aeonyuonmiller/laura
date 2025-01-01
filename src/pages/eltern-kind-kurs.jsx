@@ -45,13 +45,18 @@ export default function Home() {
                     <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                         Eltern-Kind-Kurse</motion.h1>
                     <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
-                        Kinder zwischen 0 und 3 Jahren entdecken hier ihre musische Seite.
+                        Gemeinsam Musik erleben.
                     </motion.h2>
                 </motion.div>
 
+                <div className="wrapper">
+                    <p>Die Eltern-Kind-Kurse sind für mich eine besondere Herzensangelegenheit. Es geht darum, Kindern einen ersten Kontakt zur Welt der Musik zu ermöglichen und euch als Begleitperson eine angeleitete, musikalische Qualitätszeit mit eurem Kind zu schenken.</p>
+                    <p>Im Mittelpunkt stehen gemeinsames Singen, Tanzen, Bewegen und erste Erfahrungen mit Rhythmusinstrumenten. Die Stunden wechseln zwischen aktiven und entspannten Phasen, wobei ich flexibel auf die Bedürfnisse der Gruppe eingehe. Ob mehr Bewegung oder längere Konzentration – ich passe den Ablauf individuell an.</p>
+                </div>
+
                 <section className="points">
                     <Bound>
-                        <h3 className="center">Drei gute Gründe</h3>
+                        {/* <h3 className="center">Drei gute Gründe</h3> */}
 
                         <motion.div
                             className="point"
@@ -62,8 +67,8 @@ export default function Home() {
                             viewport={{ once: true }}
                         >
                             <span>
-                                <h4>Grund 1</h4>
-                                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
+                                <h4>Wer kann begleiten?</h4>
+                                <p>Alle nahen Bezugspersonen des Kindes sind willkommen – ob Eltern, Großeltern oder andere Vertraute. Wichtig ist nur, dass sich das Kind in der Begleitung sicher fühlt und sein natürliches Explorationsverhalten entfalten kann.</p>
                             </span>
                             <Image
                                 aria-hidden
@@ -83,8 +88,8 @@ export default function Home() {
                             viewport={{ once: true }}
                         >
                             <span>
-                                <h4>Grund 2</h4>
-                                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
+                                <h4>Barrierefreiheit und Flexibilität</h4>
+                                <p>Wir sitzen in der Regel auf dem Boden, aber für Begleitpersonen, die das nicht können, stehen Stühle bereit. Habt ihr besondere Wünsche? Sprecht mich gerne an – wir finden eine Lösung, damit alle teilnehmen können!</p>
                             </span>
                             <Image
                                 aria-hidden
@@ -94,29 +99,22 @@ export default function Home() {
                                 height={300}
                             />
                         </motion.div>
-
-                        <motion.div
-                            className="point"
-                            variants={imagereveal}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <span>
-                                <h4>Grund 3</h4>
-                                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-                            </span>
-                            <Image
-                                aria-label='drums'
-                                src="/drums.svg"
-                                alt="Trommel"
-                                width={300}
-                                height={300}
-                            />
-                        </motion.div>
                     </Bound>
                 </section>
+
+                <div className="wrapper">
+                    <h4>Rahmenbedingungen</h4>
+                    <p>
+                        Elternabend: Zu Kursbeginn gibt es einen Elternabend, um Fragen zu klären und Erwartungen abzugleichen. Spät-Einsteigende erhalten die wichtigsten Infos per Elternbrief.
+                        Gruppeneinteilung: Die Gruppen werden altersgerecht eingeteilt, z. B. 1–2-Jährige und 3–4-Jährige.
+                        Ferienregelung: In den hessischen Schulferien findet in der Regel kein Unterricht statt. Nachholtermine bei Ausfall können jedoch in diese Zeit fallen.
+                        Probezeit: Die ersten 4 Wochen gelten als Probezeit und kosten 35 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).
+                        Alle weiteren Informationen findet ihr im Vertrag, den ich euch nach Anfrage per E-Mail zusende.
+                    </p>
+                    <p>
+                        Ich freue mich auf euch und eure kleinen Musiker:innen!
+                    </p>
+                </div>
 
                 <Footer />
             </div>
