@@ -36,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Background2 color={"#EA4447"} />
+      <Background2 color={"#EA4447"} />
         
       <Transition backgroundColor={"#B0AD98"}>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
