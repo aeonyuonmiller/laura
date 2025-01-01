@@ -842,6 +842,11 @@ img {
     font-size: 32px;
   }
 
+  .wrapper p,
+  p {
+    font-size: 22px;
+  }
+
   .cursor {
     display: none;
   }
