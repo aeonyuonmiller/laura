@@ -20,7 +20,6 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <div className='main'>
-      
       <Cursor />
       
       <div className={`${dokdo.variable}`}>
@@ -34,27 +33,25 @@ export default function App({ Component, pageProps, router }) {
 
       <div className="logo">
         <Magnetic>
-              <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={0}>
-                <Logo />
-              </Link>
-            </Magnetic>
-          </div>
+          <Link href="/#" aria-label="Tamusi Logo" scroll={false} tabIndex={0}>
+            <Logo />
+          </Link>
+        </Magnetic>
+      </div>
 
-        
-
-        <nav>
-          <Magnetic>
-            <Link href="/eltern-kind-kurs" scroll={false} tabIndex={0}>
-              <Image
-                src="/eltern-kind-kurse.svg"
-                alt="Kinderhand in Elternhand"
-                width={90}
-                height={90}
-                priority
-              />
-              Eltern-Kind-Kurse
-            </Link>
-          </Magnetic>
+      <nav>
+        <Magnetic>
+          <Link href="/eltern-kind-kurs" scroll={false} tabIndex={0}>
+            <Image
+              src="/eltern-kind-kurse.svg"
+              alt="Kinderhand in Elternhand"
+              width={90}
+              height={90}
+              priority
+            />
+            Eltern-Kind-Kurse
+          </Link>
+        </Magnetic>
 
           {/* <Magnetic>
             <Link href="/kinder-kurse" scroll={false} tabIndex={0}>
@@ -99,11 +96,7 @@ export default function App({ Component, pageProps, router }) {
                 height={90}
                 priority
               />Kontakt</a></Magnetic>
-        </nav>
-
-      
-        {/* <Cursor /> */}
-        
+        </nav>        
       </div>
     )
   }

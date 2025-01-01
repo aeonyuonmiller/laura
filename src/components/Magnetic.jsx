@@ -20,9 +20,11 @@ export default function Magnetic({ children }) {
     const { x, y } = position;
     return (
         <motion.div
+            className='magnetic'
             style={{ position: "relative" }}
             ref={ref}
             onMouseMove={handleMouse}
+            onTouchMove={handleMouse}
             onMouseLeave={reset}
             animate={{ x, y }}
             exit={{ opacity: 0 }}

@@ -817,6 +817,18 @@ img {
     display: none;
   }
 
+  .logo {
+    position: fixed;
+    border-radius: 50%;
+    top: 4vh;
+    left: calc(50% - 60px);
+    width: 120px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10px);
+    /* border: 10px solid white; */
+    z-index: 9999;
+  }
+
   h2 {
     font-size: 26px;
     font-weight: 100;
