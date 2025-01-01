@@ -62,7 +62,16 @@
   height: 100%;
   right: 0;
   top: 0;
-  background: pink;
+  background: #fff;
+}
+
+ul {
+  list-style-type: square;
+  /* Options: disc, circle, square, none */
+}
+
+li {
+  margin-bottom: 1em;
 }
 
 .velocity-section {
