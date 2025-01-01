@@ -72,7 +72,7 @@ export default function Home() {
                             </span>
                             <Image
                                 aria-hidden
-                                src="/hands-with-heart.svg"
+                                src="/holding-hands.svg"
                                 alt="File icon"
                                 width={300}
                                 height={300}
@@ -93,7 +93,7 @@ export default function Home() {
                             </span>
                             <Image
                                 aria-hidden
-                                src="/holding-hands.svg"
+                                src="/hands-with-heart.svg"
                                 alt="Hand in Hand"
                                 width={300}
                                 height={300}
