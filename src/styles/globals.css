@@ -33,26 +33,34 @@
 /* :root:has(#parallax:checked) a svg { */
 
 .mobile-nav {
+  display: none;
   position: fixed;
-  background: green;
   height: 100svh;
-  width: 50vw;
+  width: 100vw;
+  left: 0;
   z-index: 9999;
 }
 
 .controls {
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: 40px;
+  z-index: 9999;
 }
 
-.control button {
-  background: #000;
+.controls button {
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1em;
+  cursor: pointer;
 }
 
 .mobile-menu {
-  position: fixed;
-  left: 0;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  right: 0;
   top: 0;
   background: pink;
 }
@@ -816,6 +824,10 @@ img {
 @media (max-width: 700px) {
   nav {
     display: none;
+  }
+
+  .mobile-nav {
+    display: unset;
   }
 
   .logo {

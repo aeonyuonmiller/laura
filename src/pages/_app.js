@@ -22,6 +22,8 @@ export default function App({ Component, pageProps, router }) {
     <div className='main'>
       <Cursor />
       
+      <MobileNav />
+      
       <div className={`${dokdo.variable}`}>
         <AnimatePresence mode='sync' onExitComplete={() => window.scrollTo(0, 0)}>
           <Component key={router.route} {...pageProps} />
@@ -29,7 +31,6 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </div>
 
-      <MobileNav />
 
       <div className="logo">
         <Magnetic>

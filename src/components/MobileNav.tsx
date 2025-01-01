@@ -4,16 +4,18 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
 export default function App() {
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
 
     return (
         <div className="mobile-nav">
             <div className="controls">
                 <motion.button
                     whileTap={{ scale: 0.95 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0.5 }}
                     onClick={() => setShow(!show)}
                 >
-                    {show ? "Menü" : "Schliessen"}
+                    {show ? "Schliessen" : "Menü"}
                 </motion.button>
             </div>
 
@@ -21,9 +23,10 @@ export default function App() {
                 {show ? (
                     <motion.div
                         className="mobile-menu"
-                        exit={{ opacity: 0, scale: 1.1 }}
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        initial={{ x: "100%" }}
+                        animate={{ x: "0" }}
+                        exit={{ x: "100%" }}
+                        transition={{ duration: 0.7, bounce: .8 }}
                     />
                 ) : null}
             </AnimatePresence>
