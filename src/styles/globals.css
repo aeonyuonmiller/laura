@@ -43,13 +43,14 @@
 
 .controls {
   position: fixed;
-  top: 60px;
+  top: 70px;
   right: 40px;
   z-index: 9999;
 }
 
 .controls button {
   border: none;
+  background: none;
   padding: .7em;
   cursor: pointer;
 }
