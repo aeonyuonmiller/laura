@@ -80,7 +80,7 @@ export default function Home() {
           </motion.section>
           
         <div className="wrapper">
-          <h4 style={{ fontSize: "90px", marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h4>
+          <h4 style={{ marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h4>
           <p>Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
           <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.</p>
           <p>Schildere dein Anliegen, und ich werde mich zeitnah bei dir zurückmelden.</p>
