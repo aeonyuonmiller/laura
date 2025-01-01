@@ -1,39 +1,40 @@
-"use client"
+'use client'
 
-import { AnimatePresence } from "motion/react"
-import * as motion from "motion/react-client"
-import { useState } from "react"
+import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 
-export default function ExitAnimation() {
-    const [isVisible, setIsVisible] = useState(false)
+export default function App() {
+    const [show, setShow] = useState(true);
 
     return (
-        <div style={container}>
-            <AnimatePresence initial={false}>
-                {isVisible ? (
+        <div className="mobile-nav">
+            <div className="controls">
+                <motion.button
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => setShow(!show)}
+                >
+                    {show ? "Menü" : "Schliessen"}
+                </motion.button>
+            </div>
+
+            <AnimatePresence>
+                {show ? (
                     <motion.div
-                        initial={{ opacity: 0.9, scale: 0, y: -50 }}
-                        animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0.9, scale: 0, y: 50 }}
-                        style={box}
-                        key="box"
+                        className="mobile-menu"
+                        exit={{ opacity: 0, scale: 1.1 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
                     />
                 ) : null}
             </AnimatePresence>
-            <motion.button
-                style={button}
-                onClick={() => setIsVisible(!isVisible)}
-                whileTap={{ y: 1 }}
-            >
-                {isVisible ? "Schliessen" : "Menü"}
-            </motion.button>
         </div>
-    )
+    );
 }
+
 
 /**
  * ==============   Styles   ================
- */
+ 
 
 const container: React.CSSProperties = {
     // display: "flex",
@@ -45,10 +46,10 @@ const container: React.CSSProperties = {
 }
 
 const box: React.CSSProperties = {
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
     backgroundColor: "#fff",
-    borderRadius: "10px",
+    borderRadius: "30px",
 }
 
 const button: React.CSSProperties = {
@@ -63,3 +64,5 @@ const button: React.CSSProperties = {
     width: "300px",
     zIndex: 9999,
 }
+
+*/

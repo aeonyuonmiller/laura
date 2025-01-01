@@ -51,7 +51,7 @@ export default function Home() {
             Musikkurse für Kleinkinder. 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
-          </motion.div>
+        </motion.div>
 
           {/*
           <Scrollmarquee>
@@ -64,8 +64,8 @@ export default function Home() {
             <img src="./guitar2.png" alt="Gitarre" />
             <img src="./bongos.png" alt="Bongo Trommeln" />
             <img src="./ring1.png" alt="Klangstock" />
-          </Scrollmarquee> */}
-
+          </Scrollmarquee> */}  
+          
         <motion.section className="scroller"
         variants={trans} initial="hidden" animate="enter" exit="exit">
           <img src="./bongos.png" alt="Bongo Trommeln" />
@@ -77,22 +77,15 @@ export default function Home() {
           <img src="./guitar2.png" alt="Gitarre" />
           <img src="./bongos.png" alt="Bongo Trommeln" />
           <img src="./ring1.png" alt="Klangstock" />
-        </motion.section>
-
-        <section className="points">
-          <Bound>
-            <h3>Hallo,<br/> wie schön dich hier begrüssen zu dürfen.</h3>
-            <h2>
-              Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.
-              <br /><br />
-              Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.
-              <br /><br />
-              Schildere dein Anliegen, und ich werde mich zeitnah bei dir zurückmelden. 
-              <br /><br/>
-              Ich freue mich auf deine Nachricht!
-            </h2>
-          </Bound> 
-        </section>
+          </motion.section>
+          
+        <div className="wrapper">
+          <h4 style={{ fontSize: "90px", marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h4>
+          <p>Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
+          <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.</p>
+          <p>Schildere dein Anliegen, und ich werde mich zeitnah bei dir zurückmelden.</p>
+         <p><strong>Ich freue mich auf deine Nachricht!</strong></p>
+        </div>  
 
         <section className="two-grid">
             <div>

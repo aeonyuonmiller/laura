@@ -19,8 +19,6 @@ const dokdo = localFont({
 export default function App({ Component, pageProps, router }) {
 
   return (
-      
-    
     <div className='main'>
       
       <Cursor />
@@ -32,6 +30,7 @@ export default function App({ Component, pageProps, router }) {
         </AnimatePresence>
       </div>
 
+      <MobileNav />
 
       <div className="logo">
         <Magnetic>
@@ -102,7 +101,6 @@ export default function App({ Component, pageProps, router }) {
               />Kontakt</a></Magnetic>
         </nav>
 
-        <MobileNav />
       
         {/* <Cursor /> */}
         

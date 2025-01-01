@@ -30,7 +30,7 @@ const Footer = () => {
                 </p>
             </div>
 
-            <span>&copy; {new Date().getFullYear()} – <strong>Alle Rechte vorbehalten.</strong>
+            <span>&copy; <strong>{new Date().getFullYear()} – Alle Rechte vorbehalten.</strong>
                 <Link href="/impressum">Impressum</Link>
                 <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
             </span>
