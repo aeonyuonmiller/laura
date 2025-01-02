@@ -43,12 +43,13 @@
 
 .controls {
   position: fixed;
-  top: 70px;
+  top: 40px;
   right: 40px;
   z-index: 9999;
 }
 
 .controls button {
+  position: relative;
   border: none;
   background: none;
   padding: .7em;
@@ -414,9 +415,10 @@ a:after {
 
 .hero-img img {
   position: relative;
-  min-width: 250px;
-  width: 100%;
-  max-width: 600px;
+  /* min-width: 250px; */
+  height: 40vh;
+  border-radius: 30px;
+  /* max-width: 600px; */
   /* background: grey; */
   z-index: 0;
 }
