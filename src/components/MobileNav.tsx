@@ -63,7 +63,7 @@ export default function App() {
                         </Link>
 
                         <a href="mailto:tamusi.darmstadt@gmail.com" tabIndex={0}>
-                            Kontakt
+                            E-Mail schreiben
                         </a>
                     </motion.div>
                 ) : null}
