@@ -407,7 +407,7 @@ a:after {
   position: absolute;
   display: grid;
   place-items: center;
-  top: -20%;
+  top: -10%;
   width: 100vw;
   height: 100svh;
   margin: auto;
