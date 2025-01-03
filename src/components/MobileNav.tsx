@@ -50,6 +50,10 @@ export default function App() {
                         exit={{ x: "100%" }}
                         transition={{ duration: 0.4, bounce: .9 }}
                     >
+                        <Link href="/" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                            Startseite
+                        </Link>
+
                         <Link href="/eltern-kind-kurs" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
                             Eltern-Kind-Kurse
                         </Link>
