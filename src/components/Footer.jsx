@@ -25,12 +25,15 @@ const Footer = () => {
 
             <div className="openinghours">
                 <p>
-                    <strong>Öffnungszeiten</strong> Donnerstag 9:00 - 18:00 Uhr<br />
+                    <strong>Öffnungszeiten</strong> Donnerstag 9:00 - 18:00 Uhr
+                </p>
+                <p>
                     <strong>Telefonisch erreichbar</strong> Montag - Freitag 9:00 - 11:00 Uhr
                 </p>
             </div>
 
-            <span>&copy; <strong>{new Date().getFullYear()} – Alle Rechte vorbehalten.</strong>
+            <span>&copy; <strong>
+                {new Date().getFullYear()} – Alle Rechte vorbehalten.</strong>
                 <Link href="/impressum">Impressum</Link>
                 <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
             </span>
