@@ -80,6 +80,7 @@
 
 ul {
   list-style-type: square;
+  padding: 0 40px;
   /* Options: disc, circle, square, none */
 }
 
