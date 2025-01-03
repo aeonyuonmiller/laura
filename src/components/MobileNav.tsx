@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function App() {
     const [show, setShow] = useState(false);
@@ -10,6 +12,7 @@ export default function App() {
         <div className="mobile-nav">
             <div className="controls">
                 <motion.button
+                    whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
@@ -46,7 +49,23 @@ export default function App() {
                         animate={{ x: "0" }}
                         exit={{ x: "100%" }}
                         transition={{ duration: 0.4, bounce: .9 }}
-                    />
+                    >
+                        <Link href="/eltern-kind-kurs" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                            Eltern-Kind-Kurse
+                        </Link>
+
+                        <Link href="/ueber-mich" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                            Über Mich
+                        </Link>
+
+                        <Link href="/zusammenarbeit" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                            Zusammenarbeit
+                        </Link>
+
+                        <a href="mailto:tamusi.darmstadt@gmail.com" tabIndex={0}>
+                            Kontakt
+                        </a>
+                    </motion.div>
                 ) : null}
             </AnimatePresence>
         </div>
