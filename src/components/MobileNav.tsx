@@ -48,7 +48,7 @@ export default function App() {
                         initial={{ x: "100%" }}
                         animate={{ x: "0" }}
                         exit={{ x: "100%" }}
-                        transition={{ duration: 0.4, bounce: .9 }}
+                        transition={{ duration: 0.7, bounce: .9 }}
                     >
                         <Link href="/" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
                             Startseite
