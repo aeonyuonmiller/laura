@@ -436,7 +436,7 @@ a:after {
   transform: translateY(-15%);
   height: 40vh;
   object-fit: contain;
-  background: grey;
+  /* background: grey; */
   z-index: 0;
 }
 
