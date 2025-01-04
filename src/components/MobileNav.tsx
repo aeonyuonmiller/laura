@@ -2,14 +2,16 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function App() {
     const [show, setShow] = useState(false);
+    const toggleNav = () => {
+        setShow(!show);
+    };
 
     return (
-        // < className="mobile-nav">
+        // <div className="mobile-nav">
         <>
             <div className="controls">
                 <motion.button
@@ -17,10 +19,12 @@ export default function App() {
                     whileTap={{ scale: 0.9 }}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
+                    // animate={{ setShow? "show": "hide" }}
                     exit={{ scale: 0 }}
-                    onClick={() => setShow(!show)}
+                    onClick={toggleNav}
+                // onClick={() => setShow(!show)}
                 >
-                    <AnimatePresence>
+                    <AnimatePresence mode="wait">
                         {show ? (
                             <motion.svg
                                 initial={{ scale: 0, rotate: 32 }}
@@ -51,19 +55,19 @@ export default function App() {
                         exit={{ x: "100%" }}
                         transition={{ duration: 0.7, bounce: .9 }}
                     >
-                        <Link href="/" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                        <Link href="/" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Startseite
                         </Link>
 
-                        <Link href="/eltern-kind-kurs" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                        <Link href="/eltern-kind-kurs" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Eltern-Kind-Kurse
                         </Link>
 
-                        <Link href="/ueber-mich" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                        <Link href="/ueber-mich" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Über Mich
                         </Link>
 
-                        <Link href="/zusammenarbeit" scroll={false} onClick={() => setShow(!show)} tabIndex={0}>
+                        <Link href="/zusammenarbeit" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Zusammenarbeit
                         </Link>
 
