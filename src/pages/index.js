@@ -89,7 +89,7 @@ export default function Home() {
 
         <section className="two-grid">
             <div>
-            <h5>Mein Steckbrief</h5>
+            <h4>Mein Steckbrief</h4>
             {/* <h2>Hallo, wie schön, dass dich dein Weg hierher geführt hat. :)</h2> */}
             <p>
               Mein Name ist Laura. Ich bin Traumapädagogin und Erzieherin und seit mehr als 15 Jahren im Songwriting und als Sängerin in Bands tätig.
@@ -113,7 +113,7 @@ export default function Home() {
               <Image src="/portrait.jpg" alt="portrait" width={500} height={500} />
             </motion.div>
 
-            <h5>Laura Maria Müller</h5>
+            <h4>Laura Maria Müller</h4>
             <h6>Musikerin und Pädagogin</h6>
           </div>
           </section>

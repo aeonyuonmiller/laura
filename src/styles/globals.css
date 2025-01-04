@@ -424,7 +424,7 @@ a:after {
   position: absolute;
   display: grid;
   place-items: center;
-  top: -10%;
+  top: 0;
   width: 100vw;
   height: 100svh;
   margin: auto;
@@ -432,11 +432,11 @@ a:after {
 
 .hero-img img {
   position: relative;
-  /* min-width: 250px; */
-  height: 40vh;
   border-radius: 30px;
-  /* max-width: 600px; */
-  /* background: grey; */
+  transform: translateY(-15%);
+  height: 40vh;
+  object-fit: contain;
+  background: grey;
   z-index: 0;
 }
 
