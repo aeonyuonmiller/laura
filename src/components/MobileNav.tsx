@@ -53,7 +53,7 @@ export default function App() {
                         initial={{ x: "100%" }}
                         animate={{ x: "0" }}
                         exit={{ x: "100%" }}
-                        transition={{ ease: [0.785, 0.135, 0.15, 0.86], duration: 1 }}
+                        transition={{ ease: [0.785, 0.135, 0.15, 0.86], duration: .6 }}
                     // transition={{ duration: 0.7, bounce: .9 }}
                     >
                         <Link href="/" scroll={false} onClick={toggleNav} tabIndex={0}>
