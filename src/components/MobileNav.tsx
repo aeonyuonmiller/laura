@@ -19,7 +19,7 @@ export default function App() {
                     whileTap={{ scale: 0.9 }}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    // animate={{ setShow? "show": "hide" }}
+                    // animate={{ show? "enter": "hide" }}
                     exit={{ scale: 0 }}
                     onClick={toggleNav}
                 // onClick={() => setShow(!show)}

@@ -42,6 +42,7 @@
 }
 
 .controls {
+  display: none;
   position: fixed;
   top: 45px;
   right: 20px;
@@ -851,6 +852,10 @@ img {
 @media (max-width: 750px) {
   nav {
     display: none;
+  }
+
+  .controls {
+    display: unset;
   }
 
   .mobile-nav {
