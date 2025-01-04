@@ -38,7 +38,7 @@
   height: 100svh;
   width: 100vw;
   left: 0;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .controls {
@@ -57,7 +57,7 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +69,7 @@
   top: 0;
   padding-top: 15svh;
   background: whitesmoke;
+  z-index: 999;
 }
 
 .mobile-menu a {
@@ -613,6 +614,7 @@ footer svg {
   font-size: 22px;
   text-align: center;
   line-height: 150%;
+  margin-bottom: 8px;
 }
 
 .openinghours p strong {
@@ -638,8 +640,6 @@ footer svg {
   justify-content: flex-end;
   padding-bottom: 10svh;
 }
-
-
 
 .point {
   width: 100%;

@@ -9,7 +9,8 @@ export default function App() {
     const [show, setShow] = useState(false);
 
     return (
-        <div className="mobile-nav">
+        // < className="mobile-nav">
+        <>
             <div className="controls">
                 <motion.button
                     whileHover={{ scale: 1.1 }}
@@ -72,7 +73,7 @@ export default function App() {
                     </motion.div>
                 ) : null}
             </AnimatePresence>
-        </div>
+        </>
     );
 }
 
