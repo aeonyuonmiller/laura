@@ -48,7 +48,7 @@ export default function Home() {
               Willkommen<br />bei Tamusi
           </motion.h1>
             <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
-            Musikkurse für Kleinkinder. 
+            Musikkurse für Kleinkinder.<br/> 
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
         </motion.div>
