@@ -989,7 +989,8 @@ img {
     font-size: 10px;
     letter-spacing: 0.04rem;
     text-align: center;
-    line-height: 150%;
+    line-height: 100%;
+    margin-bottom: 3em;
   }
 
   .openinghours p strong {
