@@ -7,7 +7,7 @@ const Footer = () => {
             <Magnetic>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    height="80"
+                    height="50"
                     fill="none"
                     viewBox="0 0 147 109"
                 >

@@ -5,10 +5,11 @@ const Background2 = ({ color }) => (
     <svg
         className="backgroundish"
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
+        fill={color}
         viewBox="0 0 720 721"
     >
         <motion.path
+            className="hide-on-mobile"
             initial={{ scale: 1, rotate: '-60deg', x: 0, y: 0 }}
             animate={{ scale: 8, rotate: ['0deg', '60deg'], x: '-50%', y: '-50%', transition: { duration: .8 } }}
             exit={{ scale: 8, x: '-50%', y: '-50%', transition: { delay: .6 } }}
