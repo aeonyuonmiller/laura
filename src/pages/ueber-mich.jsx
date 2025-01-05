@@ -6,14 +6,12 @@ import Image from "next/image";
 
 // Components
 import Magnetic from "../components/Magnetic";
-import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
 import Background2 from "../components/Background2";
 import Footer from '../components/Footer';
 
 export default function Uebermich() {
-
   const container = useRef();
   const { scrollYProgress } = useScroll({
     target: container,
@@ -47,24 +45,22 @@ export default function Uebermich() {
           <img src="./portrait.jpg" />
         </motion.div>
 
-        <section className="points">
-          <Bound>
-            <p>
-              Laura Maria Müller seit 2012 in Darmstadt lebend, 1993 im Rhein-Main-Gebiet geboren, fand ich früh den Weg zur Musik. Über das Singen mit meiner Mama, verfolgte ich meine Leidenschaft für den Gesang in zahlreichen Schulchören, und nahm zwei Jahre lang Keyboardunterricht. Mit 15 Jahren gründeten einige Schulfreund/Innen und ich unsere erste Band, in der ich als Sängerin und Songwriterin tätig war. Seither, probierte ich mich mit den verschiedensten Instrumenten (Gitarre, Ukulele, Kalimba, Glockenspiele, unterschiedliche Percussioninstrumente, und Software am Computer u.a. Fruity Loops und Ableton) aus und war Teil verschiedener Bandprojekte und verfolgte meinen Weg als Solokünstlerin.
-            </p>
-            <p>
-              Mit 17 Jahren begann ich die Ausbildung zur Sozialassisstentin, begab mich danach in die Ausbildung zur staatlich anerkannten Erzieherin und arbeitete fast 10 Jahre mit Kindern im Alter von zwei bis 12 Jahren. Im Laufe meiner Berufsbahn als Erzieherin absolvierte ich die Ausbildung zur Kinderschutzfachkraft, war als stellvertretende Leitung tätig und absolvierte später dann die Weiterbildung zur Traumapädagogin. Nach einer Auszeit, kam die elementare Musikpädagogik mir quasi zugeflogen. Es fühlte sich einfach richtig an, an meiner beruflichen Situation etwas zu verändern und mir die Expertise aus meiner Tätigkeit als Erzieherin dafür von Nutzen zu machen. Ich hospitierte bei einer Musikschule, nahm dort an Eltern-Kind-Kursen und Kursen für Kinder bis zum Schuleintritt teil und merkte schnell wie viel Spass es mir bereitete mich in der musikalischen Früherziehung, mit den Eltern und ihren Kindern auszutoben.
-            </p>
-            <p>
-              Im September 2024 begann ich dann für die Musikschule Taunus zu arbeiten und nahm zeitgleich an diversen Fortbildungen (Musikgarten 1 & Musikgarten 2, dem „Early Child Music Education“- Seminar, vom Verband deutscher Musikschulen, und weiteren kurzweiligen Fortbildungen zum Instrumentalspiel mit Kindern) teil. Seit September 2024 bilde ich mich stetig mit Klavier- und Gesangsunterricht weiter, um professionelle Arbeit leisten zu können. Im Februar 2025 beginnt außerdem ein zertifizierter Lehrgang zur „Fachkraft für Musik im Elementarbereich“.
-            </p>
-            <p>
-              Mit meiner Expertise als Erzieherin gehe ich bewusst auf die Bedürfnisse unserer kleinsten Mitmenschen ein und lasse den Kindern die nötige Zeit um von selbst in den Ausdruck, oder das Spiel mit der Musik zu kommen. Ich freue mich auf euch!
-            </p>
-            <p>
-              Ich freue mich auf deine Nachricht!
-            </p>
-          </Bound>
+        <section className="wrapper">
+          <p>
+            Laura Maria Müller seit 2012 in Darmstadt lebend, 1993 im Rhein-Main-Gebiet geboren, fand ich früh den Weg zur Musik. Über das Singen mit meiner Mama, verfolgte ich meine Leidenschaft für den Gesang in zahlreichen Schulchören, und nahm zwei Jahre lang Keyboardunterricht. Mit 15 Jahren gründeten einige Schulfreund/Innen und ich unsere erste Band, in der ich als Sängerin und Songwriterin tätig war. Seither, probierte ich mich mit den verschiedensten Instrumenten (Gitarre, Ukulele, Kalimba, Glockenspiele, unterschiedliche Percussioninstrumente, und Software am Computer u.a. Fruity Loops und Ableton) aus und war Teil verschiedener Bandprojekte und verfolgte meinen Weg als Solokünstlerin.
+          </p>
+          <p>
+            Mit 17 Jahren begann ich die Ausbildung zur Sozialassisstentin, begab mich danach in die Ausbildung zur staatlich anerkannten Erzieherin und arbeitete fast 10 Jahre mit Kindern im Alter von zwei bis 12 Jahren. Im Laufe meiner Berufsbahn als Erzieherin absolvierte ich die Ausbildung zur Kinderschutzfachkraft, war als stellvertretende Leitung tätig und absolvierte später dann die Weiterbildung zur Traumapädagogin. Nach einer Auszeit, kam die elementare Musikpädagogik mir quasi zugeflogen. Es fühlte sich einfach richtig an, an meiner beruflichen Situation etwas zu verändern und mir die Expertise aus meiner Tätigkeit als Erzieherin dafür von Nutzen zu machen. Ich hospitierte bei einer Musikschule, nahm dort an Eltern-Kind-Kursen und Kursen für Kinder bis zum Schuleintritt teil und merkte schnell wie viel Spass es mir bereitete mich in der musikalischen Früherziehung, mit den Eltern und ihren Kindern auszutoben.
+          </p>
+          <p>
+            Im September 2024 begann ich dann für die Musikschule Taunus zu arbeiten und nahm zeitgleich an diversen Fortbildungen (Musikgarten 1 & Musikgarten 2, dem „Early Child Music Education“- Seminar, vom Verband deutscher Musikschulen, und weiteren kurzweiligen Fortbildungen zum Instrumentalspiel mit Kindern) teil. Seit September 2024 bilde ich mich stetig mit Klavier- und Gesangsunterricht weiter, um professionelle Arbeit leisten zu können. Im Februar 2025 beginnt außerdem ein zertifizierter Lehrgang zur „Fachkraft für Musik im Elementarbereich“.
+          </p>
+          <p>
+            Mit meiner Expertise als Erzieherin gehe ich bewusst auf die Bedürfnisse unserer kleinsten Mitmenschen ein und lasse den Kindern die nötige Zeit um von selbst in den Ausdruck, oder das Spiel mit der Musik zu kommen. Ich freue mich auf euch!
+          </p>
+          <p>
+            Ich freue mich auf deine Nachricht!
+          </p>
         </section>
 
         {/* <section className='contact-form'>
@@ -140,7 +136,7 @@ export default function Uebermich() {
         </section> */}
 
         <Footer />
-      </div>
+      </div >
     </>
   );
 }

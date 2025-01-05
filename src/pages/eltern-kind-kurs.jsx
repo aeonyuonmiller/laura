@@ -113,7 +113,7 @@ export default function Home() {
                     <p>
                         Alle weiteren Informationen findet ihr im Vertrag, den ich euch nach Anfrage per E-Mail zusende.
                     </p>
-                    <p className='center'>
+                    <p className="center">
                         <strong>Ich freue mich auf euch und eure kleinen Musiker:innen!</strong>
                     </p>
                 </div>

@@ -835,7 +835,6 @@ img {
   }
 } */
 
-
 @media (max-width: 1200px) {
 
   section.two-grid {
@@ -873,6 +872,12 @@ img {
     backdrop-filter: blur(10px);
     /* border: 10px solid white; */
     z-index: 9999;
+  }
+
+  h1 {
+    font-size: 72px;
+    width: 320px;
+    margin-bottom: -.4em;
   }
 
   h2 {
