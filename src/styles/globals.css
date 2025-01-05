@@ -773,14 +773,13 @@ h3 {
 
 h4 {
   font-family: var(--font-geist-sans);
-  font-size: 2rem;
+  font-size: 1.5em;
   margin-bottom: 16px;
-  letter-spacing: -.09rem;
+  letter-spacing: -.1rem;
   line-height: .7em;
   width: 100%;
   max-width: 18ch;
   /* margin: 4vh auto 0 auto; */
-  text-wrap: pretty;
 }
 
 h5 {
