@@ -51,9 +51,8 @@ export default function App() {
                     <motion.div
                         className="mobile-menu"
                         initial={{ x: "100%" }}
-                        animate={{ x: "0" }}
-                        exit={{ x: "100%" }}
-                        transition={{ ease: [0.785, 0.135, 0.15, 0.86], duration: 1.2 }}
+                        animate={{ x: "0", transition: { ease: [0.785, 0.135, 0.15, 0.86], duration: .9 } }}
+                        exit={{ x: "100%", transition: { ease: [0.785, 0.135, 0.15, 0.86], duration: .7 } }}
                     // transition={{ duration: 0.7, bounce: .9 }}
                     >
                         <Link href="/" scroll={false} onClick={toggleNav} tabIndex={0}>

@@ -53,6 +53,7 @@
   position: relative;
   border: none;
   background: none;
+  border-radius: 30px;
   padding: .7em;
   cursor: pointer;
 }
