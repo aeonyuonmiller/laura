@@ -56,10 +56,10 @@ export default function Uebermich() {
             Im September 2024 begann ich dann für die Musikschule Taunus zu arbeiten und nahm zeitgleich an diversen Fortbildungen (Musikgarten 1 & Musikgarten 2, dem „Early Child Music Education“- Seminar, vom Verband deutscher Musikschulen, und weiteren kurzweiligen Fortbildungen zum Instrumentalspiel mit Kindern) teil. Seit September 2024 bilde ich mich stetig mit Klavier- und Gesangsunterricht weiter, um professionelle Arbeit leisten zu können. Im Februar 2025 beginnt außerdem ein zertifizierter Lehrgang zur „Fachkraft für Musik im Elementarbereich“.
           </p>
           <p>
-            Mit meiner Expertise als Erzieherin gehe ich bewusst auf die Bedürfnisse unserer kleinsten Mitmenschen ein und lasse den Kindern die nötige Zeit um von selbst in den Ausdruck, oder das Spiel mit der Musik zu kommen. Ich freue mich auf euch!
+            Mit meiner Expertise als Erzieherin gehe ich bewusst auf die Bedürfnisse unserer kleinsten Mitmenschen ein und lasse den Kindern die nötige Zeit um von selbst in den Ausdruck, oder das Spiel mit der Musik zu kommen.
           </p>
           <p>
-            Ich freue mich auf deine Nachricht!
+            Ich freue mich auf euch!
           </p>
         </section>
 
