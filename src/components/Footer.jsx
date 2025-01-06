@@ -30,11 +30,9 @@ const Footer = () => {
 
             <div className="openinghours">
                 <p>
-                    <strong>Email</strong> tamusi.darmstadt@gmail.com
-                </p>
-
-                <p>
+                    <strong>Email</strong> tamusi.darmstadt@gmail.com<br />
                     <strong>Telefonisch erreichbar</strong> 0163 9027 748<br />
+                    {/* Montags + Freitags von 12:00-14:00 Uhr<br /> */}
                     <strong>Montags + Freitags</strong> von 12:00-14:00 Uhr<br />
                     <span className="fineprint">
                         (mit Ausnahme der hessischen Schulferien)
@@ -42,9 +40,12 @@ const Footer = () => {
                 </p>
             </div>
 
-            <span>&copy; <strong>
-                {/* {new Date().getFullYear()} – Alle Rechte vorbehalten.</strong> */}
-                {year} – Alle Rechte vorbehalten.</strong>
+            <span>
+                &copy;
+                <strong>
+                    {/* {new Date().getFullYear()} – Alle Rechte vorbehalten.</strong> */}
+                    {year} – Alle Rechte vorbehalten.
+                </strong>
 
                 <Link href="/impressum">Impressum</Link>
                 <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
