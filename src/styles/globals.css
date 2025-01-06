@@ -32,6 +32,13 @@
 
 /* :root:has(#parallax:checked) a svg { */
 
+.fineprint {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin-bottom: 2em;
+}
+
 .mobile-nav {
   display: none;
   position: fixed;
@@ -405,7 +412,7 @@ a:after {
   bottom: 0;
   left: 0;
   z-index: -999;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -617,7 +624,7 @@ footer svg {
 .openinghours p {
   font-size: 22px;
   text-align: center;
-  line-height: 150%;
+  line-height: 170%;
   margin-bottom: 8px;
 }
 
@@ -989,7 +996,7 @@ img {
     font-size: 10px;
     letter-spacing: 0.04rem;
     text-align: center;
-    line-height: 100%;
+    line-height: 150%;
     margin-bottom: 3em;
   }
 
