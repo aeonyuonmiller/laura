@@ -32,6 +32,10 @@
 
 /* :root:has(#parallax:checked) a svg { */
 
+.thumb {
+  max-width: 300px;
+}
+
 .fineprint {
   font-size: 8px;
   font-weight: 900;

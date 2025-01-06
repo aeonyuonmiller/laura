@@ -76,14 +76,15 @@ export default function Home() {
                                 </p>
                                 {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
                             </span>
-                            <Image
+                            {/* <Image
                                 className="thumb"
                                 aria-hidden
                                 src="/zucker-logo.svg"
                                 alt="File icon"
                                 width={200}
                                 height={80}
-                            />
+                            /> */}
+                            <img className="thumb" src="/zucker-logo.svg" alt="Zucker Logo" />
                         </motion.div>
 
                         <motion.div
@@ -99,14 +100,15 @@ export default function Home() {
                                 <p>Hier arbeite ich im Bereich der elementaren Musikpädagogik.</p>
                                 <a href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
                             </span>
-                            <Image
+                            {/* <Image
                                 className="thumb"
                                 aria-hidden
                                 src="/musikschule-taunus-logo.png"
                                 alt="Musikschule Taunus Logo"
                                 height={238}
                                 width={800}
-                            />
+                            /> */}
+                            <img className="thumb" src="/musikschule-taunus-logo.png" alt=" Musikschule Taunus Logo" />
                         </motion.div>
 
                         <motion.div
@@ -122,7 +124,7 @@ export default function Home() {
                                 <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
                                 <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
                             </span>
-                            <img src="/blumenstrauss.jpeg" />
+                            <img className="thumb" src="/blumenstrauss.jpeg" alt="Rosa Wolf Blumenstrauss" />
                             {/* <Image
                             className="thumb"
                             aria-hidden
