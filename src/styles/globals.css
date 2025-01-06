@@ -32,8 +32,12 @@
 
 /* :root:has(#parallax:checked) a svg { */
 
+/* * {
+  border: 1px solid white;
+} */
+
 .thumb {
-  max-width: 300px;
+  max-width: 600px;
 }
 
 .fineprint {
@@ -674,12 +678,12 @@ footer svg {
 }
 
 .point {
-  width: 100%;
-  display: flex;
-  gap: 0;
   align-items: center;
+  display: flex;
   flex: 1;
+  gap: 2em;
   margin-bottom: 4em;
+  width: 100%;
 }
 
 .point:nth-child(odd) {
@@ -881,6 +885,10 @@ img {
 }
 
 @media (max-width: 750px) {
+  .thumb {
+    max-width: 320px;
+  }
+
   nav {
     display: none;
   }

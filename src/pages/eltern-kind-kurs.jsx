@@ -40,7 +40,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <Background2 color="#287ff0" />
+                {/* <Background2 color="#287ff0" /> */}
+                <Background2 color="#4994f8" />
+
 
                 <Transition>
                     <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
