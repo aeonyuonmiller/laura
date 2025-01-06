@@ -72,8 +72,8 @@ export default function Home() {
                                 <h4>Zucker e.V. in Darmstadt</h4>
                                 <p>
                                     Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
-                                    <a href="/#" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
                                 </p>
+                                <a href="https://www.musikschule-taunus.de/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
                                 {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
                             </span>
                             {/* <Image
