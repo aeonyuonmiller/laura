@@ -5,9 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 // Components
-import Magnetic from "../components/Magnetic";
 import { hlone, hltwo, imagereveal } from '../components/anim';
-import Link from "next/link";
 import Background2 from "../components/Background2";
 import Footer from '../components/Footer';
 import Transition from '../components/Transition';
