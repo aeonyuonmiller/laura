@@ -57,9 +57,6 @@ export default function Home() {
                     </motion.div>
 
                     <section className="wrapper">
-                        {/* <Bound> */}
-                        {/* <h3 className="center">Gemeinsam mit…</h3> */}
-
                         <motion.div
                             className="point"
                             variants={imagereveal}

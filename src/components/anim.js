@@ -42,3 +42,8 @@ export const hltwo = {
     enter: { opacity: 1, y: 0, transition: { delay: 1.05 }},
     exit: { opacity: 0, y: -15 }
 }
+
+export const ui = {
+    hidden: { opacity: 0, y: -20 },
+    enter: { opacity: 1, y: 0, transition: { type: "spring", bounce: .5, delay: 1.2 }}
+}

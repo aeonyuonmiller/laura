@@ -94,7 +94,6 @@ export default function Home() {
         <section className="grid-two">
             <div>
             <h4>Mein Steckbrief</h4>
-            {/* <h2>Hallo, wie schön, dass dich dein Weg hierher geführt hat. :)</h2> */}
             <p>
               Mein Name ist Laura. Ich bin Traumapädagogin und Erzieherin und seit mehr als 15 Jahren im Songwriting und als Sängerin in Bands tätig.
             </p>

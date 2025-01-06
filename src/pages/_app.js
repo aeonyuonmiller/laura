@@ -1,8 +1,9 @@
 import "../styles/globals.css";
+import { ui } from '../components/anim';
 import { Analytics } from '@vercel/analytics/next';
 
 import localFont from "next/font/local";
-import { AnimatePresence } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
 import Image from "next/image";
 import Link from "next/link";
 import Magnetic from "../components/Magnetic";
@@ -40,7 +41,7 @@ export default function App({ Component, pageProps, router }) {
         </Magnetic>
       </div>
 
-      <nav>
+      <motion.nav variants={ui} initial="hidden" animate="enter">
         <Magnetic>
           <Link href="/eltern-kind-kurs" scroll={false} tabIndex={0}>
             <Image
@@ -97,7 +98,7 @@ export default function App({ Component, pageProps, router }) {
                 height={90}
                 priority
               />Kontakt</a></Magnetic>
-        </nav>        
+        </motion.nav>        
       </div>
     )
   }

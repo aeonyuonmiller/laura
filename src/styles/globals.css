@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #920B0E;
+    --background: #EA4447;
     --foreground: #000000ad;
   }
 }
@@ -361,7 +361,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--foreground);
+  background: whitesmoke;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-dodko);
   font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
