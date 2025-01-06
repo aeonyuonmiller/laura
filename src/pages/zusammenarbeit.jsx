@@ -10,6 +10,7 @@ import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
 import Background2 from "../components/Background2";
+import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
 // import Background3 from '../components/Background3';
 
@@ -42,86 +43,87 @@ export default function Home() {
             <div>
                 <Background2 color="#87EA80" />
 
-                <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-                    {/* <img src="./start.png" /> */}
-                </motion.div>
-
-                <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
-                    <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
-                        Zusammen-<br />arbeit</motion.h1>
-                    <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
-                        Zusammen erreicht man soviel mehr.
-                    </motion.h2>
-                </motion.div>
-
-                <section className="wrapper">
-                    {/* <Bound> */}
-                    {/* <h3 className="center">Gemeinsam mit…</h3> */}
-
-                    <motion.div
-                        className="point"
-                        variants={imagereveal}
-                        initial="hidden"
-                        whileInView="enter"
-                        exit="exit"
-                        viewport={{ once: true }}
-                    >
-                        <span>
-                            <h4>Zucker e.V. in Darmstadt</h4>
-                            <p>
-                                Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
-                                <a href="/#" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
-                            </p>
-                            {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
-                        </span>
-                        <Image
-                            className="thumb"
-                            aria-hidden
-                            src="/zucker-logo.svg"
-                            alt="File icon"
-                            width={200}
-                            height={80}
-                        />
+                <Transition>
+                    <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+                        {/* <img src="./start.png" /> */}
                     </motion.div>
 
-                    <motion.div
-                        className="point"
-                        variants={imagereveal}
-                        initial="hidden"
-                        whileInView="enter"
-                        exit="exit"
-                        viewport={{ once: true }}
-                    >
-                        <span>
-                            <h4>Musikschule Taunus</h4>
-                            <p>Hier arbeite ich im Bereich der elementaren Musikpädagogik.</p>
-                            <a href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
-                        </span>
-                        <Image
-                            className="thumb"
-                            aria-hidden
-                            src="/musikschule-taunus-logo.png"
-                            alt="Musikschule Taunus Logo"
-                            height={238}
-                            width={800}
-                        />
+                    <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
+                        <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
+                            Zusammen-<br />arbeit</motion.h1>
+                        <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
+                            Zusammen erreicht man soviel mehr.
+                        </motion.h2>
                     </motion.div>
 
-                    <motion.div
-                        className="point"
-                        variants={imagereveal}
-                        initial="hidden"
-                        whileInView="enter"
-                        exit="exit"
-                        viewport={{ once: true }}
-                    >
-                        <span>
-                            <h4>Illustrationen</h4>
-                            <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
-                            <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
-                        </span>
-                        <img src="/blumenstrauss.jpeg" />
-                        {/* <Image
+                    <section className="wrapper">
+                        {/* <Bound> */}
+                        {/* <h3 className="center">Gemeinsam mit…</h3> */}
+
+                        <motion.div
+                            className="point"
+                            variants={imagereveal}
+                            initial="hidden"
+                            whileInView="enter"
+                            exit="exit"
+                            viewport={{ once: true }}
+                        >
+                            <span>
+                                <h4>Zucker e.V. in Darmstadt</h4>
+                                <p>
+                                    Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
+                                    <a href="/#" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
+                                </p>
+                                {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
+                            </span>
+                            <Image
+                                className="thumb"
+                                aria-hidden
+                                src="/zucker-logo.svg"
+                                alt="File icon"
+                                width={200}
+                                height={80}
+                            />
+                        </motion.div>
+
+                        <motion.div
+                            className="point"
+                            variants={imagereveal}
+                            initial="hidden"
+                            whileInView="enter"
+                            exit="exit"
+                            viewport={{ once: true }}
+                        >
+                            <span>
+                                <h4>Musikschule Taunus</h4>
+                                <p>Hier arbeite ich im Bereich der elementaren Musikpädagogik.</p>
+                                <a href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
+                            </span>
+                            <Image
+                                className="thumb"
+                                aria-hidden
+                                src="/musikschule-taunus-logo.png"
+                                alt="Musikschule Taunus Logo"
+                                height={238}
+                                width={800}
+                            />
+                        </motion.div>
+
+                        <motion.div
+                            className="point"
+                            variants={imagereveal}
+                            initial="hidden"
+                            whileInView="enter"
+                            exit="exit"
+                            viewport={{ once: true }}
+                        >
+                            <span>
+                                <h4>Illustrationen</h4>
+                                <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
+                                <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
+                            </span>
+                            <img src="/blumenstrauss.jpeg" />
+                            {/* <Image
                             className="thumb"
                             aria-hidden
                             src="/blumenstrauss.jpeg"
@@ -129,12 +131,13 @@ export default function Home() {
                             width={200}
                             height={600}
                         /> */}
-                    </motion.div>
+                        </motion.div>
 
-                    {/* </Bound> */}
-                </section>
+                        {/* </Bound> */}
+                    </section>
 
-                <Footer />
+                    <Footer />
+                </Transition >
             </div>
         </>
     );

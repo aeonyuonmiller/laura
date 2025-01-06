@@ -11,6 +11,7 @@ import { hlone, hltwo, imagereveal } from '../components/anim';
 import Link from "next/link";
 import Background2 from "../components/Background2";
 import Footer from '../components/Footer';
+import Transition from '../components/Transition';
 // import Background3 from '../components/Background3';
 
 export default function Home() {
@@ -42,65 +43,67 @@ export default function Home() {
             <div>
                 <Background2 color="#a35cf0" />
 
-                <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-                    {/* <img src="./start.png" /> */}
-                </motion.div>
+                <Transition>
+                    <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+                        {/* <img src="./start.png" /> */}
+                    </motion.div>
 
-                <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
-                    <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
-                        Impressum</motion.h1>
-                </motion.div>
+                    <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
+                        <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
+                            Impressum</motion.h1>
+                    </motion.div>
 
-                <section className="wrapper">
-                    <h5>Angaben gemäss § 5 TMG</h5>
-                    <p>
-                        Tamusi - Musikkurse für Kinder im Elementarbereich<br />
-                        Laura Maria Müller<br />
-                        Lauteschlägerstrasse 11<br />
-                        xxxxxx Darmstadt
-                    </p>
-                    <h5>Kontakt</h5>
-                    <p>
-                        Telefon: [Telefonnummer]<br />
-                        E-Mail: tamusi.darmstadt@gmail.com<br />
-                        Website: www.tamusi-darmstadt.de
-                    </p>
+                    <section className="wrapper">
+                        <h5>Angaben gemäss § 5 TMG</h5>
+                        <p>
+                            Tamusi - Musikkurse für Kinder im Elementarbereich<br />
+                            Laura Maria Müller<br />
+                            Lauteschlägerstrasse 11<br />
+                            xxxxxx Darmstadt
+                        </p>
+                        <h5>Kontakt</h5>
+                        <p>
+                            Telefon: [Telefonnummer]<br />
+                            E-Mail: tamusi.darmstadt@gmail.com<br />
+                            Website: www.tamusi-darmstadt.de
+                        </p>
 
-                    <h5>Vertreten durch</h5>
-                    <p>
-                        Laura Maria Müller
-                    </p>
+                        <h5>Vertreten durch</h5>
+                        <p>
+                            Laura Maria Müller
+                        </p>
 
-                    <h5>Umsatzsteuer-Identifikationsnummer gemäss § 27 a Umsatzsteuergesetz:</h5>
-                    <p>
-                        [falls vorhanden, angeben]
-                    </p>
+                        <h5>Umsatzsteuer-Identifikationsnummer gemäss § 27 a Umsatzsteuergesetz:</h5>
+                        <p>
+                            [falls vorhanden, angeben]
+                        </p>
 
-                    <h5>Berufsbezeichnung und berufsrechtliche Regelungen</h5>
-                    <p>
-                        Berufsbezeichnung: [z. B. Musikpädagoge/Musikpädagogin]
-                        Zuständige Kammer: [falls relevant]
-                        Verleihungsstaat: [Land, in dem die Berufsbezeichnung verliehen wurde]
-                    </p>
+                        <h5>Berufsbezeichnung und berufsrechtliche Regelungen</h5>
+                        <p>
+                            Berufsbezeichnung: [z. B. Musikpädagoge/Musikpädagogin]
+                            Zuständige Kammer: [falls relevant]
+                            Verleihungsstaat: [Land, in dem die Berufsbezeichnung verliehen wurde]
+                        </p>
 
-                    <h5>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h5>
-                    <p>
-                        [Vorname Nachname, Adresse]
-                    </p>
+                        <h5>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h5>
+                        <p>
+                            [Vorname Nachname, Adresse]
+                        </p>
 
-                    <h5>Haftungsausschluss (Disclaimer)</h5>
-                    <p>
-                        [Hier könnte ein Haftungsausschluss stehen, z. B. Haftung für Inhalte und Links.]
-                    </p>
+                        <h5>Haftungsausschluss (Disclaimer)</h5>
+                        <p>
+                            [Hier könnte ein Haftungsausschluss stehen, z. B. Haftung für Inhalte und Links.]
+                        </p>
 
-                    <h5>Streitschlichtung</h5>
-                    <p>
-                        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [Link zur Plattform].
-                        Unsere E-Mail-Adresse finden Sie oben im Impressum.
-                    </p>
-                </section>
+                        <h5>Streitschlichtung</h5>
+                        <p>
+                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [Link zur Plattform].
+                            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                        </p>
+                    </section>
 
-                <Footer />
+                    <Footer />
+                </Transition>
             </div >
         </>
     );

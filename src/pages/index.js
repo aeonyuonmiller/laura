@@ -38,7 +38,7 @@ export default function Home() {
       <>
       <Background2 color={"#EA4447"} />
         
-      <Transition backgroundColor={"#B0AD98"}>
+      <Transition>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
           <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./guitar2.png" />
         </motion.div>
