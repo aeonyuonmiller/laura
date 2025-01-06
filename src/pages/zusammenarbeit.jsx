@@ -54,94 +54,83 @@ export default function Home() {
                     </motion.h2>
                 </motion.div>
 
-                <section className="points">
-                    <Bound>
-                        <h3 className="center">Gemeinsam mit…</h3>
+                <section className="wrapper">
+                    {/* <Bound> */}
+                    {/* <h3 className="center">Gemeinsam mit…</h3> */}
 
-                        <motion.div
-                            className="point"
-                            variants={imagereveal}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <span>
-                                <h4>Dem Zucker in Darmstadt</h4>
-                                <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p>
-                            </span>
-                            <Image
-                                aria-hidden
-                                src="/zucker-logo.svg"
-                                alt="File icon"
-                                width={200}
-                                height={80}
-                            />
-                        </motion.div>
+                    <motion.div
+                        className="point"
+                        variants={imagereveal}
+                        initial="hidden"
+                        whileInView="enter"
+                        exit="exit"
+                        viewport={{ once: true }}
+                    >
+                        <span>
+                            <h4>Zucker e.V. in Darmstadt</h4>
+                            <p>
+                                Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
+                                <a href="/#" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
+                            </p>
+                            {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
+                        </span>
+                        <Image
+                            className="thumb"
+                            aria-hidden
+                            src="/zucker-logo.svg"
+                            alt="File icon"
+                            width={200}
+                            height={80}
+                        />
+                    </motion.div>
 
-                        <motion.div
-                            className="point"
-                            variants={imagereveal}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <span>
-                                <h4>Musikschule</h4>
-                                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-                            </span>
-                            <Image
-                                aria-hidden
-                                src="/zucker-logo.svg"
-                                alt="File icon"
-                                width={200}
-                                height={80}
-                            />
-                        </motion.div>
+                    <motion.div
+                        className="point"
+                        variants={imagereveal}
+                        initial="hidden"
+                        whileInView="enter"
+                        exit="exit"
+                        viewport={{ once: true }}
+                    >
+                        <span>
+                            <h4>Musikschule Taunus</h4>
+                            <p>Hier arbeite ich im Bereich der elementaren Musikpädagogik.</p>
+                            <a href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
+                        </span>
+                        <Image
+                            className="thumb"
+                            aria-hidden
+                            src="/musikschule-taunus-logo.png"
+                            alt="Musikschule Taunus Logo"
+                            height={238}
+                            width={800}
+                        />
+                    </motion.div>
 
-                        <motion.div
-                            className="point"
-                            variants={imagereveal}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <span>
-                                <h4>Illustrationen</h4>
-                                <p>Die schönen Illustrationen sind von XXXXXXXX</p>
-                            </span>
-                            <Image
-                                aria-hidden
-                                src="/zucker-logo.svg"
-                                alt="File icon"
-                                width={200}
-                                height={80}
-                            />
-                        </motion.div>
+                    <motion.div
+                        className="point"
+                        variants={imagereveal}
+                        initial="hidden"
+                        whileInView="enter"
+                        exit="exit"
+                        viewport={{ once: true }}
+                    >
+                        <span>
+                            <h4>Illustrationen</h4>
+                            <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
+                            <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
+                        </span>
+                        <Image
+                            className="thumb"
+                            aria-hidden
+                            src="/blumenstrauss.jpeg"
+                            alt="File icon"
+                            width={200}
+                            height={600}
+                        />
+                    </motion.div>
 
-                        <motion.div
-                            className="point"
-                            variants={imagereveal}
-                            initial="hidden"
-                            whileInView="enter"
-                            exit="exit"
-                            viewport={{ once: true }}
-                        >
-                            <span>
-                                <h4>Kollaboration</h4>
-                                <p>Warum es gut ist sein Kind in den Musikunterricht zu nehmen. Barrieren abbauen. Lorem ipsum.</p>
-                            </span>
-                            <Image
-                                aria-hidden
-                                src="/zucker-logo.svg"
-                                alt="File icon"
-                                width={200}
-                                height={80}
-                            />
-                        </motion.div>
-                    </Bound>
+                    {/* </Bound> */}
                 </section>
 
                 <Footer />

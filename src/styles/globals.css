@@ -227,6 +227,23 @@ section.scroller {
   font-size: 32px;
 }
 
+.wrapper a {
+  position: relative;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 900;
+  padding: 8px 22px;
+  margin: auto 8px;
+  border-radius: 30px;
+  background: #00000010;
+}
+
+.wrapper a:hover,
+.wrapper a:focus-visible {
+  background: #00000015;
+  color: #000;
+}
+
 .full-bleed {
   grid-column: 1 / -1;
 }
@@ -658,6 +675,7 @@ footer svg {
   gap: 0;
   align-items: center;
   flex: 1;
+  margin-bottom: 4em;
 }
 
 .point:nth-child(odd) {
