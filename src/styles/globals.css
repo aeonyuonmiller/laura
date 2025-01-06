@@ -608,7 +608,7 @@ footer {
   font-size: 20px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4em;
+  padding: 4em 0;
   width: 100%;
 }
 
@@ -786,8 +786,9 @@ h2 {
 
 h3 {
   font-family: var(--font-geist-sans);
+  font-size: 70px;
   /* font-size: 3rem; */
-  font-size: clamp(2rem, 20.3vw - 7.3rem, 6rem);
+  /* font-size: clamp(2rem, 20.3vw - 7.3rem, 6rem); */
   letter-spacing: -.05em;
   line-height: .7em;
   max-width: 14ch;

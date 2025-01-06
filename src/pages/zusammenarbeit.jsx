@@ -120,14 +120,15 @@ export default function Home() {
                             <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
                             <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
                         </span>
-                        <Image
+                        <img src="/blumenstrauss.jpeg" />
+                        {/* <Image
                             className="thumb"
                             aria-hidden
                             src="/blumenstrauss.jpeg"
                             alt="File icon"
                             width={200}
                             height={600}
-                        />
+                        /> */}
                     </motion.div>
 
                     {/* </Bound> */}
