@@ -36,9 +36,9 @@ const Footer = () => {
                 <p>
                     <strong>Telefonisch erreichbar</strong> 0163 9027 748<br />
                     <strong>Montags + Freitags</strong> von 12:00-14:00 Uhr<br />
-                    {/* <span className="fineprint"> */}
-                    (mit Ausnahme der hessischen Schulferien)
-                    {/* </span> */}
+                    <span className="fineprint">
+                        (mit Ausnahme der hessischen Schulferien)
+                    </span>
                 </p>
             </div>
 
