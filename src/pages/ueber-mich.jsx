@@ -74,8 +74,8 @@ export default function Uebermich() {
             <p>
               Mit meiner Expertise als Erzieherin gehe ich bewusst auf die Bedürfnisse unserer kleinsten Mitmenschen ein und lasse den Kindern die nötige Zeit um von selbst in den Ausdruck, oder das Spiel mit der Musik zu kommen.
             </p>
-            <p>
-              Ich freue mich auf euch!
+            <p className="center">
+              <strong>Ich freue mich auf euch!</strong>
             </p>
           </section>
 
