@@ -53,7 +53,7 @@ export default function Home() {
 
                     <div className="wrapper">
                         <p>Die Eltern-Kind-Kurse sind für mich eine besondere Herzensangelegenheit. Es geht darum Kindern einen ersten Kontakt zur Welt der Musik zu ermöglichen und euch als Begleitperson eine angeleitete, musikalische Zeit mit eurem Kind zu schenken.</p>
-                        <p>Im Mittelpunkt stehen gemeinsames Singen, Tanzen, Bewegen und erste Erfahrungen mit Rhythmusinstrumenten. Die Stunden wechseln zwischen aktiven und entspannten Phasen, wobei ich flexibel auf die Bedürfnisse der Gruppe eingehe. Ob mehr Bewegung oder längere Konzentration – ich passe den Ablauf individuell an.</p>
+                        <p>Im Mittelpunkt stehen gemeinsames Singen, Tanzen, Bewegen und erste Erfahrungen mit Rhythmusinstrumenten. Die Stunden <strong>(eine Einheit dauert 45 Minuten)</strong> wechseln zwischen aktiven und entspannten Phasen, wobei ich flexibel auf die Bedürfnisse der Gruppe eingehe. Ob mehr Bewegung oder längere Konzentration – ich passe den Ablauf individuell an.</p>
                     </div>
 
                     <section className="points">
