@@ -82,7 +82,7 @@ export default function Home() {
         */}
           
         <div className="wrapper">
-          <h3 className='center' style={{ marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h3>
+          <h3 className="center" style={{ marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h3>
           <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./kinder1.png" />
           <p>Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
           <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.</p>
@@ -90,7 +90,8 @@ export default function Home() {
          <p className='center'><strong>Ich freue mich auf deine Nachricht!</strong></p>
         </div>  
 
-        <section className="two-grid">
+        {/* classname was "two-grid" */}
+        <section className="grid-two">
             <div>
             <h4>Mein Steckbrief</h4>
             {/* <h2>Hallo, wie schön, dass dich dein Weg hierher geführt hat. :)</h2> */}

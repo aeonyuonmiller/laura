@@ -73,7 +73,7 @@ export default function Home() {
                                 <p>
                                     Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
                                 </p>
-                                <a href="https://www.musikschule-taunus.de/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
+                                <a target="_blank" href="https://www.musikschule-taunus.de/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
                                 {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
                             </span>
                             {/* <Image
@@ -98,7 +98,7 @@ export default function Home() {
                             <span>
                                 <h4>Musikschule Taunus</h4>
                                 <p>Hier arbeite ich im Bereich der elementaren Musikpädagogik.</p>
-                                <a href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
+                                <a target="_blank" href="/#" alt="Link zur Webseite der Musikschule Taunus">Zur Webseite</a>
                             </span>
                             {/* <Image
                                 className="thumb"
@@ -122,7 +122,7 @@ export default function Home() {
                             <span>
                                 <h4>Illustrationen</h4>
                                 <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
-                                <a href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
+                                <a target="_blank" href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
                             </span>
                             <img className="thumb" src="/blumenstrauss.jpeg" alt="Rosa Wolf Blumenstrauss" />
                             {/* <Image

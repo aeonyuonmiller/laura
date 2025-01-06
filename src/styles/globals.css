@@ -36,6 +36,29 @@
   border: 1px solid white;
 } */
 
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.grid-item {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+}
+
 .thumb {
   max-width: 600px;
 }
@@ -470,7 +493,7 @@ a:after {
   position: relative;
   border-radius: 30px;
   transform: translateY(-15%);
-  height: 40vh;
+  height: 30vh;
   object-fit: contain;
   /* background: grey; */
   z-index: 0;
@@ -942,6 +965,10 @@ img {
   p {
     font-size: 21px;
     letter-spacing: 0.07px;
+  }
+
+  .hero {
+    height: 110svh;
   }
 
   .cursor {
