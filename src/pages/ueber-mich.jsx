@@ -19,7 +19,8 @@ export default function Uebermich() {
   const y = useTransform(scrollYProgress, [0, 1], ["0vh", "40vh"])
   const opacity = useTransform(scrollYProgress, [0, .2], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
-  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
+  const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
+  const r = useTransform(scrollYProgress, [0, 1], [0, -30])
   const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.6])
   const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
 
@@ -44,8 +45,10 @@ export default function Uebermich() {
               Leidenschaftliche Musikerin mit pädagogischer Erfahrung.
             </motion.h2>
           </motion.div>
-          <motion.div style={{ y: y2, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-            <img src="./portrait.jpg" />
+          <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+            <motion.div style={{ y: y2, scale: s2, opacity: o2, rotate: r }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
+              <img src="./portrait.jpg" alt="Foto von Lauras Gesicht" />
+            </motion.div>
           </motion.div>
 
           <section className="wrapper">

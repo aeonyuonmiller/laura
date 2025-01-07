@@ -741,7 +741,7 @@ footer svg {
 
 .logo {
   position: fixed;
-  top: 2vw;
+  top: 3vw;
   left: 3vw;
 }
 
@@ -797,7 +797,7 @@ h1 {
   letter-spacing: -.1em;
   text-align: center;
   text-wrap: pretty;
-  margin: 0 auto;
+  margin: 0 auto -0.29em auto;
   /* margin-top: 50vh; */
 }
 
