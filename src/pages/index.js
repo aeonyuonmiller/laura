@@ -38,14 +38,13 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-
         <motion.div ref={container} style={{opacity, scale}} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
             <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
             Musikkurse für Kleinkinder.<br/> 
-            Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
+            Mit Empathie und Rhythmus die Entwicklung fördern.
           </motion.h2>
         </motion.div>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
@@ -53,39 +52,11 @@ export default function Home() {
             <img src="./guitar2.png" alt="Foto von Lauras Gesicht" />
           </motion.div>
         </motion.div>  
-
-          {/*
-          <Scrollmarquee>
-            <img src="./bongos.png" alt="Bongo Trommeln" />
-            <img src="./guitar2.png" alt="Gitarre" />
-            <img src="./ring1.png" alt="Klangstock" />
-            <img src="./guitar2.png" alt="Gitarre" />
-            <img src="./bongos.png" alt="Bongo Trommeln" />
-            <img src="./ring1.png" alt="Klangstock" />
-            <img src="./guitar2.png" alt="Gitarre" />
-            <img src="./bongos.png" alt="Bongo Trommeln" />
-            <img src="./ring1.png" alt="Klangstock" />
-          </Scrollmarquee> */}  
-          
-        {/* 
-        <motion.section className="scroller"
-        variants={trans} initial="hidden" animate="enter" exit="exit">
-          <img src="./bongos.png" alt="Bongo Trommeln" />
-          <img src="./guitar2.png" alt="Gitarre" />
-          <img src="./ring1.png" alt="Klangstock" />
-          <img src="./guitar2.png" alt="Gitarre" />
-          <img src="./bongos.png" alt="Bongo Trommeln" />
-          <img src="./ring1.png" alt="Klangstock" />
-          <img src="./guitar2.png" alt="Gitarre" />
-          <img src="./bongos.png" alt="Bongo Trommeln" />
-          <img src="./ring1.png" alt="Klangstock" />
-          </motion.section> 
-        */}
           
         <div className="wrapper">
           <h3 className="center" style={{ marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h3>
           <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./kinder1.png" />
-          <p>Das hier ist die Webseite von meinem Projekt Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
+          <p>Das hier ist die Webseite von Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
           <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.</p>
           <p>Schildere dein Anliegen, und ich werde mich zeitnah bei dir zurückmelden.</p>
          <p className='center'><strong>Ich freue mich auf deine Nachricht!</strong></p>
@@ -93,10 +64,11 @@ export default function Home() {
 
         {/* classname was "two-grid" */}
         <section className="grid-two">
-            <div>
+        {/* <section className="wrapper"> */}
+          <div>
             <h4>Mein Steckbrief</h4>
             <p>
-              Mein Name ist Laura. Ich bin Traumapädagogin und Erzieherin und seit mehr als 15 Jahren im Songwriting und als Sängerin in Bands tätig.
+              Mein Name ist Laura.<br/>Ich bin Traumapädagogin, Erzieherin und seit mehr als 15 Jahren im Songwriting und als Sängerin in Bands tätig.
             </p>
             <p>
               Ab dem Frühjahr 2025 biete ich Eltern-Kind-Kurse im Bereich der elementaren Musikpädagogik in Darmstadt und Umgebung an.
@@ -114,11 +86,10 @@ export default function Home() {
               animate="enter"
               exit="exit"
             >
-              <Image src="/portrait.jpg" alt="portrait" width={500} height={500} />
+              <Image src="/portrait.jpg" alt="portrait" width={300} height={300} />
+              <h4>Laura Maria Müller</h4>
+              <h6>Musikerin und Pädagogin</h6>
             </motion.div>
-
-            <h4>Laura Maria Müller</h4>
-            <h6>Musikerin und Pädagogin</h6>
           </div>
           </section>
           
