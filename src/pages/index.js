@@ -38,9 +38,6 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-        <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-          <img src="./guitar2.png" />
-        </motion.div>
 
         <motion.div ref={container} style={{opacity, scale}} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
@@ -51,6 +48,11 @@ export default function Home() {
             Mit Empathie und Rhythmus die Entwicklung Ihrer Kleinen fördern.
           </motion.h2>
         </motion.div>
+        <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+          <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
+            <img src="./guitar2.png" alt="Foto von Lauras Gesicht" />
+          </motion.div>
+        </motion.div>  
 
           {/*
           <Scrollmarquee>
