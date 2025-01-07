@@ -1,18 +1,14 @@
-// 'use client'
+'use client'
 import { useScroll, useTransform, motion } from 'motion/react';
 import { useRef } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 
 // Components
-import Magnetic from "../components/Magnetic";
-import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
-import Link from "next/link";
 import Background2 from "../components/Background2";
 import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
-// import Background3 from '../components/Background3';
 
 export default function Home() {
 
@@ -21,10 +17,12 @@ export default function Home() {
         target: container,
         offset: ['start start', 'end start']
     })
-    const y = useTransform(scrollYProgress, [0, 1], ["0vh", "70vh"])
-    const opacity = useTransform(scrollYProgress, [0, .2], [1, 0])
+    const y = useTransform(scrollYProgress, [0, 1], ["0vh", "40vh"])
+    const opacity = useTransform(scrollYProgress, [0, .4], [1, 0])
     const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
-
+    const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
+    const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
+    const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
 
     // const Slide = (props) => {
     // const direction = props.direction == 'left' ? -1 : 1;
@@ -48,12 +46,17 @@ export default function Home() {
                         {/* <img src="./start.png" /> */}
                     </motion.div>
 
-                    <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
+                    <motion.div ref={container} style={{ opacity, scale }} className="bound xl">
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Zusammen-<br />arbeit</motion.h1>
                         <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
                             Zusammen erreicht man soviel mehr.
                         </motion.h2>
+                    </motion.div>
+                    <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+                        <motion.div style={{ y: y2, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
+                            <img src="./mutter-mit-kind.png" alt="Begleitperson weiblich mit Kind im Kurs" />
+                        </motion.div>
                     </motion.div>
 
                     <section className="wrapper">
