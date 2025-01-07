@@ -5,14 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Components
-import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
-import { trans } from '../components/anim';
 import Background2 from "../components/Background2";
 import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
 import Magnetic from '../components/Magnetic';
-import Scrollmarquee from '../components/Scrollmarquee/index';
 
 export default function Home() {
 
@@ -22,9 +19,11 @@ export default function Home() {
     target: container,
     offset: ['start start', 'end start']
   })
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "70vh"] )
-  const opacity = useTransform(scrollYProgress, [0, .2], [1, 0])
+  const opacity = useTransform(scrollYProgress, [0, .4], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2])
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
+  const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
+  const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
 
   return (
     <>
@@ -39,11 +38,11 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-        <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
-          <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./guitar2.png" />
+        <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
+          <img src="./guitar2.png" />
         </motion.div>
 
-        <motion.div ref={container} style={{y, opacity, scale}} className="bound xl">
+        <motion.div ref={container} style={{opacity, scale}} className="bound xl">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
