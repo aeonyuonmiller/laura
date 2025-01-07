@@ -87,8 +87,8 @@ export default function Home() {
               exit="exit"
             >
               <Image src="/portrait.jpg" alt="portrait" width={300} height={300} />
-              <h4>Laura Maria Müller</h4>
-              <h6>Musikerin und Pädagogin</h6>
+              <h5>Laura Maria Müller</h5>
+              <h6 className="fineprint">Musikerin und Pädagogin</h6>
             </motion.div>
           </div>
           </section>
