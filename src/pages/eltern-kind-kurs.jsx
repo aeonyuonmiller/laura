@@ -74,13 +74,6 @@ export default function Home() {
                                 <h4>Wer kann begleiten?</h4>
                                 <p>Alle nahen Bezugspersonen des Kindes sind willkommen – ob Eltern, Großeltern oder andere Vertraute. Wichtig ist nur, dass sich das Kind in der Begleitung sicher fühlt und sein natürliches Explorationsverhalten entfalten kann.</p>
                             </span>
-                            <Image
-                                aria-hidden
-                                src="/holding-hands.svg"
-                                alt="File icon"
-                                width={300}
-                                height={300}
-                            />
                         </motion.div>
 
                         <motion.div
@@ -95,13 +88,13 @@ export default function Home() {
                                 <h4>Barrierefreiheit und Flexibilität</h4>
                                 <p>Wir sitzen in der Regel auf dem Boden, aber für Begleitpersonen, die das nicht können, stehen Stühle bereit. Habt ihr besondere Wünsche? Sprecht mich gerne an – wir finden eine Lösung, damit alle teilnehmen können!</p>
                             </span>
-                            <Image
+                            {/* <Image
                                 aria-hidden
                                 src="/hands-with-heart.svg"
                                 alt="Hand in Hand"
                                 width={300}
                                 height={300}
-                            />
+                            /> */}
                         </motion.div>
                     </section>
 
