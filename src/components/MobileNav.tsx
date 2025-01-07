@@ -24,7 +24,7 @@ export default function App() {
                     onClick={toggleNav}
                 // onClick={() => setShow(!show)}
                 >
-                    <AnimatePresence mode="wait">
+                    <AnimatePresence mode="sync">
                         {show ? (
                             <motion.svg
                                 initial={{ scale: 0, rotate: 32 }}

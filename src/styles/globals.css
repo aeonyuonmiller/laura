@@ -82,7 +82,7 @@
 .controls {
   display: none;
   position: fixed;
-  top: 80px;
+  top: 79px;
   right: 30px;
   z-index: 9999;
 }
@@ -823,15 +823,11 @@ h2 {
 
 h3 {
   font-family: var(--font-geist-sans);
-  font-size: 70px;
-  /* font-size: 3rem; */
-  /* font-size: clamp(2rem, 20.3vw - 7.3rem, 6rem); */
+  font-size: 60px;
   letter-spacing: -.05em;
-  line-height: .7em;
-  max-width: 14ch;
-  /* margin: 12vh auto 0 auto; */
+  line-height: .75em;
+  max-width: 10ch;
   text-wrap: pretty;
-  /* text-align: center; */
 }
 
 h4 {

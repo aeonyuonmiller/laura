@@ -54,10 +54,10 @@ export default function Home() {
         </motion.div>  
           
         <div className="wrapper">
-          <h3 className="center" style={{ marginBottom: 20 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h3>
+          <h3 className="center" style={{ marginBottom: 30 }}>Hallo,<br/>wie schön dich hier begrüssen zu dürfen</h3>
           <img style={{ mixBlendMode: "plus-darker", opacity: .8 }} src="./kinder1.png" />
           <p>Das hier ist die Webseite von Tamusi. Hier geht es um das Singen, Tanzen, Bewegen und darum ganzheitliche Erfahrungen in der Welt der Musik zu machen.</p>
-          <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, dann kontaktiere mich gerne über meine E-Mail.</p>
+          <p>Wenn du auf der Suche nach einem Eltern-Kind-Kurs bist, oder Interesse an einer Kooperation mit mir hast, kontaktiere mich gerne über meine E-Mail.</p>
           <p>Schildere dein Anliegen, und ich werde mich zeitnah bei dir zurückmelden.</p>
          <p className='center'><strong>Ich freue mich auf deine Nachricht!</strong></p>
         </div>  
