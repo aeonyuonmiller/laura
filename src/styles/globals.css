@@ -498,10 +498,9 @@ a:after {
 .hero-img img {
   position: relative;
   border-radius: 30px;
-  transform: translateY(-15%);
+  /* transform: translateY(-15%); */
   height: 30vh;
   object-fit: contain;
-  /* background: grey; */
   z-index: 0;
 }
 
