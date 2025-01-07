@@ -1,14 +1,11 @@
-// 'use client'
+'use client'
 import { useScroll, useTransform, motion } from 'motion/react';
 import { useRef } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 
 // Components
-import Magnetic from "../components/Magnetic";
-import { Bound } from "../components/Bound";
 import { hlone, hltwo, imagereveal } from '../components/anim';
-import Link from "next/link";
 import Background2 from "../components/Background2";
 import Footer from '../components/Footer';
 import Transition from '../components/Transition';
@@ -42,9 +39,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                {/* <Background2 color="#287ff0" /> */}
                 <Background2 color="#4994f8" />
-
 
                 <Transition>
                     <motion.div ref={container} style={{ opacity, scale }} className="bound xl">
@@ -56,7 +51,7 @@ export default function Home() {
                     </motion.div>
                     <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
                         <motion.div style={{ y: y2, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
-                            <img src="./portrait.jpg" alt="Foto von Lauras Gesicht" />
+                            <img src="./vater-mit-kind.png" alt="Begleitpersonen mit Kindern im Eltern-Kind-Kurs" />
                         </motion.div>
                     </motion.div>
 
@@ -65,52 +60,49 @@ export default function Home() {
                         <p>Im Mittelpunkt stehen gemeinsames Singen, Tanzen, Bewegen und erste Erfahrungen mit Rhythmusinstrumenten. Die Stunden <strong>(eine Einheit dauert 45 Minuten)</strong> wechseln zwischen aktiven und entspannten Phasen, wobei ich flexibel auf die Bedürfnisse der Gruppe eingehe. Ob mehr Bewegung oder längere Konzentration – ich passe den Ablauf individuell an.</p>
                     </div>
 
-                    <section className="points">
-                        <Bound>
-                            {/* <h3 className="center">Drei gute Gründe</h3> */}
+                    <section className="wrapper">
+                        {/* <h3 className="center">Drei gute Gründe</h3> */}
+                        <motion.div
+                            className="point"
+                            variants={imagereveal}
+                            initial="hidden"
+                            whileInView="enter"
+                            exit="exit"
+                            viewport={{ once: true }}
+                        >
+                            <span>
+                                <h4>Wer kann begleiten?</h4>
+                                <p>Alle nahen Bezugspersonen des Kindes sind willkommen – ob Eltern, Großeltern oder andere Vertraute. Wichtig ist nur, dass sich das Kind in der Begleitung sicher fühlt und sein natürliches Explorationsverhalten entfalten kann.</p>
+                            </span>
+                            <Image
+                                aria-hidden
+                                src="/holding-hands.svg"
+                                alt="File icon"
+                                width={300}
+                                height={300}
+                            />
+                        </motion.div>
 
-                            <motion.div
-                                className="point"
-                                variants={imagereveal}
-                                initial="hidden"
-                                whileInView="enter"
-                                exit="exit"
-                                viewport={{ once: true }}
-                            >
-                                <span>
-                                    <h4>Wer kann begleiten?</h4>
-                                    <p>Alle nahen Bezugspersonen des Kindes sind willkommen – ob Eltern, Großeltern oder andere Vertraute. Wichtig ist nur, dass sich das Kind in der Begleitung sicher fühlt und sein natürliches Explorationsverhalten entfalten kann.</p>
-                                </span>
-                                <Image
-                                    aria-hidden
-                                    src="/holding-hands.svg"
-                                    alt="File icon"
-                                    width={300}
-                                    height={300}
-                                />
-                            </motion.div>
-
-                            <motion.div
-                                className="point"
-                                variants={imagereveal}
-                                initial="hidden"
-                                whileInView="enter"
-                                exit="exit"
-                                viewport={{ once: true }}
-                            >
-                                <span>
-                                    <h4>Barrierefreiheit und Flexibilität</h4>
-                                    <p>Wir sitzen in der Regel auf dem Boden, aber für Begleitpersonen, die das nicht können, stehen Stühle bereit. Habt ihr besondere Wünsche? Sprecht mich gerne an – wir finden eine Lösung, damit alle teilnehmen können!</p>
-                                </span>
-                                <Image
-                                    aria-hidden
-                                    src="/hands-with-heart.svg"
-                                    alt="Hand in Hand"
-                                    width={300}
-                                    height={300}
-                                />
-                            </motion.div>
-                        </Bound>
+                        <motion.div
+                            className="point"
+                            variants={imagereveal}
+                            initial="hidden"
+                            whileInView="enter"
+                            exit="exit"
+                            viewport={{ once: true }}
+                        >
+                            <span>
+                                <h4>Barrierefreiheit und Flexibilität</h4>
+                                <p>Wir sitzen in der Regel auf dem Boden, aber für Begleitpersonen, die das nicht können, stehen Stühle bereit. Habt ihr besondere Wünsche? Sprecht mich gerne an – wir finden eine Lösung, damit alle teilnehmen können!</p>
+                            </span>
+                            <Image
+                                aria-hidden
+                                src="/hands-with-heart.svg"
+                                alt="Hand in Hand"
+                                width={300}
+                                height={300}
+                            />
+                        </motion.div>
                     </section>
 
                     <div className="wrapper">
