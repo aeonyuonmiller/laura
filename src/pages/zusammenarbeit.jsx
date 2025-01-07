@@ -118,7 +118,7 @@ export default function Home() {
                         >
                             <span>
                                 <h4>Illustrationen</h4>
-                                <p>Die schönen Illustrationen sind von der echten Rosa Wolf.</p>
+                                <p>Die schönen Illustrationen sind von Rosa Wolf.</p>
                                 <a target="_blank" href="https://www.instagram.com/die_echte_rosa_wolf?igsh=c3UzeWx3eDNzZGxs">Zu Rosa Wolfs Instagram</a>
                             </span>
                             <img className="thumb" src="/blumenstrauss.jpeg" alt="Rosa Wolf Blumenstrauss" />
