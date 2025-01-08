@@ -39,9 +39,9 @@ export default function Uebermich() {
             <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Über mich
             </motion.h1>
-            <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
+            {/* <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
               Leidenschaftliche Musikerin mit pädagogischer Erfahrung.
-            </motion.h2>
+            </motion.h2> */}
           </motion.div>
           <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
             <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
