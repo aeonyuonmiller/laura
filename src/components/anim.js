@@ -38,7 +38,7 @@ export const scale = {
 }
 
 export const hltwo = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     enter: { opacity: 1, y: 0, transition: { delay: 1.05 }},
     exit: { opacity: 0, y: -15 }
 }
