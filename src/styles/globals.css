@@ -373,7 +373,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: whitesmoke;
+  background-color: whitesmoke;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-dodko);
   font-family: 'Didact Gothic', Arial, Helvetica, sans-serif;
@@ -381,27 +381,27 @@ body {
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  transition: background linear .8s;
+  transition: background-color linear .8s;
 }
 
 body:has(#startseite) {
-  background: #EA4447;
+  background-color: #EA4447;
 }
 
 body:has(#elternkind) {
-  background: #4994f8;
+  background-color: #4994f8;
 }
 
 body:has(#uebermich) {
-  background: #FD7536;
+  background-color: #FD7536;
 }
 
 body:has(#zusammenarbeit) {
-  background: #87EA80;
+  background-color: #87EA80;
 }
 
 body:has(#impressum) {
-  background: #af70f3;
+  background-color: #af70f3;
 }
 
 input {
@@ -998,7 +998,7 @@ img {
   }
 
   .hero {
-    height: 110svh;
+    height: 100svh;
   }
 
   .cursor {
@@ -1036,8 +1036,8 @@ img {
 
   .backgroundish {
     position: fixed;
-    left: -2%;
-    width: 104%;
+    left: 0%;
+    width: 100%;
     /* height: 100svh; */
     z-index: -999;
     /* left: -100vw;
