@@ -382,6 +382,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body:has(#startseite) {
+  background: #EA4447;
+}
+
+body:has(#elternkind) {
+  background: #4994f8;
+}
+
+body:has(#uebermich) {
+  background: #FD7536;
+}
+
+body:has(#zusammenarbeit) {
+  background: #87EA80;
+}
+
+body:has(#startseite) {
+  background: #EA4447;
+}
+
 input {
   caret-shape: bar;
   caret-color: #000;

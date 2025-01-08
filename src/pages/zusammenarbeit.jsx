@@ -46,7 +46,7 @@ export default function Home() {
                         {/* <img src="./start.png" /> */}
                     </motion.div>
 
-                    <motion.div ref={container} style={{ opacity, scale }} className="bound xl">
+                    <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="zusammenarbeit">
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Zusammen-<br />arbeit</motion.h1>
                         <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">

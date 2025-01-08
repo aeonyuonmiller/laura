@@ -35,7 +35,7 @@ export default function Uebermich() {
         <Background2 color="#FD7536" />
 
         <Transition>
-          <motion.div ref={container} style={{ opacity, scale }} className="bound xl">
+          <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="uebermich">
             <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Über mich
             </motion.h1>

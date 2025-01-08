@@ -42,7 +42,7 @@ export default function Home() {
                 <Background2 color="#4994f8" />
 
                 <Transition>
-                    <motion.div ref={container} style={{ opacity, scale }} className="bound xl">
+                    <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="elternkind">
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Eltern-Kind-Kurse</motion.h1>
                         <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">

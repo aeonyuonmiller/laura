@@ -38,7 +38,7 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-        <motion.div ref={container} style={{opacity, scale}} className="bound xl">
+        <motion.div ref={container} style={{opacity, scale}} className="bound xl" id="startseite">
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
