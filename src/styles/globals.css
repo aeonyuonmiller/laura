@@ -337,7 +337,8 @@ input:valid+label {
   color: rgb(0, 100, 0);
 }
 
-/* a:after {
+
+a:after {
   content: '';
   display: block;
   position: absolute;
@@ -348,7 +349,7 @@ input:valid+label {
   border-radius: 10px;
   border: 2px solid white;
   background: #000;
-} */
+}
 
 ::selection {
   background: rgba(0, 0, 0, 0.7);
@@ -399,8 +400,8 @@ body:has(#zusammenarbeit) {
   background: #87EA80;
 }
 
-body:has(#startseite) {
-  background: #EA4447;
+body:has(#impressum) {
+  background: #af70f3;
 }
 
 input {
@@ -491,6 +492,7 @@ a:after {
   position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
   z-index: -999;
   width: 100%;
   height: 100vh;

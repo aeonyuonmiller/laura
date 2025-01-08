@@ -41,14 +41,14 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <Background2 color="#a35cf0" />
+                <Background2 color="#af70f3" />
 
                 <Transition>
                     <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
                         {/* <img src="./start.png" /> */}
                     </motion.div>
 
-                    <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl">
+                    <motion.div ref={container} style={{ y, opacity, scale }} className="bound xl" id="impressum">
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Impressum</motion.h1>
                     </motion.div>
@@ -63,7 +63,7 @@ export default function Home() {
                         </p>
                         <h5>Kontakt</h5>
                         <p>
-                            Telefon: [Telefonnummer]<br />
+                            Telefon: 0049 1639 9277 48<br />
                             E-Mail: tamusi.darmstadt@gmail.com<br />
                             Website: www.tamusi-darmstadt.de
                         </p>
@@ -87,7 +87,7 @@ export default function Home() {
 
                         <h5>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h5>
                         <p>
-                            [Vorname Nachname, Adresse]
+                            Laura Maria Müller, Lautschlägerstrasse 11, Darmstadt
                         </p>
 
                         <h5>Haftungsausschluss (Disclaimer)</h5>
