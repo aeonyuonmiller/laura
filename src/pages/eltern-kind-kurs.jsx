@@ -104,7 +104,8 @@ export default function Home() {
                             <li><strong>Elternabend:</strong> Zu Kursbeginn gibt es einen Elternabend, um Fragen zu klären und Erwartungen abzugleichen. Spät-Einsteigende erhalten die wichtigsten Infos per Elternbrief.</li>
                             <li><strong>Gruppeneinteilung:</strong> Die Gruppen werden altersgerecht eingeteilt, z. B. 1–2-Jährige und 3–4-Jährige.</li>
                             <li><strong>Ferienregelung:</strong> In den hessischen Schulferien findet in der Regel kein Unterricht statt. Nachholtermine bei Ausfall können jedoch in diese Zeit fallen.</li>
-                            <li><strong>Probezeit:</strong> Die ersten 4 Wochen gelten als Probezeit und kosten 35 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).</li>
+                            <li><strong>Probezeit:</strong> Die ersten 4 Wochen gelten als Probezeit und kosten 25 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).</li>
+                            <li><strong>Allgemein:</strong>Der monatliche Beitrag beläuft sich auf 35€ monatlich (abgesehen vom ersten Monat, der als Probezeit gilt und mit 25 Euro abgedeckt abgedeckt wird.</li>
                         </ul>
                         <p>
                             Alle weiteren Informationen findet ihr im Vertrag, den ich euch nach Anfrage per E-Mail zusende.
