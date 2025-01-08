@@ -36,6 +36,12 @@
   border: 1px solid white;
 } */
 
+.call {
+  padding-bottom: 2px;
+  border-bottom: 0 solid rgba(0, 0, 0, 0.2);
+}
+
+
 .grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr;

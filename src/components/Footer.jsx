@@ -30,8 +30,8 @@ const Footer = () => {
 
             <div className="openinghours">
                 <p>
-                    <strong>Email</strong> tamusi.darmstadt@gmail.com<br />
-                    <strong>Telefonisch erreichbar</strong> 0163 9027 748<br />
+                    <strong>Email</strong><a href="mailto:tamusi.darmstadt@gmail.com" className="call">tamusi.darmstadt@gmail.com</a><br />
+                    <strong>Telefonisch erreichbar</strong><a href="tel:00491639027748" className="call">0049 1639 0277 48</a><br />
                     {/* Montags + Freitags von 12:00-14:00 Uhr<br /> */}
                     <strong>Montags + Freitags</strong> von 12:00-14:00 Uhr<br />
                     <span className="fineprint">
