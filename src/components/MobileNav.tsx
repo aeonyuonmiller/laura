@@ -16,13 +16,12 @@ export default function App() {
             <div className="controls">
                 <motion.button
                     whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
+                    whileTap={{ scale: 0.9, rotate: 180 }}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     // animate={{ show? "enter": "hide" }}
                     exit={{ scale: 0 }}
                     onClick={toggleNav}
-                // onClick={() => setShow(!show)}
                 >
                     <AnimatePresence mode="sync">
                         {show ? (
