@@ -53,11 +53,26 @@ export default function Home() {
                             Zusammen erreicht man soviel mehr.
                         </motion.h2>
                     </motion.div>
+
+
                     <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
                         <motion.div style={{ y: y2, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
                             <img src="./mutter-mit-kind.png" alt="Begleitperson weiblich mit Kind im Kurs" />
                         </motion.div>
                     </motion.div>
+
+                    <div className="wrapper">
+                        <h4>Lust auf eine Kooperation?</h4>
+                        <p>
+                            Ich biete in drei Kindertagesstätten musikalische Früherziehung für die Kindergartenkinder an. Das sind 2 Stunden in der Woche, in denen wir auf spielerische Art und Weise die Welt der Musik kennenlernen und erforschen. Kommunikation sind das A und O. Damit ein gutes Angebot in eurer Einrichtung möglich ist, braucht es den Austausch darüber welche Erwartungen und Wünsche alle Seiten haben und Klarheit darüber, wo die Grenzen des Angebotes liegen.
+                        </p>
+                        <p>
+                            Geplant sind weitere Kooperationen mit einem Wohnheim für Menschen mit Behinderung, Grundschulen oder Jugendzentren, um Projektwochen, Ferienspiele oder Projekttage auszurichten und zu begleiten.
+                        </p>
+                        <p>
+                            Traut euch euer Anliegen und eure Idee zu formulieren und wir schauen gemeinsam was machbar ist.
+                        </p>
+                    </div>
 
                     <section className="wrapper">
                         <motion.div
