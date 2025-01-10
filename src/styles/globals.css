@@ -85,9 +85,9 @@
 
   .stoerer {
     top: 20vh;
-    left: calc(50% + 10vw);
-    width: 10ch;
-    height: 10ch;
+    left: calc(1% + 10vw);
+    width: 9ch;
+    height: 9ch;
     font-size: 22px;
   }
 }
