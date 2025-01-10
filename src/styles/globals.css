@@ -82,6 +82,14 @@
   .grid-two {
     grid-template-columns: 1fr;
   }
+
+  .stoerer {
+    top: 20vh;
+    left: calc(50% + 10vw);
+    width: 10ch;
+    height: 10ch;
+    font-size: 22px;
+  }
 }
 
 .thumb {
