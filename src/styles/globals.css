@@ -84,8 +84,8 @@
   }
 
   .stoerer {
-    top: 20vh;
-    left: calc(1% + 10vw);
+    top: 30vh;
+    /* left: calc(0% + 8vw); */
     width: 9ch;
     height: 9ch;
     font-size: 22px;
