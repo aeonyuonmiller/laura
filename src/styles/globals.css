@@ -84,7 +84,8 @@
   }
 
   .stoerer {
-    top: 30vh;
+    top: 29vh;
+    left: calc(100% - 140px);
     /* left: calc(0% + 8vw); */
     width: 9ch;
     height: 9ch;
@@ -706,7 +707,7 @@ footer {
 
 footer a {
   font-family: "Didact Gothic", serif;
-  margin-left: 1em;
+  margin: 1em;
   border-bottom: 2px solid #0000006d;
   padding: 4px;
   overflow: hidden;
@@ -734,14 +735,14 @@ footer svg {
   font-size: 22px;
   text-align: center;
   line-height: 170%;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .openinghours p strong {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 160%;
-  margin-right: 1em;
+  margin: 0 1em;
 }
 
 .bound {
