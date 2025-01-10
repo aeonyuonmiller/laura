@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Components
-import { hlone, hltwo, imagereveal } from '../components/anim';
+import { hlone, hltwo, zoom } from '../components/anim';
 import Background2 from "../components/Background2";
 import Transition from "../components/Transition/index"
 import Footer from '../components/Footer';
@@ -38,7 +38,10 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-        <motion.div ref={container} style={{opacity, scale}} className="bound xl" id="startseite">
+          <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="startseite">
+            <motion.div variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
+              Ab<br/>März 2025
+            </motion.div>
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
