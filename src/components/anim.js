@@ -45,7 +45,7 @@ export const hltwo = {
 
 export const zoom = {
     hidden: { scale: 0 },
-    enter: { scale: 1, transition: { delay: 1.05 }},
+    enter: { scale: 1, transition: { delay: 1.5 }},
     exit: { scale: 0 }
 }
 

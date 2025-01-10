@@ -24,6 +24,8 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
   const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
   const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
+  const r = useTransform(scrollYProgress, [0, 1], [0, 360])
+
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function Home() {
         
       <Transition>
           <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="startseite">
-            <motion.div variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
+            <motion.div style={{ rotate: r }} variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
               Ab<br/>März 2025
             </motion.div>
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
