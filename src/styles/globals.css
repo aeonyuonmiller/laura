@@ -43,9 +43,13 @@
 
 .stoerer {
   position: absolute;
-  top: 25vh;
-  left: calc(50% + 20vw);
-  background: #00000092;
+  top: 66vh;
+  left: calc(50% + 27vw);
+  background-image: url("/dot.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
+  background-size: 100%;
   width: 10ch;
   height: 10ch;
   border-radius: 50%;
