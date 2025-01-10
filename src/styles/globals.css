@@ -48,7 +48,7 @@
   background-image: url("/dot.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   background-size: 100%;
   width: 10ch;
   height: 10ch;

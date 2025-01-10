@@ -24,7 +24,7 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
   const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
   const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
-  const r = useTransform(scrollYProgress, [0, 1], [0, 180])
+  const r = useTransform(scrollYProgress, [0, 1], [0, 80])
 
 
   return (
