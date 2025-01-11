@@ -823,6 +823,7 @@ nav {
 nav a {
   display: flex;
   font-family: 'Didact Gothic', sans-serif;
+  font-weight: 900;
   font-size: 20px;
   flex-direction: column;
   align-items: center;
@@ -833,8 +834,7 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-  color: #fff;
-  fill: #fff;
+  color: whitesmoke;
   /* filter: invert(1); */
   outline-offset: 40px;
 }
@@ -862,7 +862,7 @@ h1 {
   letter-spacing: -.1em;
   text-align: center;
   text-wrap: pretty;
-  margin: 0 auto -0.29em auto;
+  margin: 0 auto -0.19em auto;
   /* margin-top: 50vh; */
 }
 
