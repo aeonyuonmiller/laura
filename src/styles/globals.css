@@ -10,7 +10,7 @@
   }
 }
 
-@supports (animation-timeline: scroll()) {
+/* @supports (animation-timeline: scroll()) {
   section.scroller img {
     animation-name: scale, scale;
     animation-fill-mode: both;
@@ -23,12 +23,12 @@
   @keyframes scale {
     0% {
       scale: .5;
-      transform: translate3d(0, 0, 0) rotateY(20deg);
-      /* filter: blur(14px); */
+      /* transform: translate3d(0, 0, 0) rotateY(20deg); */
+/* filter: blur(14px); 
       opacity: 0.5;
     }
   }
-}
+} */
 
 /* :root:has(#parallax:checked) a svg { */
 
@@ -1137,34 +1137,5 @@ img {
     font-size: 18px;
     line-height: 160%;
     margin-right: 1em;
-  }
-
-  section.scroller {
-    height: 80vh;
-    grid-auto-columns: 40%;
-    grid-auto-flow: column;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-color: none;
-    gap: 1.5em;
-    padding: 0 10px;
-
-    /* hide scrollbar mobile */
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-  }
-
-  .scroller::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
-  }
-
-  .scroller img {
-    border-radius: 20px;
-  }
-
-  .scroller img:nth-child(odd) {
-    transform: translateY(40px);
   }
 }

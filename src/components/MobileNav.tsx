@@ -16,7 +16,7 @@ export default function App() {
             <div className="controls">
                 <motion.button
                     whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9, rotate: 180 }}
+                    whileTap={{ scale: 0.9, rotate: 90 }}
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     exit={{ scale: 0 }}
@@ -27,7 +27,8 @@ export default function App() {
                             <motion.svg
                                 key={show ? "open" : "close"}
                                 initial={{ opacity: 0, rotate: 90 }}
-                                animate={{ opacity: 1, rotate: 0 }}
+                                animate={show ? { opacity: 1, rotate: 0 } : { opacity: 0, rotate: -90 }}
+                                // animate={{ opacity: 1, rotate: 0 }}
                                 width="30" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M99.6391 67.1122L83.0504 86.9536L47.9213 122.083L42.2291 120.944L39.4643 115.577L28.5678 106.307L28.2425 101.753L74.2681 61.9079L95.2479 40.928L102.079 36.6995L121.269 42.5544L121.92 45.8071L106.795 60.9321L100.29 64.8353L99.6391 67.1122Z" fill="#333" />
                                 <path d="M99.6391 87.8878L83.0504 68.0464L47.9213 32.9173L42.2291 34.0557L39.4643 39.4227L28.5678 48.6929L28.2425 53.2466L74.2681 93.0921L95.2479 114.072L102.079 118.3L121.269 112.446L121.92 109.193L106.795 94.0679L100.29 90.1647L99.6391 87.8878Z" fill="#333" />
