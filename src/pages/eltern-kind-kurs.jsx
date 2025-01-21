@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 // Components
-import { hlone, hltwo, imagereveal } from '../components/anim';
+import { hlone, hltwo, imagereveal, zoom } from '../components/anim';
 import Background2 from "../components/Background2";
 import Footer from '../components/Footer';
 import Transition from '../components/Transition';
@@ -23,6 +23,7 @@ export default function Home() {
     const y2 = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
     const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
     const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
+    const r = useTransform(scrollYProgress, [0, 1], [0, 80])
 
     // const Slide = (props) => {
     // const direction = props.direction == 'left' ? -1 : 1;
@@ -34,7 +35,7 @@ export default function Home() {
             <Head>
                 <title>Tamusi • Tanzen, Musizieren & Singen</title>
                 <meta name="description" content="Erlebe spielerische Musik-Kurse für Kleinkinder: Instrumente entdecken, kreative Zusammenarbeit und musikalische Entwicklung. Teilnahme mit oder ohne Eltern möglich!" />
-                <meta name="keywords" content="Musik-Kurse Kinder, Musik für Kleinkinder, Kinder-Instrumentenkurse, Eltern-Kind Musik-Kurse, musikalische Früherziehung, Kleinkind-Kurse, Musik und Zusammenarbeit, Musik entdecken für Kinder, kreative Kurse für Kinder, Darmstadt, Hessen" />
+                <meta name="keywords" content="Musikalische Früherziehung, Elementare Musikpädagogik, EMP, Laura Maria Mueller, Tamusi, Darmstadt, Martinsviertel, Zucker, Eltern-Kind-Kurse, musikalische Angebote, Kita, Kindertagesstätte, Wohnheim" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -43,6 +44,10 @@ export default function Home() {
 
                 <Transition>
                     <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="elternkind">
+                        <motion.div style={{ rotate: r }} variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer zwei">
+                            Donnerstags<br />von 15.00 - 18.00 Uhr
+                        </motion.div>
+
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Eltern-Kind-Kurse</motion.h1>
                         <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">

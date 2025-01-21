@@ -64,6 +64,21 @@
   letter-spacing: -0.08em;
 }
 
+.zwei {
+  width: 10ch;
+  height: 10ch;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--font-geist-sans);
+  line-height: 90%;
+  letter-spacing: -0.08em;
+}
+
 
 .grid-two {
   display: grid;

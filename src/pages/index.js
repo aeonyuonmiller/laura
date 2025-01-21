@@ -13,7 +13,7 @@ import Magnetic from '../components/Magnetic';
 
 export default function Home() {
 
-  // Page Headline Scroll Anim
+  // Scroll Anim
   const container = useRef();
   const { scrollYProgress } = useScroll({
     target: container,

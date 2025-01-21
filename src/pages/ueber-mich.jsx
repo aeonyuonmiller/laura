@@ -27,7 +27,7 @@ export default function Uebermich() {
       <Head>
         <title>Tamusi • Über mich</title>
         <meta name="description" content="Erlebe spielerische Musik-Kurse für Kleinkinder: Instrumente entdecken, kreative Zusammenarbeit und musikalische Entwicklung. Teilnahme mit oder ohne Eltern möglich!" />
-        <meta name="keywords" content="Musik-Kurse Kinder, Musik für Kleinkinder, Kinder-Instrumentenkurse, Eltern-Kind Musik-Kurse, musikalische Früherziehung, Kleinkind-Kurse, Musik und Zusammenarbeit, Musik entdecken für Kinder, kreative Kurse für Kinder, Darmstadt, Hessen" />
+        <meta name="keywords" content="Musikalische Früherziehung, Elementare Musikpädagogik, EMP, Laura Maria Mueller, Tamusi, Darmstadt, Martinsviertel, Zucker, Eltern-Kind-Kurse, musikalische Angebote, Kita, Kindertagesstätte, Wohnheim" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -63,7 +63,7 @@ export default function Uebermich() {
               Mit 17 Jahren begann ich die Ausbildung zur Sozialassisstentin, begab mich danach in die Ausbildung zur staatlich anerkannten Erzieherin und arbeitete fast 10 Jahre mit Kindern im Alter von zwei bis 12 Jahren.
             </p>
             <p>
-              Im Laufe meiner Berufsbahn als Erzieherin absolvierte ich die Ausbildung zur Kinderschutzfachkraft, war als stellvertretende Leitung tätig und absolvierte später dann die Weiterbildung zur Traumapädagogin.
+              Im Laufe meiner Berufslaufbahn als Erzieherin absolvierte ich die Ausbildung zur Kinderschutzfachkraft, war als stellvertretende Leitung tätig und absolvierte später dann die Weiterbildung zur Traumapädagogin.
             </p>
             <p>
               Nach einer Auszeit, kam die elementare Musikpädagogik mir quasi zugeflogen. Es fühlte sich einfach richtig an, an meiner beruflichen Situation etwas zu verändern und mir die Expertise aus meiner Tätigkeit als Erzieherin dafür von Nutzen zu machen. Ich hospitierte bei einer Musikschule, nahm dort an Eltern-Kind-Kursen und Kursen für Kinder bis zum Schuleintritt teil und merkte schnell wie viel Spass es mir bereitete mich in der musikalischen Früherziehung, mit den Eltern und ihren Kindern auszutoben.
