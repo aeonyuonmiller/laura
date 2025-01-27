@@ -54,7 +54,7 @@ export default function Home() {
         </motion.div>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
           <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
-            <img src="./ukulele.png" alt="Foto von Lauras Gesicht" />
+            <img src="./ukulele.png" alt="Ukulele" />
           </motion.div>
         </motion.div>  
           
