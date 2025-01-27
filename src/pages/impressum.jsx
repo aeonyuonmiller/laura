@@ -54,52 +54,22 @@ export default function Home() {
                     </motion.div>
 
                     <section className="wrapper">
-                        <h5>Angaben gemäss § 5 TMG</h5>
-                        <p>
-                            Tamusi - Musikkurse für Kinder im Elementarbereich<br />
-                            Laura Maria Müller<br />
-                            Lauteschlägerstrasse 11<br />
-                            xxxxxx Darmstadt
-                        </p>
-                        <h5>Kontakt</h5>
-                        <p>
-                            Telefon: 0049 1639 9277 48<br />
-                            E-Mail: tamusi.darmstadt@gmail.com<br />
-                            Website: www.tamusi-darmstadt.de
-                        </p>
+                        <p>Laura Maria M&uuml;ller<br />
+                            Musikp&auml;dagogische Angebote Tamusi<br />
+                            Lauteschl&auml;gerstra&szlig;e 11<br />
+                            64289 Darmstadt</p>
 
-                        <h5>Vertreten durch</h5>
-                        <p>
-                            Laura Maria Müller
-                        </p>
+                        <h2>Kontakt</h2>
+                        <p>Telefon: +49 (0) 163 90 27 74 8<br />
+                            E-Mail: tamusi.darmstadt@gmail.com</p>
 
-                        <h5>Umsatzsteuer-Identifikationsnummer gemäss § 27 a Umsatzsteuergesetz:</h5>
-                        <p>
-                            [falls vorhanden, angeben]
-                        </p>
+                        <h2>EU-Streitschlichtung</h2>
+                        <p>Die Europ&auml;ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
-                        <h5>Berufsbezeichnung und berufsrechtliche Regelungen</h5>
-                        <p>
-                            Berufsbezeichnung: [z. B. Musikpädagoge/Musikpädagogin]
-                            Zuständige Kammer: [falls relevant]
-                            Verleihungsstaat: [Land, in dem die Berufsbezeichnung verliehen wurde]
-                        </p>
+                        <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
+                        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
-                        <h5>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h5>
-                        <p>
-                            Laura Maria Müller, Lautschlägerstrasse 11, Darmstadt
-                        </p>
-
-                        <h5>Haftungsausschluss (Disclaimer)</h5>
-                        <p>
-                            [Hier könnte ein Haftungsausschluss stehen, z. B. Haftung für Inhalte und Links.]
-                        </p>
-
-                        <h5>Streitschlichtung</h5>
-                        <p>
-                            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [Link zur Plattform].
-                            Unsere E-Mail-Adresse finden Sie oben im Impressum.
-                        </p>
+                        <p>Quelle: <a href="https://www.e-recht24.de/impressum-generator.html">https://www.e-recht24.de/impressum-generator.html</a></p>
                     </section>
 
                     <Footer />
