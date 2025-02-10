@@ -877,8 +877,8 @@ h1 {
   letter-spacing: -.1em;
   text-align: center;
   text-wrap: pretty;
+  mix-blend-mode: darken;
   margin: 0 auto -0.19em auto;
-  /* margin-top: 50vh; */
 }
 
 h2 {
