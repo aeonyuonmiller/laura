@@ -54,7 +54,7 @@ export default function Home() {
         </motion.div>
         <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
           <motion.div style={{ y, scale: s2, opacity: o2, marginTop: "-10%" }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
-            <img src="./laura1.jpeg" alt="Porträt von Laura Müller" />
+            <img src="./ukulele.png" alt="Ukulele" />
           </motion.div>
         </motion.div>  
           
