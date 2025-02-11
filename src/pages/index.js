@@ -91,7 +91,7 @@ export default function Home() {
               animate="enter"
               exit="exit"
             >
-              <Image src="/laura2.jpeg" alt="portrait" width={300} height={300} />
+              <Image src="/laura2.jpeg" alt="portrait" fill />
               <h5>Laura Maria Müller</h5>
               <h6 className="fineprint">Musikerin und Pädagogin</h6>
             </motion.div>
