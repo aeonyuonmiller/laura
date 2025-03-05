@@ -47,7 +47,7 @@ export default function Home() {
                         <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
                             Anmeldung & Vertrag</motion.h1>
                         <motion.h2 className="center" variants={hltwo} initial="hidden" animate="enter" exit="exit">
-                            Du hast Lust an einem Eltern-Kind-Kurs teilzunehmen?
+                            Du hast Lust an einem<br />Eltern-Kind-Kurs teilzunehmen?
                         </motion.h2>
                     </motion.div>
                     <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
@@ -61,15 +61,17 @@ export default function Home() {
                         <p>
                             <a href="Tamusi-Unterrichtsvertrag.pdf" download>Vertrag herunterladen</a>, ausdrucken und auf dem Postweg an unten stehende Adresse senden oder persönlich einwerfen.
                         </p>
-                        <h2 style={{ marginBottom: "40px" }}>
+                        <h2 className="center" style={{ marginBottom: "40px" }}>
                             Laura Maria Müller<br />
                             Tamusi<br />
                             Lauteschlägerstraße 11<br />
                             64289 Darmstadt
                         </h2>
+                        <h4 className='center'>Du hast keinen Drucker?</h4>
                         <p>
-                            Du hast keinen Drucker? Kein Problem, Einen Vertrag zum ausfüllen, findest du bereits ausgedruckt, für dich zum mitnehmen am Briefkasten an oben benannter Adresse.
+                            Kein Problem, Einen Vertrag zum ausfüllen, findest du bereits ausgedruckt, für dich zum mitnehmen am Briefkasten an oben benannter Adresse.
                         </p>
+                        <h4 className='center'>Probezeit</h4>
                         <p>
                             Du möchtest erst einmal ausprobieren und dich nicht direkt verpflichten? Der erste Monat gilt als Probezeit. In dieser Zeit hast du die Möglichkeit auszuprobieren, wie es dir und deinem Kind im Kurs gefällt. Während dieser Zeit kannst du den Vertrag jederzeit (bis zum letzten Tag des Monats) per Mail kündigen.
                         </p>
