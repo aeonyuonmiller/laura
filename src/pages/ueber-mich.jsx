@@ -45,7 +45,7 @@ export default function Uebermich() {
           </motion.div>
           <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
             <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
-              <img src="./laura1.jpeg" alt="Foto von Lauras Gesicht" />
+              <img src="./laura-portrait.jpg" alt="Foto von Lauras Gesicht" />
             </motion.div>
           </motion.div>
 

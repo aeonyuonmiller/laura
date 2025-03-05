@@ -1,7 +1,7 @@
 import { useScroll, useTransform, motion } from 'motion/react';
 import { useRef } from 'react';
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 // Components
@@ -26,7 +26,6 @@ export default function Home() {
   const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
   const r = useTransform(scrollYProgress, [0, 1], [0, 80])
 
-
   return (
     <>
       <Head>
@@ -41,9 +40,23 @@ export default function Home() {
         
       <Transition>
           <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="startseite">
-            <motion.div style={{ rotate: r }} variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
+            {/* <motion.div style={{ rotate: r }} variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
               Ab<br/>März 2025
-            </motion.div>
+            </motion.div> */}
+            <Link href="vertrag">
+              <motion.div
+                style={{ rotate: r }}
+                variants={zoom}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: .99 }}
+                initial="hidden"
+                animate="enter"
+                exit="exit"
+                className="stoerer-link"
+              >
+                Los geht's<br/>Anmeldung<br/>& Vertrag
+              </motion.div>
+            </Link>
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
               Willkommen<br />bei Tamusi
           </motion.h1>
