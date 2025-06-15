@@ -476,6 +476,10 @@ body:has(#impressum) {
   background-color: #af70f3;
 }
 
+body:has(#vertrag) {
+  background-color: #eef888;
+}
+
 input {
   caret-shape: bar;
   caret-color: #000;
