@@ -41,9 +41,9 @@ const Footer = () => {
             </div>
 
             <span>
-                &copy;
                 <strong>
                     {/* {new Date().getFullYear()} – Alle Rechte vorbehalten.</strong> */}
+                    &copy;
                     {year} – Alle Rechte vorbehalten.
                 </strong>
 
