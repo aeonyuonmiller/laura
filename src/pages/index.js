@@ -54,7 +54,7 @@ export default function Home() {
                 exit="exit"
                 className="stoerer-link"
               >
-                Hier zur<br/>Anmeldung<br/>& Vertrag
+                &#10173; Hier zur<br/>Anmeldung<br/>& Vertrag
               </motion.div>
             </Link>
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">

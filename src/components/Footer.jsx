@@ -49,6 +49,7 @@ const Footer = () => {
 
                 <Link href="/impressum">Impressum</Link>
                 <a href="mailto:tamusi.darmstadt@gmail.com">Kontakt</a>
+                <Link href="/vertrag">Vertrag</Link>
             </span>
         </footer>
     )
