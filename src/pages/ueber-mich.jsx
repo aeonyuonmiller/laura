@@ -46,12 +46,13 @@ export default function Uebermich() {
           <motion.div variants={hltwo} initial="hidden" animate="enter" exit="exit" className="hero-img">
             <motion.div style={{ y, scale: s2, opacity: o2 }} variants={hltwo} initial="hidden" animate="enter" exit="exit">
               <img src="./laura-portrait.jpg" alt="Foto von Lauras Gesicht" />
+              <h4 style={{ textAlign: "center", maxWidth: "100%" }}>Laura Maria Müller</h4>
             </motion.div>
           </motion.div>
 
           <section className="wrapper">
             <p>
-              Laura Maria Müller seit 2012 in Darmstadt lebend, 1993 im Rhein-Main-Gebiet geboren, fand ich früh den Weg zur Musik.
+              <strong>1993</strong><br />im Rhein-Main-Gebiet geboren und seit 2012 in Darmstadt zu Hause, entdeckte ich schon früh meine Leidenschaft für die Musik.
             </p>
             <p>
               Über das Singen mit meiner Mama, verfolgte ich meine Leidenschaft für den Gesang in zahlreichen Schulchören, und nahm zwei Jahre lang Keyboardunterricht.

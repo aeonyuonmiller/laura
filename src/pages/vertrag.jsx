@@ -69,7 +69,7 @@ export default function Home() {
                         </h2>
                         <h4 className='center'>Du hast keinen Drucker?</h4>
                         <p>
-                            Kein Problem, Einen Vertrag zum ausfüllen, findest du bereits ausgedruckt, für dich zum mitnehmen am Briefkasten an oben benannter Adresse.
+                            Kein Problem, schicke mir eine Email an tamusi.darmstadt@gmail.com mit deiner Adresse und der bitte darum dir einen Vertrag zukommen zu lassen, dann kümmere ich mich darum dass du diesen bald in deinem Briefkasten findest.
                         </p>
                         <h4 className='center'>Probezeit</h4>
                         <p>

@@ -77,6 +77,8 @@ export default function Home() {
                         >
                             <span>
                                 <h4>Wer kann begleiten?</h4>
+                                <p>„Ihr als Begleitpersonen seid Vorbilder für eure Kinder. Wenn ihr mitmacht und ein gutes Beispiel gebt, wird euer Kind ganz von selbst beginnen, aktiv teilzunehmen – ganz ohne dass ihr seine Hände führen müsst. Gebt den Kindern die Zeit, die sie brauchen: Vom Staunen und Zuschauen finden sie von alleine den Weg ins eigene Tun.</p>
+                                <p>Ihr könnt den Takt der Lieder, die wir singen, mit sanftem Tippen, Patschen oder ähnlichen Bewegungen auf den Körper eures Kindes übertragen – so entwickelt es ein erstes Gefühl für Rhythmus. Wenn euer Kind bei euch auf dem Schoß sitzt, spürt es dabei nicht nur eure Bewegungen, sondern auch die Schwingungen eures Körpers beim Singen und Musizieren. Das fördert nicht nur seine musikalische Wahrnehmung, sondern stärkt auch eure Beziehung zueinander und schenkt insbesondere den Kleinsten erste wertvolle musikalische Eindrücke.“</p>
                                 <p>Alle nahen Bezugspersonen des Kindes sind willkommen – ob Eltern, Großeltern oder andere Vertraute. Wichtig ist nur, dass sich das Kind in der Begleitung sicher fühlt und sein natürliches Explorationsverhalten entfalten kann.</p>
                             </span>
                         </motion.div>
@@ -106,11 +108,13 @@ export default function Home() {
                     <div className="wrapper">
                         <h4>Rahmenbedingungen</h4>
                         <ul>
-                            <li><strong>Elternabend:</strong> Zu Kursbeginn gibt es einen Elternabend, um Fragen zu klären und Erwartungen abzugleichen. Spät-Einsteigende erhalten die wichtigsten Infos per Elternbrief.</li>
+                            {/* <li><strong>Elternabend:</strong> Zu Kursbeginn gibt es einen Elternabend, um Fragen zu klären und Erwartungen abzugleichen. Spät-Einsteigende erhalten die wichtigsten Infos per Elternbrief.</li> */}
                             <li><strong>Gruppeneinteilung:</strong> Die Gruppen werden altersgerecht eingeteilt, z. B. 1–2-Jährige und 3–4-Jährige.</li>
                             <li><strong>Ferienregelung:</strong> In den hessischen Schulferien findet in der Regel kein Unterricht statt. Nachholtermine bei Ausfall können jedoch in diese Zeit fallen.</li>
-                            <li><strong>Probezeit:</strong> Die ersten 4 Wochen gelten als Probezeit und kosten 25 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).</li>
-                            <li><strong>Allgemein:</strong>Der monatliche Beitrag beläuft sich auf 35€ monatlich (abgesehen vom ersten Monat, der als Probezeit gilt und mit 25 Euro abgedeckt wird.</li>
+                            {/* <li><strong>Probezeit:</strong> Die ersten 4 Wochen gelten als Probezeit und kosten 25 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).</li> */}
+                            {/* <li><strong>Allgemein:</strong>Der monatliche Beitrag beläuft sich auf 35€ monatlich (abgesehen vom ersten Monat, der als Probezeit gilt und mit 25 Euro abgedeckt wird.</li> */}
+                            <li><strong>Allgemein:</strong> Der monatliche Beitrag beläuft sich auf 40€ monatlich -  Kündbar nach einem halben Jahr.</li>
+                            <li><strong>Probezeit:</strong> Vertrag kann halbjährlich gekündigt werden jeweils zum 31.1. und 31.8. </li>
                         </ul>
                         <p>
                             Alle weiteren Informationen findet ihr im Vertrag, den ich euch nach Anfrage per E-Mail zusende.

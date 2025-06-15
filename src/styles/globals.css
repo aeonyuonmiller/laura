@@ -681,7 +681,7 @@ section.points span {
 
 section.points span p {
   text-wrap: pretty;
-  columns: 40ch;
+  columns: 44ch;
 }
 
 section.two-grid {
@@ -723,7 +723,7 @@ section.two-grid img {
 section.two-grid p {
   text-align: left;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 section.two-grid a {

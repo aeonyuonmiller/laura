@@ -24,7 +24,7 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "85%"])
   const s2 = useTransform(scrollYProgress, [0, 1], [1, 1.4])
   const o2 = useTransform(scrollYProgress, [0.5, 1], [1, 0])
-  const r = useTransform(scrollYProgress, [0, 1], [0, 80])
+  const scale2 = useTransform(scrollYProgress, [0, 1], [1, 0])
 
   return (
     <>
@@ -39,13 +39,13 @@ export default function Home() {
       <Background2 color={"#EA4447"} />
         
       <Transition>
-          <motion.div ref={container} style={{ opacity, scale }} className="bound xl" id="startseite">
+          <motion.div ref={container} style={{ opacity, scale, objectPosition:"50% 50%" }} className="bound xl" id="startseite">
             {/* <motion.div style={{ rotate: r }} variants={zoom} initial="hidden" animate="enter" exit="exit" className="stoerer">
               Ab<br/>März 2025
             </motion.div> */}
             <Link href="vertrag">
               <motion.div
-                style={{ rotate: r }}
+                style={{ scale: scale2 }}
                 variants={zoom}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: .99 }}
@@ -54,7 +54,7 @@ export default function Home() {
                 exit="exit"
                 className="stoerer-link"
               >
-                Los geht's<br/>Anmeldung<br/>& Vertrag
+                Hier zur<br/>Anmeldung<br/>& Vertrag
               </motion.div>
             </Link>
           <motion.h1 variants={hlone} initial="hidden" animate="enter" exit="exit">
