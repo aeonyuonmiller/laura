@@ -117,7 +117,7 @@ export default function Home() {
                             <li><strong>Probezeit:</strong> Vertrag kann halbjährlich gekündigt werden jeweils zum 31.1. und 31.8. </li>
                         </ul>
                         <p>
-                            Alle weiteren Informationen findet ihr im <a href="/vertrag">&#10140; Vertrag</a>.
+                            Alle weiteren Informationen findet ihr im <a href="/vertrag">&rarr; Vertrag</a>.
                         </p>
                         <p className="center">
                             <strong>Ich freue mich auf euch und eure kleinen Musiker:innen!</strong>

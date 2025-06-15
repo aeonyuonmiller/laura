@@ -480,6 +480,11 @@ body:has(#vertrag) {
   background-color: #eef888;
 }
 
+u {
+  margin: 0;
+  padding: 0;
+}
+
 input {
   caret-shape: bar;
   caret-color: #000;
