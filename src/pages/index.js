@@ -52,7 +52,7 @@ export default function Home() {
                 initial="hidden"
                 animate="enter"
                 exit="exit"
-                className="stoerer-link"
+                className="stoerer stoerer-link"
               >
                 Hier zur<br/>Anmeldung<br/>& Vertrag<br/>&rarr;
               </motion.div>
