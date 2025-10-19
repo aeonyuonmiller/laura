@@ -113,7 +113,8 @@ export default function Home() {
                             <li><strong>Ferienregelung:</strong> In den hessischen Schulferien findet in der Regel kein Unterricht statt. Nachholtermine bei Ausfall können jedoch in diese Zeit fallen.</li>
                             {/* <li><strong>Probezeit:</strong> Die ersten 4 Wochen gelten als Probezeit und kosten 25 €. Eine Kündigung ist in dieser Zeit per E-Mail möglich. Ohne Kündigung läuft der Vertrag bis zum Ende des Musikschuljahres (31. August).</li> */}
                             {/* <li><strong>Allgemein:</strong>Der monatliche Beitrag beläuft sich auf 35€ monatlich (abgesehen vom ersten Monat, der als Probezeit gilt und mit 25 Euro abgedeckt wird.</li> */}
-                            <li><strong>Allgemein:</strong> Der monatliche Beitrag beläuft sich auf 40€ monatlich -  Kündbar nach einem halben Jahr.</li>
+                            <li><strong>Allgemein:</strong> Der monatliche Beitrag beläuft sich auf 40€ monatlich, Reguläre Vertragslaufzeit 1 Jahr. Fristgerechte Kündigung zum Halbjahr möglich.</li>
+                            <li><strong>Bildung und Teilhabe (BuT):</strong> Finanzielle Unterstützung zur Teilhabe am sozialen und kulturellen Leben <a href="#">Dokument</a></li>
                             <li><strong>Probezeit:</strong> Vertrag kann halbjährlich gekündigt werden jeweils zum 31.1. und 31.8. </li>
                         </ul>
                         <p>

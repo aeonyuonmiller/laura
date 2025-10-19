@@ -64,7 +64,7 @@ export default function Home() {
                         <h2 className="center" style={{ marginBottom: "40px" }}>
                             Laura Maria Müller<br />
                             Tamusi<br />
-                            Lauteschlägerstraße 11<br />
+                            Kittlerstrasse 31<br />
                             64289 Darmstadt
                         </h2>
                         <h4 className='center'>Du hast keinen Drucker?</h4>
@@ -74,6 +74,10 @@ export default function Home() {
                         <h4 className='center'>Probezeit</h4>
                         <p>
                             Du möchtest erst einmal ausprobieren und dich nicht direkt verpflichten? Der erste Monat gilt als Probezeit. In dieser Zeit hast du die Möglichkeit auszuprobieren, wie es dir und deinem Kind im Kurs gefällt. Während dieser Zeit kannst du den Vertrag jederzeit (bis zum letzten Tag des Monats) per Mail kündigen.
+                        </p>
+                        <h4 className='center'>Bildung und Teilhabe (BuT)</h4>
+                        <p>
+                            Finanzielle Unterstützung zur Teilhabe am sozialen und kulturellen Leben <a href="#">Dokument</a>
                         </p>
                     </div >
 

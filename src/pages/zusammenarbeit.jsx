@@ -84,11 +84,11 @@ export default function Home() {
                             viewport={{ once: true }}
                         >
                             <span>
-                                <h4>Zucker e.V. in Darmstadt</h4>
+                                <h4>Struppi in Darmstadt</h4>
                                 <p>
-                                    Nähe des Riegerplatzes finden die Kurse in der Räumlichkeit des Zucker e.V. statt.
+                                    In der nähe des Herrngartens, Landwehrstraße 24a, 64293 Darmstadt
                                 </p>
-                                <a target="_blank" href="https://zuckersachen.de/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
+                                <a target="_blank" href="https://johannescrowd.de/struppi/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
                                 {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
                             </span>
                             {/* <Image
@@ -99,7 +99,7 @@ export default function Home() {
                                 width={200}
                                 height={80}
                             /> */}
-                            <img className="thumb" src="/zucker-logo.svg" alt="Zucker Logo" />
+                            <img className="thumb" src="/Struppi_Logo-Lila.png" alt="Struppi Logo" />
                         </motion.div>
 
                         <motion.div

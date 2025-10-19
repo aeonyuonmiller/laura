@@ -56,7 +56,7 @@ export default function Home() {
                     <section className="wrapper">
                         <p>Laura Maria M&uuml;ller<br />
                             Musikp&auml;dagogische Angebote Tamusi<br />
-                            Lauteschl&auml;gerstra&szlig;e 11<br />
+                            Kittlerstrasse 31<br />
                             64289 Darmstadt</p>
 
                         <h2>Kontakt</h2>
