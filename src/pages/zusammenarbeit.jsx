@@ -75,7 +75,7 @@ export default function Home() {
                     </div>
 
                     <section className="wrapper">
-                        <motion.div
+                        {/* <motion.div
                             className="point"
                             variants={imagereveal}
                             initial="hidden"
@@ -89,9 +89,10 @@ export default function Home() {
                                     In der nähe des Herrngartens, Landwehrstraße 24a, 64293 Darmstadt
                                 </p>
                                 <a target="_blank" href="https://johannescrowd.de/struppi/" alt="Link zur Webseite vom Zucker e.V.">Zur Webseite</a>
-                                {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p> */}
-                            </span>
-                            {/* <Image
+                                {/* <p>Ein in Darmstadt ansässiger Verein. Förder seit über zehn Jahren Kunst und Kultur im regionalen Raum. Hier finden die Kurse statt.</p>
+                    </span> */}
+
+                        {/* <Image
                                 className="thumb"
                                 aria-hidden
                                 src="/zucker-logo.svg"
@@ -99,8 +100,8 @@ export default function Home() {
                                 width={200}
                                 height={80}
                             /> */}
-                            <img className="thumb" src="/Struppi_Logo-Lila.png" alt="Struppi Logo" />
-                        </motion.div>
+                        {/* <img className="thumb" src="/Struppi_Logo-Lila.png" alt="Struppi Logo" />
+                        </motion.div> */}
 
                         <motion.div
                             className="point"
@@ -155,7 +156,7 @@ export default function Home() {
 
                     <Footer />
                 </Transition >
-            </div>
+            </div >
         </>
     );
 }
