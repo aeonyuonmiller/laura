@@ -42,7 +42,7 @@ export default function App({ Component, pageProps, router }) {
       </div>
 
       <motion.nav variants={ui} initial="hidden" animate="enter">
-        <Magnetic>
+        {/* <Magnetic>
           <Link href="/eltern-kind-kurs" scroll={false} tabIndex={0}>
             <Image
               src="/eltern-kind-kurse.svg"
@@ -53,7 +53,7 @@ export default function App({ Component, pageProps, router }) {
             />
             Eltern-Kind-Kurse
           </Link>
-        </Magnetic>
+        </Magnetic> */}
 
           {/* <Magnetic>
             <Link href="/kinder-kurse" scroll={false} tabIndex={0}>

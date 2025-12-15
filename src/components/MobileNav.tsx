@@ -60,9 +60,9 @@ export default function App() {
                             Startseite
                         </Link>
 
-                        <Link href="/eltern-kind-kurs" scroll={false} onClick={toggleNav} tabIndex={0}>
+                        {/* <Link href="/eltern-kind-kurs" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Eltern-Kind-Kurse
-                        </Link>
+                        </Link> */}
 
                         <Link href="/ueber-mich" scroll={false} onClick={toggleNav} tabIndex={0}>
                             Über Mich
